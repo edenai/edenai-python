@@ -8,4 +8,4 @@ else
     echo "from edenai.simplify import *" >> edenai/__init__.py
 fi
 
-bash git_push.sh edenai edenai-python $1
+bash git_push.sh edenai edenai-python " $1 "
