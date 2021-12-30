@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.models.pipelines_body import PipelinesBody  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.models.pipelines_body import PipelinesBody  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestPipelinesBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPipelinesBody(unittest.TestCase):
     def testPipelinesBody(self):
         """Test PipelinesBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = edenai_python.models.pipelines_body.PipelinesBody()  # noqa: E501
+        # model = edenai.models.pipelines_body.PipelinesBody()  # noqa: E501
         pass
 
 

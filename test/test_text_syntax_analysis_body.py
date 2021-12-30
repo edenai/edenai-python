@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.models.text_syntax_analysis_body import TextSyntaxAnalysisBody  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.models.text_syntax_analysis_body import TextSyntaxAnalysisBody  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestTextSyntaxAnalysisBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTextSyntaxAnalysisBody(unittest.TestCase):
     def testTextSyntaxAnalysisBody(self):
         """Test TextSyntaxAnalysisBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = edenai_python.models.text_syntax_analysis_body.TextSyntaxAnalysisBody()  # noqa: E501
+        # model = edenai.models.text_syntax_analysis_body.TextSyntaxAnalysisBody()  # noqa: E501
         pass
 
 

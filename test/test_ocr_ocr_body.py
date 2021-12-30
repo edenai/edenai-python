@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.models.ocr_ocr_body import OcrOcrBody  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.models.ocr_ocr_body import OcrOcrBody  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestOcrOcrBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestOcrOcrBody(unittest.TestCase):
     def testOcrOcrBody(self):
         """Test OcrOcrBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = edenai_python.models.ocr_ocr_body.OcrOcrBody()  # noqa: E501
+        # model = edenai.models.ocr_ocr_body.OcrOcrBody()  # noqa: E501
         pass
 
 

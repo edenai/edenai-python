@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.models.text_named_entity_recognition_body import TextNamedEntityRecognitionBody  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.models.text_named_entity_recognition_body import TextNamedEntityRecognitionBody  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestTextNamedEntityRecognitionBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTextNamedEntityRecognitionBody(unittest.TestCase):
     def testTextNamedEntityRecognitionBody(self):
         """Test TextNamedEntityRecognitionBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = edenai_python.models.text_named_entity_recognition_body.TextNamedEntityRecognitionBody()  # noqa: E501
+        # model = edenai.models.text_named_entity_recognition_body.TextNamedEntityRecognitionBody()  # noqa: E501
         pass
 
 

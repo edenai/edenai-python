@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.models.text_keyword_extraction_body import TextKeywordExtractionBody  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.models.text_keyword_extraction_body import TextKeywordExtractionBody  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestTextKeywordExtractionBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTextKeywordExtractionBody(unittest.TestCase):
     def testTextKeywordExtractionBody(self):
         """Test TextKeywordExtractionBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = edenai_python.models.text_keyword_extraction_body.TextKeywordExtractionBody()  # noqa: E501
+        # model = edenai.models.text_keyword_extraction_body.TextKeywordExtractionBody()  # noqa: E501
         pass
 
 

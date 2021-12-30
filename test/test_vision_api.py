@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.api.vision_api import VisionApi  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.api.vision_api import VisionApi  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestVisionApi(unittest.TestCase):

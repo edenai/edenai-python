@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.models.train_id_prediction_body import TrainIdPredictionBody  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.models.train_id_prediction_body import TrainIdPredictionBody  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestTrainIdPredictionBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTrainIdPredictionBody(unittest.TestCase):
     def testTrainIdPredictionBody(self):
         """Test TrainIdPredictionBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = edenai_python.models.train_id_prediction_body.TrainIdPredictionBody()  # noqa: E501
+        # model = edenai.models.train_id_prediction_body.TrainIdPredictionBody()  # noqa: E501
         pass
 
 

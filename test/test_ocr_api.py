@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.api.ocr_api import OCRApi  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.api.ocr_api import OCRApi  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestOCRApi(unittest.TestCase):

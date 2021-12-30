@@ -14,13 +14,13 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.models.inline_response201 import InlineResponse201  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.models.inline_response200 import InlineResponse200  # noqa: E501
+from edenai.rest import ApiException
 
 
-class TestInlineResponse201(unittest.TestCase):
-    """InlineResponse201 unit test stubs"""
+class TestInlineResponse200(unittest.TestCase):
+    """InlineResponse200 unit test stubs"""
 
     def setUp(self):
         pass
@@ -28,10 +28,10 @@ class TestInlineResponse201(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testInlineResponse201(self):
-        """Test InlineResponse201"""
+    def testInlineResponse200(self):
+        """Test InlineResponse200"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = edenai_python.models.inline_response201.InlineResponse201()  # noqa: E501
+        # model = edenai.models.inline_response200.InlineResponse200()  # noqa: E501
         pass
 
 

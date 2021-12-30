@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.models.audio_speech_recognition_body import AudioSpeechRecognitionBody  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.models.audio_speech_recognition_body import AudioSpeechRecognitionBody  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestAudioSpeechRecognitionBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAudioSpeechRecognitionBody(unittest.TestCase):
     def testAudioSpeechRecognitionBody(self):
         """Test AudioSpeechRecognitionBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = edenai_python.models.audio_speech_recognition_body.AudioSpeechRecognitionBody()  # noqa: E501
+        # model = edenai.models.audio_speech_recognition_body.AudioSpeechRecognitionBody()  # noqa: E501
         pass
 
 

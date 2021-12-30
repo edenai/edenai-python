@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.models.translation_language_detection_body import TranslationLanguageDetectionBody  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.models.translation_language_detection_body import TranslationLanguageDetectionBody  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestTranslationLanguageDetectionBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTranslationLanguageDetectionBody(unittest.TestCase):
     def testTranslationLanguageDetectionBody(self):
         """Test TranslationLanguageDetectionBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = edenai_python.models.translation_language_detection_body.TranslationLanguageDetectionBody()  # noqa: E501
+        # model = edenai.models.translation_language_detection_body.TranslationLanguageDetectionBody()  # noqa: E501
         pass
 
 

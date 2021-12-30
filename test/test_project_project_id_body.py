@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.models.project_project_id_body import ProjectProjectIdBody  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.models.project_project_id_body import ProjectProjectIdBody  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestProjectProjectIdBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestProjectProjectIdBody(unittest.TestCase):
     def testProjectProjectIdBody(self):
         """Test ProjectProjectIdBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = edenai_python.models.project_project_id_body.ProjectProjectIdBody()  # noqa: E501
+        # model = edenai.models.project_project_id_body.ProjectProjectIdBody()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.api.text_api import TextApi  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.api.text_api import TextApi  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestTextApi(unittest.TestCase):

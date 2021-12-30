@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.api.speech_api import SpeechApi  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.api.speech_api import SpeechApi  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestSpeechApi(unittest.TestCase):

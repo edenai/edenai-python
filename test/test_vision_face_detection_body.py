@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.models.vision_face_detection_body import VisionFaceDetectionBody  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.models.vision_face_detection_body import VisionFaceDetectionBody  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestVisionFaceDetectionBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestVisionFaceDetectionBody(unittest.TestCase):
     def testVisionFaceDetectionBody(self):
         """Test VisionFaceDetectionBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = edenai_python.models.vision_face_detection_body.VisionFaceDetectionBody()  # noqa: E501
+        # model = edenai.models.vision_face_detection_body.VisionFaceDetectionBody()  # noqa: E501
         pass
 
 

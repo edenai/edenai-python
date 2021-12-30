@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import edenai_python
-from edenai_python.models.vision_explicit_content_detection_body import VisionExplicitContentDetectionBody  # noqa: E501
-from edenai_python.rest import ApiException
+import edenai
+from edenai.models.vision_explicit_content_detection_body import VisionExplicitContentDetectionBody  # noqa: E501
+from edenai.rest import ApiException
 
 
 class TestVisionExplicitContentDetectionBody(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestVisionExplicitContentDetectionBody(unittest.TestCase):
     def testVisionExplicitContentDetectionBody(self):
         """Test VisionExplicitContentDetectionBody"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = edenai_python.models.vision_explicit_content_detection_body.VisionExplicitContentDetectionBody()  # noqa: E501
+        # model = edenai.models.vision_explicit_content_detection_body.VisionExplicitContentDetectionBody()  # noqa: E501
         pass
 
 
