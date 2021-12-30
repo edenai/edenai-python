@@ -15,15 +15,22 @@ from __future__ import absolute_import
 import unittest
 
 import edenai
-from edenai.api.vision_api import VisionApi  # noqa: E501
+from edenai import Vision  # noqa: E501
 from edenai.rest import ApiException
+
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
 
 
 class TestVisionApi(unittest.TestCase):
     """VisionApi unit test stubs"""
 
     def setUp(self):
-        self.api = VisionApi()  # noqa: E501
+        self.api = Vision(os.getenv("API_KEY"))  # noqa: E501
 
     def tearDown(self):
         pass

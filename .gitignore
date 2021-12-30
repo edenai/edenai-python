@@ -68,3 +68,5 @@ target/
 
 scripts/
 docs/
+test/
+!test/*_api.py

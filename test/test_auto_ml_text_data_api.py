@@ -15,15 +15,23 @@ from __future__ import absolute_import
 import unittest
 
 import edenai
-from edenai.api.auto_ml_text_data_api import AutoMLTextDataApi  # noqa: E501
+from edenai import AutoMLTextData  # noqa: E501
 from edenai.rest import ApiException
+
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
+
 
 
 class TestAutoMLTextDataApi(unittest.TestCase):
     """AutoMLTextDataApi unit test stubs"""
 
     def setUp(self):
-        self.api = AutoMLTextDataApi()  # noqa: E501
+        self.api = AutoMLTextData(os.getenv("API_KEY"))  # noqa: E501
 
     def tearDown(self):
         pass

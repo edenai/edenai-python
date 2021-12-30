@@ -15,15 +15,21 @@ from __future__ import absolute_import
 import unittest
 
 import edenai
-from edenai.api.speech_api import SpeechApi  # noqa: E501
+from edenai import Speech  # noqa: E501
 from edenai.rest import ApiException
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 
 class TestSpeechApi(unittest.TestCase):
     """SpeechApi unit test stubs"""
 
     def setUp(self):
-        self.api = SpeechApi()  # noqa: E501
+        self.api = Speech(os.getenv("API_KEY"))  # noqa: E501
 
     def tearDown(self):
         pass

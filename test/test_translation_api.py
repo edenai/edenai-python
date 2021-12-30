@@ -15,15 +15,23 @@ from __future__ import absolute_import
 import unittest
 
 import edenai
-from edenai.api.translation_api import TranslationApi  # noqa: E501
+from edenai import Translation  # noqa: E501
 from edenai.rest import ApiException
+
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
 
 
 class TestTranslationApi(unittest.TestCase):
     """TranslationApi unit test stubs"""
 
     def setUp(self):
-        self.api = TranslationApi()  # noqa: E501
+        self.api = Translation(os.getenv("API_KEY"))  # noqa: E501
+
 
     def tearDown(self):
         pass

@@ -30,7 +30,6 @@ class TestTextApi(unittest.TestCase):
 
     def setUp(self):
         self.api = Text(os.getenv("API_KEY"))  # noqa: E501
-        print(os.getenv("API_KEY"))
 
 
     def tearDown(self):
