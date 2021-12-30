@@ -62,3 +62,9 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+# env where API_TOKEN is
+.env
+
+scripts/
+docs/

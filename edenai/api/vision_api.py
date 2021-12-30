@@ -44,7 +44,7 @@ class VisionApi(object):
         :param async_req bool
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse201
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -67,7 +67,7 @@ class VisionApi(object):
         :param async_req bool
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse201
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -131,7 +131,7 @@ class VisionApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse201',  # noqa: E501
+            response_type='InlineResponse200',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -151,7 +151,7 @@ class VisionApi(object):
         :param async_req bool
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse201
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -174,7 +174,7 @@ class VisionApi(object):
         :param async_req bool
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse201
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -238,7 +238,7 @@ class VisionApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse201',  # noqa: E501
+            response_type='InlineResponse200',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -258,7 +258,7 @@ class VisionApi(object):
         :param async_req bool
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse201
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -281,7 +281,7 @@ class VisionApi(object):
         :param async_req bool
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse201
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -345,7 +345,7 @@ class VisionApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse201',  # noqa: E501
+            response_type='InlineResponse200',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

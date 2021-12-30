@@ -28,7 +28,7 @@ from edenai.configuration import Configuration
 # import models into sdk package
 from edenai.models.audio_speech_recognition_body import AudioSpeechRecognitionBody
 from edenai.models.audio_text_to_speech_body import AudioTextToSpeechBody
-from edenai.models.inline_response201 import InlineResponse201
+from edenai.models.inline_response200 import InlineResponse200
 from edenai.models.ocr_ocr_body import OcrOcrBody
 from edenai.models.ocr_ocr_invoice_body import OcrOcrInvoiceBody
 from edenai.models.pipelines_body import PipelinesBody
