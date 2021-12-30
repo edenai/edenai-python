@@ -13,17 +13,25 @@
 from __future__ import absolute_import
 
 import unittest
+import os
+from pprint import pprint
 
 import edenai
-from edenai.api.text_api import TextApi  # noqa: E501
+from edenai import Text  # noqa: E501
 from edenai.rest import ApiException
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 
 class TestTextApi(unittest.TestCase):
     """TextApi unit test stubs"""
 
     def setUp(self):
-        self.api = TextApi()  # noqa: E501
+        self.api = Text(os.getenv("API_KEY"))  # noqa: E501
+        print(os.getenv("API_KEY"))
+
 
     def tearDown(self):
         pass
@@ -32,7 +40,13 @@ class TestTextApi(unittest.TestCase):
         """Test case for keyword_extraction
 
         """
-        pass
+        language = 'en-US'  
+        text = 'When parsing an invoice through your dashboard online, I get a very nice result displaying all information of my invoice, and also my line items' # str | 
+        providers = ["amazon"]
+         
+        api_response = self.api.keyword_extraction(language, text, providers) 
+        pprint(api_response) 
+
 
     def test_named_entity_recognition(self):
         """Test case for named_entity_recognition
