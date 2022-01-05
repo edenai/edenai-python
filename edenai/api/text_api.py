@@ -35,7 +35,7 @@ class TextApi(object):
     def keyword_extraction(self, language, text, providers, **kwargs):  # noqa: E501
         """keyword_extraction  # noqa: E501
 
-        Keyword extraction (also known as keyword detection or keyword analysis) is a text analysis technique that consists of automatically extracting the most important words and expressions in a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|------------------------------|---------------| | **English (US)**|*`string`*|`en-US`| | **French**|*`string`*|`fr-FR`| | **Spanish**|*`string`*|`es-ES`|    **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|                         |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|                         |[**Micrososft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|    # noqa: E501
+        Keyword extraction (also known as keyword detection or keyword analysis) is a text analysis technique that consists of automatically extracting the mostimportant words and expressions in a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|`v3.1`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|`boto3 (v1.15.18)`| |[**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|`v1 (2021-08-01)`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.keyword_extraction(language, text, providers, async_req=True)
@@ -45,7 +45,7 @@ class TextApi(object):
         :param str language: (required)
         :param str text: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2003
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -59,7 +59,7 @@ class TextApi(object):
     def keyword_extraction_with_http_info(self, language, text, providers, **kwargs):  # noqa: E501
         """keyword_extraction  # noqa: E501
 
-        Keyword extraction (also known as keyword detection or keyword analysis) is a text analysis technique that consists of automatically extracting the most important words and expressions in a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|------------------------------|---------------| | **English (US)**|*`string`*|`en-US`| | **French**|*`string`*|`fr-FR`| | **Spanish**|*`string`*|`es-ES`|    **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|                         |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|                         |[**Micrososft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|    # noqa: E501
+        Keyword extraction (also known as keyword detection or keyword analysis) is a text analysis technique that consists of automatically extracting the mostimportant words and expressions in a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|`v3.1`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|`boto3 (v1.15.18)`| |[**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|`v1 (2021-08-01)`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.keyword_extraction_with_http_info(language, text, providers, async_req=True)
@@ -69,7 +69,7 @@ class TextApi(object):
         :param str language: (required)
         :param str text: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2003
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -139,7 +139,7 @@ class TextApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse200',  # noqa: E501
+            response_type='InlineResponse2003',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -150,7 +150,7 @@ class TextApi(object):
     def named_entity_recognition(self, language, text, providers, **kwargs):  # noqa: E501
         """named_entity_recognition  # noqa: E501
 
-        Named Entity Recognition (also called entity identification or entity extraction) is an information extraction technique that automatically identifies named entities in a text and classifies them into predefined categories.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en-US`| | **French**|*`string`*|`fr-FR`| | **Spanish**|*`string`*|`es-ES`|    **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|                         |[**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`|                         |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|                         |[**Lettria**](https://www.edenai.co/catalog/Lettria)|`lettria`|                         |[**Micrososft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|    # noqa: E501
+        Named Entity Recognition (also called entity identification or entity extraction) is an information extraction technique that automatically identifies named entities in a text and classifies them into predefined categories.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|`v3.1`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|`boto3 (v1.15.18)`| |[**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|`v1 (2021-08-01)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.named_entity_recognition(language, text, providers, async_req=True)
@@ -160,7 +160,7 @@ class TextApi(object):
         :param str language: (required)
         :param str text: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2004
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -174,7 +174,7 @@ class TextApi(object):
     def named_entity_recognition_with_http_info(self, language, text, providers, **kwargs):  # noqa: E501
         """named_entity_recognition  # noqa: E501
 
-        Named Entity Recognition (also called entity identification or entity extraction) is an information extraction technique that automatically identifies named entities in a text and classifies them into predefined categories.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en-US`| | **French**|*`string`*|`fr-FR`| | **Spanish**|*`string`*|`es-ES`|    **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|                         |[**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`|                         |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|                         |[**Lettria**](https://www.edenai.co/catalog/Lettria)|`lettria`|                         |[**Micrososft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|    # noqa: E501
+        Named Entity Recognition (also called entity identification or entity extraction) is an information extraction technique that automatically identifies named entities in a text and classifies them into predefined categories.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|`v3.1`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|`boto3 (v1.15.18)`| |[**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|`v1 (2021-08-01)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.named_entity_recognition_with_http_info(language, text, providers, async_req=True)
@@ -184,7 +184,7 @@ class TextApi(object):
         :param str language: (required)
         :param str text: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2004
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -254,7 +254,7 @@ class TextApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse200',  # noqa: E501
+            response_type='InlineResponse2004',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -265,7 +265,7 @@ class TextApi(object):
     def sentiment_analysis(self, language, text, providers, **kwargs):  # noqa: E501
         """sentiment_analysis  # noqa: E501
 
-        Sentiment analysis API extracts sentiment in a given string of text. Sentiment analysis, also called 'opinion mining', uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en-US`| | **French**|*`string`*|`fr-FR`| | **Spanish**|*`string`*|`es-ES`|    **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|                         |[**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`|                         |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|                         |[**Lettria**](https://www.edenai.co/catalog/Lettria)|`lettria`|                         |[**Micrososft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|    # noqa: E501
+        Sentiment analysis API extracts sentiment in a given string of text.Sentiment analysis, also called 'opinion mining',uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|`v3.1`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|`boto3 (v1.15.18)`| |[**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|`v1 (2021-08-01)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`|`v1`| |[**Lettria**](https://www.edenai.co/catalog/Lettria)|`lettria`|`v5.5.2`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.sentiment_analysis(language, text, providers, async_req=True)
@@ -275,7 +275,7 @@ class TextApi(object):
         :param str language: (required)
         :param str text: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2005
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -289,7 +289,7 @@ class TextApi(object):
     def sentiment_analysis_with_http_info(self, language, text, providers, **kwargs):  # noqa: E501
         """sentiment_analysis  # noqa: E501
 
-        Sentiment analysis API extracts sentiment in a given string of text. Sentiment analysis, also called 'opinion mining', uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en-US`| | **French**|*`string`*|`fr-FR`| | **Spanish**|*`string`*|`es-ES`|    **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|                         |[**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`|                         |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|                         |[**Lettria**](https://www.edenai.co/catalog/Lettria)|`lettria`|                         |[**Micrososft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|    # noqa: E501
+        Sentiment analysis API extracts sentiment in a given string of text.Sentiment analysis, also called 'opinion mining',uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|`v3.1`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|`boto3 (v1.15.18)`| |[**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|`v1 (2021-08-01)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`|`v1`| |[**Lettria**](https://www.edenai.co/catalog/Lettria)|`lettria`|`v5.5.2`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.sentiment_analysis_with_http_info(language, text, providers, async_req=True)
@@ -299,7 +299,7 @@ class TextApi(object):
         :param str language: (required)
         :param str text: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2005
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -369,7 +369,7 @@ class TextApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse200',  # noqa: E501
+            response_type='InlineResponse2005',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -380,7 +380,7 @@ class TextApi(object):
     def syntax_analysis(self, language, text, providers, **kwargs):  # noqa: E501
         """syntax_analysis  # noqa: E501
 
-        Syntax analysis consists principaly in highlighting the structure of a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en-US`| | **French**|*`string`*|`fr-FR`| | **Spanish**|*`string`*|`es-ES`|    **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|                         |[**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`|                         |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|                         |[**Lettria**](https://www.edenai.co/catalog/Lettria)|`lettria`|    # noqa: E501
+        Syntax analysis consists principaly in highlighting the structure of a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|`v3.1`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|`boto3 (v1.15.18)`| |[**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|`v1 (2021-08-01)`| |[**Lettria**](https://www.edenai.co/catalog/Lettria)|`lettria`|`v5.5.2`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.syntax_analysis(language, text, providers, async_req=True)
@@ -390,7 +390,7 @@ class TextApi(object):
         :param str language: (required)
         :param str text: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2006
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -404,7 +404,7 @@ class TextApi(object):
     def syntax_analysis_with_http_info(self, language, text, providers, **kwargs):  # noqa: E501
         """syntax_analysis  # noqa: E501
 
-        Syntax analysis consists principaly in highlighting the structure of a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en-US`| | **French**|*`string`*|`fr-FR`| | **Spanish**|*`string`*|`es-ES`|    **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|                         |[**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`|                         |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|                         |[**Lettria**](https://www.edenai.co/catalog/Lettria)|`lettria`|    # noqa: E501
+        Syntax analysis consists principaly in highlighting the structure of a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-text-analytics)|`microsoft`|`v3.1`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|`boto3 (v1.15.18)`| |[**IBM Watson**](https://www.edenai.co/catalog/watson-natural-language-understanding)|`ibm`|`v1 (2021-08-01)`| |[**Lettria**](https://www.edenai.co/catalog/Lettria)|`lettria`|`v5.5.2`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.syntax_analysis_with_http_info(language, text, providers, async_req=True)
@@ -414,7 +414,7 @@ class TextApi(object):
         :param str language: (required)
         :param str text: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2006
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -484,7 +484,7 @@ class TextApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse200',  # noqa: E501
+            response_type='InlineResponse2006',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import apis into api package
 from edenai.api.auto_ml_text_data_api import AutoMLTextDataApi
+from edenai.api.eden_ai_tools_api import EdenAIToolsApi
 from edenai.api.ocr_api import OCRApi
 from edenai.api.pipelines_api import PipelinesApi
 from edenai.api.speech_api import SpeechApi

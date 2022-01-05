@@ -35,7 +35,7 @@ class OCRApi(object):
     def ocr(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr  # noqa: E501
 
-        Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document.   **SUPPORTED LANGUAGE**   |    Name        |Type                           |Value                  | |---------------------------|-------------------------------|-----------------------|  | **Arabic**       |*`string`*      |`ar-XA`                 | | **Chinese - Simplified** |*`string`*      |`zh-CN`                 | | **Chinese - Traditional**|*`string`*      |`zh-TW`                 | | **Czech**       |*`string`*      |`cz-CZ`                 | | **Danish**       |*`string`*      |`da-DK`                 | | **Dutch**       |*`string`*      |`nl-NL`                 | | **English**       |*`string`*      |`en-US`                 | | **Finnish**       |*`string`*      |`fn-FN`                 | | **French**       |*`string`*      |`fr-FR`                 | | **German**       |*`string`*      |`de-DE`                 | | **Greek**       |*`string`*      |`gr-GR`                 | | **Hungarian**      |*`string`*      |`hu-HU`                 | | **Italian**       |*`string`*      |`it-IT`                 | | **Japanese**       |*`string`*      |`ja-JP`           | | **Korean**       |*`string`*      |`ko-KR`                 | | **Polish**       |*`string`*      |`pl-PO`        | | **Portuguese**      |*`string`*      |`pt-PT`        | | **Russian**       |*`string`*      |`ru-RU`            | | **Swedish**       |*`string`*      |`sw-SW`                 | | **Spanish**              |*`string`*      |`es-ES`                 | | **Turkish**       |*`string`*      |`tr-TR`                 |   **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**OCR Space**](http://www.edenai.co/catalog/ocr-space)|`ocrspace`|      | [**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-vision-(ocr))|`google`|      | [**Amazon Web Services**](https://www.edenai.co/catalog/amazon-textract)|`amazon`|      | [**Tesseract**](https://www.edenai.co/catalog/tesseract)|`tesseract`|      | [**Micrososft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|    # noqa: E501
+        Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Arabic**|`string`|`ar-XA`| |**Chinese - Simplified**|`string`|`zh-CN`| |**Chinese - Traditional**|`string`|`zh-TW`| |**Czech**|`string`|`cz-CZ`| |**Danish**|`string`|`da-DK`| |**Dutch**|`string`|`nl-NL`| |**English**|`string`|`en-US`| |**Finnish**|`string`|`fn-FN`| |**French**|`string`|`fr-FR`| |**German**|`string`|`de-DE`| |**Greek**|`string`|`gr-GR`| |**Hungarian**|`string`|`hu-HU`| |**Italian**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Korean**|`string`|`ko-KR`| |**Polish**|`string`|`pl-PO`| |**Portuguese**|`string`|`pt-PT`| |**Russian**|`string`|`ru-RU`| |**Swedish**|`string`|`sw-SW`| |**Spanish**|`string`|`es-ES`| |**Turkish**|`string`|`tr-TR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-vision-(ocr))|`google`|`v1`| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|`v3.2`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-textract)|`amazon`|`boto3 (v1.15.18)`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr(files, providers, language, async_req=True)
@@ -45,7 +45,7 @@ class OCRApi(object):
         :param str files: (required)
         :param str providers: (required)
         :param str language: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -59,7 +59,7 @@ class OCRApi(object):
     def ocr_with_http_info(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr  # noqa: E501
 
-        Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document.   **SUPPORTED LANGUAGE**   |    Name        |Type                           |Value                  | |---------------------------|-------------------------------|-----------------------|  | **Arabic**       |*`string`*      |`ar-XA`                 | | **Chinese - Simplified** |*`string`*      |`zh-CN`                 | | **Chinese - Traditional**|*`string`*      |`zh-TW`                 | | **Czech**       |*`string`*      |`cz-CZ`                 | | **Danish**       |*`string`*      |`da-DK`                 | | **Dutch**       |*`string`*      |`nl-NL`                 | | **English**       |*`string`*      |`en-US`                 | | **Finnish**       |*`string`*      |`fn-FN`                 | | **French**       |*`string`*      |`fr-FR`                 | | **German**       |*`string`*      |`de-DE`                 | | **Greek**       |*`string`*      |`gr-GR`                 | | **Hungarian**      |*`string`*      |`hu-HU`                 | | **Italian**       |*`string`*      |`it-IT`                 | | **Japanese**       |*`string`*      |`ja-JP`           | | **Korean**       |*`string`*      |`ko-KR`                 | | **Polish**       |*`string`*      |`pl-PO`        | | **Portuguese**      |*`string`*      |`pt-PT`        | | **Russian**       |*`string`*      |`ru-RU`            | | **Swedish**       |*`string`*      |`sw-SW`                 | | **Spanish**              |*`string`*      |`es-ES`                 | | **Turkish**       |*`string`*      |`tr-TR`                 |   **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**OCR Space**](http://www.edenai.co/catalog/ocr-space)|`ocrspace`|      | [**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-vision-(ocr))|`google`|      | [**Amazon Web Services**](https://www.edenai.co/catalog/amazon-textract)|`amazon`|      | [**Tesseract**](https://www.edenai.co/catalog/tesseract)|`tesseract`|      | [**Micrososft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|    # noqa: E501
+        Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Arabic**|`string`|`ar-XA`| |**Chinese - Simplified**|`string`|`zh-CN`| |**Chinese - Traditional**|`string`|`zh-TW`| |**Czech**|`string`|`cz-CZ`| |**Danish**|`string`|`da-DK`| |**Dutch**|`string`|`nl-NL`| |**English**|`string`|`en-US`| |**Finnish**|`string`|`fn-FN`| |**French**|`string`|`fr-FR`| |**German**|`string`|`de-DE`| |**Greek**|`string`|`gr-GR`| |**Hungarian**|`string`|`hu-HU`| |**Italian**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Korean**|`string`|`ko-KR`| |**Polish**|`string`|`pl-PO`| |**Portuguese**|`string`|`pt-PT`| |**Russian**|`string`|`ru-RU`| |**Swedish**|`string`|`sw-SW`| |**Spanish**|`string`|`es-ES`| |**Turkish**|`string`|`tr-TR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-vision-(ocr))|`google`|`v1`| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|`v3.2`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-textract)|`amazon`|`boto3 (v1.15.18)`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr_with_http_info(files, providers, language, async_req=True)
@@ -69,7 +69,7 @@ class OCRApi(object):
         :param str files: (required)
         :param str providers: (required)
         :param str language: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2001
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -139,7 +139,7 @@ class OCRApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse200',  # noqa: E501
+            response_type='InlineResponse2001',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -150,7 +150,7 @@ class OCRApi(object):
     def ocr_invoice(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr_invoice  # noqa: E501
 
-        The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en-US`| | **French**|*`string`*|`fr-FR`| | **Spanish**|*`string`*|`es-ES`|    **AVAILABLE PROVIDERS**  |Name|Details| |-------------------------------|---------------| |[ **Mindee**](https://www.edenai.co/catalog/mindee)|`mindee`|                          | [**Micrososft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|    # noqa: E501
+        The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|`v2.1-preview.3`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr_invoice(files, providers, language, async_req=True)
@@ -160,7 +160,7 @@ class OCRApi(object):
         :param str files: (required)
         :param str providers: (required)
         :param str language: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -174,7 +174,7 @@ class OCRApi(object):
     def ocr_invoice_with_http_info(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr_invoice  # noqa: E501
 
-        The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en-US`| | **French**|*`string`*|`fr-FR`| | **Spanish**|*`string`*|`es-ES`|    **AVAILABLE PROVIDERS**  |Name|Details| |-------------------------------|---------------| |[ **Mindee**](https://www.edenai.co/catalog/mindee)|`mindee`|                          | [**Micrososft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|    # noqa: E501
+        The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|`v2.1-preview.3`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr_invoice_with_http_info(files, providers, language, async_req=True)
@@ -184,7 +184,7 @@ class OCRApi(object):
         :param str files: (required)
         :param str providers: (required)
         :param str language: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -254,7 +254,7 @@ class OCRApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse200',  # noqa: E501
+            response_type='InlineResponse2002',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

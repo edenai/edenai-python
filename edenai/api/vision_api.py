@@ -35,7 +35,7 @@ class VisionApi(object):
     def explicit_content_detection(self, files, providers, **kwargs):  # noqa: E501
         """explicit_content_detection  # noqa: E501
 
-        Explicit Content Detection detects adult only content in videos, who is generally inappropriate for people under the age of 18 and includes nudity, sexual activity and pornography ...  **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](http://www.edenai.co/catalog/watson-visual-recognition/)|`ibm`|                 |[**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-vision)|`google`|                 |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-rekognition)|`amazon`|                 |[**Micrososft Azure**](https://www.edenai.co/catalog/azure-computer-vision)|`microsoft`|    # noqa: E501
+        Explicit Content Detection detects adult only content in videos, who is generally inappropriate for people under the age of 18 and includes nudity, sexual activity and pornography ...  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision)|`microsoft`|`v3.2`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-rekognition)|`amazon`|`boto3 (v1.15.18)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-vision)|`google`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.explicit_content_detection(files, providers, async_req=True)
@@ -44,7 +44,7 @@ class VisionApi(object):
         :param async_req bool
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2009
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -58,7 +58,7 @@ class VisionApi(object):
     def explicit_content_detection_with_http_info(self, files, providers, **kwargs):  # noqa: E501
         """explicit_content_detection  # noqa: E501
 
-        Explicit Content Detection detects adult only content in videos, who is generally inappropriate for people under the age of 18 and includes nudity, sexual activity and pornography ...  **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](http://www.edenai.co/catalog/watson-visual-recognition/)|`ibm`|                 |[**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-vision)|`google`|                 |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-rekognition)|`amazon`|                 |[**Micrososft Azure**](https://www.edenai.co/catalog/azure-computer-vision)|`microsoft`|    # noqa: E501
+        Explicit Content Detection detects adult only content in videos, who is generally inappropriate for people under the age of 18 and includes nudity, sexual activity and pornography ...  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision)|`microsoft`|`v3.2`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-rekognition)|`amazon`|`boto3 (v1.15.18)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-vision)|`google`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.explicit_content_detection_with_http_info(files, providers, async_req=True)
@@ -67,7 +67,7 @@ class VisionApi(object):
         :param async_req bool
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2009
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -131,7 +131,7 @@ class VisionApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse200',  # noqa: E501
+            response_type='InlineResponse2009',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -142,7 +142,7 @@ class VisionApi(object):
     def face_detection(self, files, providers, **kwargs):  # noqa: E501
         """face_detection  # noqa: E501
 
-        Face Detection is a computer technology being used in a variety of applications that identifies human faces in digital images.  **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-vision)|`google`|                 |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-rekognition)|`amazon`|                 |[**Micrososft Azure**](https://www.edenai.co/catalog/azure-api-face)|`microsoft`|    # noqa: E501
+        Face Detection is a computer technology being used in a variety of applicationsthat identifies human faces in digital images.  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision)|`microsoft`|`v3.2`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-rekognition)|`amazon`|`boto3 (v1.15.18)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-vision)|`google`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.face_detection(files, providers, async_req=True)
@@ -151,7 +151,7 @@ class VisionApi(object):
         :param async_req bool
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse20010
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -165,7 +165,7 @@ class VisionApi(object):
     def face_detection_with_http_info(self, files, providers, **kwargs):  # noqa: E501
         """face_detection  # noqa: E501
 
-        Face Detection is a computer technology being used in a variety of applications that identifies human faces in digital images.  **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-vision)|`google`|                 |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-rekognition)|`amazon`|                 |[**Micrososft Azure**](https://www.edenai.co/catalog/azure-api-face)|`microsoft`|    # noqa: E501
+        Face Detection is a computer technology being used in a variety of applicationsthat identifies human faces in digital images.  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision)|`microsoft`|`v3.2`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-rekognition)|`amazon`|`boto3 (v1.15.18)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-vision)|`google`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.face_detection_with_http_info(files, providers, async_req=True)
@@ -174,7 +174,7 @@ class VisionApi(object):
         :param async_req bool
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse20010
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -238,7 +238,7 @@ class VisionApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse200',  # noqa: E501
+            response_type='InlineResponse20010',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -249,7 +249,7 @@ class VisionApi(object):
     def object_detection(self, files, providers, **kwargs):  # noqa: E501
         """object_detection  # noqa: E501
 
-        Object Detection is a computer vision technique that allows us to identify and locate objects in an image or video  **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](http://www.edenai.co/catalog/watson-visual-recognition/)|`ibm`|                 |[**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-vision-(ocr))|`google`|                 |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-textract)|`amazon`|                 |[**Micrososft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|    # noqa: E501
+        Object Detection is a computer vision technique that allows us to identify and locate objects in an image or video  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision)|`microsoft`|`v3.2`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-rekognition)|`amazon`|`boto3 (v1.15.18)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-vision)|`google`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.object_detection(files, providers, async_req=True)
@@ -258,7 +258,7 @@ class VisionApi(object):
         :param async_req bool
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse20011
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -272,7 +272,7 @@ class VisionApi(object):
     def object_detection_with_http_info(self, files, providers, **kwargs):  # noqa: E501
         """object_detection  # noqa: E501
 
-        Object Detection is a computer vision technique that allows us to identify and locate objects in an image or video  **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](http://www.edenai.co/catalog/watson-visual-recognition/)|`ibm`|                 |[**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-vision-(ocr))|`google`|                 |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-textract)|`amazon`|                 |[**Micrososft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|    # noqa: E501
+        Object Detection is a computer vision technique that allows us to identify and locate objects in an image or video  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision)|`microsoft`|`v3.2`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-rekognition)|`amazon`|`boto3 (v1.15.18)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-vision)|`google`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.object_detection_with_http_info(files, providers, async_req=True)
@@ -281,7 +281,7 @@ class VisionApi(object):
         :param async_req bool
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse20011
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -345,7 +345,7 @@ class VisionApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse200',  # noqa: E501
+            response_type='InlineResponse20011',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

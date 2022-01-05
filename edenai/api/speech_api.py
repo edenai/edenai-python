@@ -32,10 +32,220 @@ class SpeechApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
+    def asynchronous_speech_recognition(self, language, files, providers, **kwargs):  # noqa: E501
+        """asynchronous_speech_recognition  # noqa: E501
+
+        Speech recognition is technology that can recognize spoken words, which can then be converted to text. This endpoint allows you to launch asynchronous speech recognition jobs.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English (US)**|`string`|`en-US`| |**English (GB)**|`string`|`en-GB`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Russian**|`string`|`ru-RU`| |**Arabic**|`string`|`ar-SA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Portuguese**|`string`|`pt-PT`| |**Turkish**|`string`|`tr-TR`| |**Indonesian**|`string`|`id-ID`| |**Malay**|`string`|`ms-MY`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-speech-to-text)|`microsoft`|`v1.0`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-transcribe)|`amazon`|`boto3 (v1.15.18)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-speech-to-text)|`google`|`v1p1beta1`| |[**Deepgram**](https://www.edenai.co/catalog/deepgram)|`deepgram`|`v1`| |[**Assembly**](https://www.edenai.co/catalog/assembly-ai)|`assembly`|`v1`|  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.asynchronous_speech_recognition(language, files, providers, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str language: (required)
+        :param str files: (required)
+        :param str providers: (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.asynchronous_speech_recognition_with_http_info(language, files, providers, **kwargs)  # noqa: E501
+        else:
+            (data) = self.asynchronous_speech_recognition_with_http_info(language, files, providers, **kwargs)  # noqa: E501
+            return data
+
+    def asynchronous_speech_recognition_with_http_info(self, language, files, providers, **kwargs):  # noqa: E501
+        """asynchronous_speech_recognition  # noqa: E501
+
+        Speech recognition is technology that can recognize spoken words, which can then be converted to text. This endpoint allows you to launch asynchronous speech recognition jobs.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English (US)**|`string`|`en-US`| |**English (GB)**|`string`|`en-GB`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Russian**|`string`|`ru-RU`| |**Arabic**|`string`|`ar-SA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Portuguese**|`string`|`pt-PT`| |**Turkish**|`string`|`tr-TR`| |**Indonesian**|`string`|`id-ID`| |**Malay**|`string`|`ms-MY`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-speech-to-text)|`microsoft`|`v1.0`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-transcribe)|`amazon`|`boto3 (v1.15.18)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-speech-to-text)|`google`|`v1p1beta1`| |[**Deepgram**](https://www.edenai.co/catalog/deepgram)|`deepgram`|`v1`| |[**Assembly**](https://www.edenai.co/catalog/assembly-ai)|`assembly`|`v1`|  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.asynchronous_speech_recognition_with_http_info(language, files, providers, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str language: (required)
+        :param str files: (required)
+        :param str providers: (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['language', 'files', 'providers']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method asynchronous_speech_recognition" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'language' is set
+        if ('language' not in params or
+                params['language'] is None):
+            raise ValueError("Missing the required parameter `language` when calling `asynchronous_speech_recognition`")  # noqa: E501
+        # verify the required parameter 'files' is set
+        if ('files' not in params or
+                params['files'] is None):
+            raise ValueError("Missing the required parameter `files` when calling `asynchronous_speech_recognition`")  # noqa: E501
+        # verify the required parameter 'providers' is set
+        if ('providers' not in params or
+                params['providers'] is None):
+            raise ValueError("Missing the required parameter `providers` when calling `asynchronous_speech_recognition`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+        if 'language' in params:
+            form_params.append(('language', params['language']))  # noqa: E501
+        if 'files' in params:
+            local_var_files['files'] = params['files']  # noqa: E501
+        if 'providers' in params:
+            form_params.append(('providers', params['providers']))  # noqa: E501
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/pretrained/audio/speech_recognition_async', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def asynchronous_speech_recognition_0(self, job_id, **kwargs):  # noqa: E501
+        """asynchronous_speech_recognition_0  # noqa: E501
+
+        This endpoint allows you to check the state of  your asynchronous speech recognition job and returns the results when they are ready.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.asynchronous_speech_recognition_0(job_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str job_id: (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.asynchronous_speech_recognition_0_with_http_info(job_id, **kwargs)  # noqa: E501
+        else:
+            (data) = self.asynchronous_speech_recognition_0_with_http_info(job_id, **kwargs)  # noqa: E501
+            return data
+
+    def asynchronous_speech_recognition_0_with_http_info(self, job_id, **kwargs):  # noqa: E501
+        """asynchronous_speech_recognition_0  # noqa: E501
+
+        This endpoint allows you to check the state of  your asynchronous speech recognition job and returns the results when they are ready.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.asynchronous_speech_recognition_0_with_http_info(job_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str job_id: (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['job_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method asynchronous_speech_recognition_0" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'job_id' is set
+        if ('job_id' not in params or
+                params['job_id'] is None):
+            raise ValueError("Missing the required parameter `job_id` when calling `asynchronous_speech_recognition_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in params:
+            path_params['job_id'] = params['job_id']  # noqa: E501
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/pretrained/audio/speech_recognition_async/{job_id}', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def speech_recognition(self, language, files, providers, **kwargs):  # noqa: E501
         """speech_recognition  # noqa: E501
 
-        Speech recognition is technology that can recognize spoken words, which can then be converted to text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en-US`| | **English (GB)**|*`string`*|`en-GB`| | **French**|*`string`*|`fr-FR`| | **Spanish**|*`string`*|`es-ES`| | **Dutch (Netherlands)**|*`string`*|`nl-NL`| | **Japanese**|*`string`*|`ja-JP`| | **Russian**|*`string`*|`ru-RU`| | **Arabic**|*`string`*|`ar-SA`| | **Italian**|*`string`*|`it-IT`| | **Korean**|*`string`*|`ko-KR`| | **Portuguese**|*`string`*|`pt-PT`| | **Turkish**|*`string`*|`tr-TR`| | **Indonesian**|*`string`*|`id-ID`| | **Malay**|*`string`*|`ms-MY`|    **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](https://www.edenai.co/catalog/watson-speech-to-text)|`ibm`|                                  | [**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-speech-to-text)|`google`                                  | [**Amazon Web Services**](https://www.edenai.co/catalog/amazon-transcribe)|`amazon`|                                  | [**Micrososft Azure**](https://www.edenai.co/catalog/azure-speech-to-text)|`microsoft`|    # noqa: E501
+        Speech recognition is technology that can recognize spoken words, which can then be converted to text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English (US)**|`string`|`en-US`| |**English (GB)**|`string`|`en-GB`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Russian**|`string`|`ru-RU`| |**Arabic**|`string`|`ar-SA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Portuguese**|`string`|`pt-PT`| |**Turkish**|`string`|`tr-TR`| |**Indonesian**|`string`|`id-ID`| |**Malay**|`string`|`ms-MY`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-speech-to-text)|`microsoft`|`v1.0`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-transcribe)|`amazon`|`boto3 (v1.15.18)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-speech-to-text)|`google`|`v1p1beta1`| |[**Deepgram**](https://www.edenai.co/catalog/deepgram)|`deepgram`|`v1`| |[**Assembly**](https://www.edenai.co/catalog/assembly-ai)|`assembly`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.speech_recognition(language, files, providers, async_req=True)
@@ -45,7 +255,7 @@ class SpeechApi(object):
         :param str language: (required)
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse201
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -59,7 +269,7 @@ class SpeechApi(object):
     def speech_recognition_with_http_info(self, language, files, providers, **kwargs):  # noqa: E501
         """speech_recognition  # noqa: E501
 
-        Speech recognition is technology that can recognize spoken words, which can then be converted to text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en-US`| | **English (GB)**|*`string`*|`en-GB`| | **French**|*`string`*|`fr-FR`| | **Spanish**|*`string`*|`es-ES`| | **Dutch (Netherlands)**|*`string`*|`nl-NL`| | **Japanese**|*`string`*|`ja-JP`| | **Russian**|*`string`*|`ru-RU`| | **Arabic**|*`string`*|`ar-SA`| | **Italian**|*`string`*|`it-IT`| | **Korean**|*`string`*|`ko-KR`| | **Portuguese**|*`string`*|`pt-PT`| | **Turkish**|*`string`*|`tr-TR`| | **Indonesian**|*`string`*|`id-ID`| | **Malay**|*`string`*|`ms-MY`|    **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](https://www.edenai.co/catalog/watson-speech-to-text)|`ibm`|                                  | [**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-speech-to-text)|`google`                                  | [**Amazon Web Services**](https://www.edenai.co/catalog/amazon-transcribe)|`amazon`|                                  | [**Micrososft Azure**](https://www.edenai.co/catalog/azure-speech-to-text)|`microsoft`|    # noqa: E501
+        Speech recognition is technology that can recognize spoken words, which can then be converted to text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English (US)**|`string`|`en-US`| |**English (GB)**|`string`|`en-GB`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Russian**|`string`|`ru-RU`| |**Arabic**|`string`|`ar-SA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Portuguese**|`string`|`pt-PT`| |**Turkish**|`string`|`tr-TR`| |**Indonesian**|`string`|`id-ID`| |**Malay**|`string`|`ms-MY`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-speech-to-text)|`microsoft`|`v1.0`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-transcribe)|`amazon`|`boto3 (v1.15.18)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-speech-to-text)|`google`|`v1p1beta1`| |[**Deepgram**](https://www.edenai.co/catalog/deepgram)|`deepgram`|`v1`| |[**Assembly**](https://www.edenai.co/catalog/assembly-ai)|`assembly`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.speech_recognition_with_http_info(language, files, providers, async_req=True)
@@ -69,7 +279,7 @@ class SpeechApi(object):
         :param str language: (required)
         :param str files: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse201
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -139,7 +349,7 @@ class SpeechApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse200',  # noqa: E501
+            response_type='InlineResponse201',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -150,7 +360,7 @@ class SpeechApi(object):
     def text_to_speech(self, text, language, option, providers, **kwargs):  # noqa: E501
         """text_to_speech  # noqa: E501
 
-        Text-to-speech (TTS) system converts normal language text into speech.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **Arabic**|*`string`*|`ar-XA`| | **Chinese**|*`string`*|`cmn-CN`| | **Danish**|*`string`*|`da-DK`| | **Dutch**|*`string`*|`nl-NL`| | **English (US)**|*`string`*|`en-US`| | **English (UK)**|*`string`*|`en-GB`| | **German**|*`string`*|`de-DE`| | **Italy**|*`string`*|`it-IT`| | **Japanese**|*`string`*|`ja-JP`| | **Portuguese (Brazil)**|*`string`*|`pt-BR`| | **Portuguese (Portugal)**|*`string`*|`pt-PT`| | **Russian**|*`string`*|`ru-RU`| | **Portuguese (Portugal)**|*`string`*|`pt-PT`| | **Spanish**|*`string`*|`es-ES`|    **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](https://www.edenai.co/catalog/watson-text-to-speech)|`ibm`|                              | [**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-text-to-speech-)|`google`|                              | [**Amazon Web Services**](https://www.edenai.co/catalog/amazon-polly)|`amazon`|                              | [**Micrososft Azure**](https://www.edenai.co/catalog/azure-text-to-speech)|`microsoft`|    # noqa: E501
+        Text-to-speech (TTS) system converts normal language text into speech.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Arabic**|`string`|`ar-XA`| |**Chinese**|`string`|`cmn-CN`| |**Danish**|`string`|`da-DK`| |**Dutch**|`string`|`nl-NL`| |**English (US)**|`string`|`en-US`| |**English (UK)**|`string`|`en-GB`| |**German**|`string`|`de-DE`| |**Italy**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Russian**|`string`|`ru-RU`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-text-to-speech)|`microsoft`|`v1.0`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-polly)|`amazon`|`boto3 (v1.15.18)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-text-to-speech)|`google`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.text_to_speech(text, language, option, providers, async_req=True)
@@ -161,7 +371,7 @@ class SpeechApi(object):
         :param str language: (required)
         :param str option: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2011
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -175,7 +385,7 @@ class SpeechApi(object):
     def text_to_speech_with_http_info(self, text, language, option, providers, **kwargs):  # noqa: E501
         """text_to_speech  # noqa: E501
 
-        Text-to-speech (TTS) system converts normal language text into speech.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **Arabic**|*`string`*|`ar-XA`| | **Chinese**|*`string`*|`cmn-CN`| | **Danish**|*`string`*|`da-DK`| | **Dutch**|*`string`*|`nl-NL`| | **English (US)**|*`string`*|`en-US`| | **English (UK)**|*`string`*|`en-GB`| | **German**|*`string`*|`de-DE`| | **Italy**|*`string`*|`it-IT`| | **Japanese**|*`string`*|`ja-JP`| | **Portuguese (Brazil)**|*`string`*|`pt-BR`| | **Portuguese (Portugal)**|*`string`*|`pt-PT`| | **Russian**|*`string`*|`ru-RU`| | **Portuguese (Portugal)**|*`string`*|`pt-PT`| | **Spanish**|*`string`*|`es-ES`|    **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| | [**IBM Watson**](https://www.edenai.co/catalog/watson-text-to-speech)|`ibm`|                              | [**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-text-to-speech-)|`google`|                              | [**Amazon Web Services**](https://www.edenai.co/catalog/amazon-polly)|`amazon`|                              | [**Micrososft Azure**](https://www.edenai.co/catalog/azure-text-to-speech)|`microsoft`|    # noqa: E501
+        Text-to-speech (TTS) system converts normal language text into speech.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Arabic**|`string`|`ar-XA`| |**Chinese**|`string`|`cmn-CN`| |**Danish**|`string`|`da-DK`| |**Dutch**|`string`|`nl-NL`| |**English (US)**|`string`|`en-US`| |**English (UK)**|`string`|`en-GB`| |**German**|`string`|`de-DE`| |**Italy**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Russian**|`string`|`ru-RU`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-text-to-speech)|`microsoft`|`v1.0`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-polly)|`amazon`|`boto3 (v1.15.18)`| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-text-to-speech)|`google`|`v1`|  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.text_to_speech_with_http_info(text, language, option, providers, async_req=True)
@@ -186,7 +396,7 @@ class SpeechApi(object):
         :param str language: (required)
         :param str option: (required)
         :param str providers: (required)
-        :return: InlineResponse200
+        :return: InlineResponse2011
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -262,7 +472,7 @@ class SpeechApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse200',  # noqa: E501
+            response_type='InlineResponse2011',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
