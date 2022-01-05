@@ -25,3 +25,5 @@
 git_push.sh
 setup.py
 README.md
+.gitignore
+.swagger-codegen-ignore
