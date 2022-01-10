@@ -44,7 +44,7 @@ class TestTextApi(unittest.TestCase):
         providers = ["amazon"]
          
         api_response = self.api.keyword_extraction(language, text, providers) 
-        pprint(api_response) 
+        assert api_response != None
 
 
     def test_named_entity_recognition(self):
