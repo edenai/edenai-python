@@ -25,8 +25,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-
-
 class TestOCRApi(unittest.TestCase):
     """OCRApi unit test stubs"""
 
@@ -37,16 +35,21 @@ class TestOCRApi(unittest.TestCase):
         pass
 
     def test_ocr(self):
-        """Test case for ocr
+        result = self.api.basic(
 
-        """
-        pass
+            providers=["google", "amazon"],
+            language="en-US",
+            file="test.pdf")
+
+        assert result != None
 
     def test_ocr_invoice(self):
-        """Test case for ocr_invoice
+        result = self.api.ocr_invoice(
 
-        """
-        pass
+            providers=["microsoft", "mindee"],
+            language="en-US",
+            files="test.pdf")
+        assert result != None
 
 
 if __name__ == '__main__':

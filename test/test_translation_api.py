@@ -25,28 +25,30 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-
 class TestTranslationApi(unittest.TestCase):
     """TranslationApi unit test stubs"""
 
     def setUp(self):
         self.api = Translation(os.getenv("API_KEY"))  # noqa: E501
 
-
     def tearDown(self):
         pass
 
-    def test_automatic_translation(self):
-        """Test case for automatic_translation
+    def automatic_translation(self):
+        result = self.api.translation(
+            text="The text you want to translate",
+            providers=["amazon", "ibm"],
+            source_language="en-US",
+            target_language="fr-FR")
+        assert result != None
 
-        """
-        pass
+    def langiage_detection(self):  # a changer
+        result = self.api.language_detection(
 
-    def test_langiage_detection(self):
-        """Test case for langiage_detection
+            text="Your text written in an unknown language",
+            providers=["amazon", "ibm"])
 
-        """
-        pass
+        assert result != None
 
 
 if __name__ == '__main__':

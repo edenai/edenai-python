@@ -25,33 +25,45 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-
 class TestVisionApi(unittest.TestCase):
     """VisionApi unit test stubs"""
 
     def setUp(self):
-        self.api = Vision(os.getenv("API_KEY"))  # noqa: E501
+        self.vision_apis = Vision(os.getenv("API_KEY"))  # noqa: E501
 
     def tearDown(self):
         pass
 
     def test_explicit_content_detection(self):
-        """Test case for explicit_content_detection
+        result = self.vision_apis.explicit_content_detection(
 
-        """
-        pass
+            providers=["google", "amazon"],
+            files="pomme.png")
+
+        print(result)
+
+        assert result.file != None
 
     def test_face_detection(self):
-        """Test case for face_detection
 
-        """
-        pass
+        result = self.vision_apis.face_detection(
+
+            providers=["google", "amazon"],
+            files="elon.png")
+        # file="elon.png")
+
+        print(result)
+        assert result.file != None
 
     def test_object_detection(self):
-        """Test case for object_detection
+        result = self.vision_apis.object_detection(
 
-        """
-        pass
+            providers=["google", "amazon"],
+            # files="pomme.png"
+            files="pomme.png")
+
+        print(result)
+        assert result.file != None
 
 
 if __name__ == '__main__':
