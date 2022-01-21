@@ -24,7 +24,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-
 class TestSpeechApi(unittest.TestCase):
     """SpeechApi unit test stubs"""
 
@@ -35,16 +34,22 @@ class TestSpeechApi(unittest.TestCase):
         pass
 
     def test_speech_recognition(self):
-        """Test case for speech_recognition
+        result = self.api.speech_to_text(
 
-        """
-        pass
+            file="your_audio.wav",
+            providers=["amazon", "ibm"],
+            language="en-US")
+
+        assert result != None
 
     def test_text_to_speech(self):
-        """Test case for text_to_speech
+        result = self.api.text_to_speech(
 
-        """
-        pass
+            text="Your text",
+            option="FEMALE",
+            providers=["microsoft", "google"],
+            language="en-US")
+        assert result != None
 
 
 if __name__ == '__main__':

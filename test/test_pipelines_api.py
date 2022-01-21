@@ -25,7 +25,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-
 class TestPipelinesApi(unittest.TestCase):
     """PipelinesApi unit test stubs"""
 
@@ -36,10 +35,27 @@ class TestPipelinesApi(unittest.TestCase):
         pass
 
     def test_pipelines(self):
-        """Test case for pipelines
 
-        """
-        pass
+        result = self.api.pipelines(
+            description=[
+                {
+                    "feature": "ocr",
+                    "params": {
+                        "providers": "['google']",
+                        "language": "en-US"
+                    }
+                },
+                {
+                    "feature": "sentiment_analysis",
+                    "params": {
+                        "providers": "['amazon']",
+                        "language": "en-US"
+                    }
+                }
+            ],
+            input_file="test.pdf",
+            text="mytext"
+        )
 
 
 if __name__ == '__main__':

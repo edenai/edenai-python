@@ -25,8 +25,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-
-
 class TestAutoMLTextDataApi(unittest.TestCase):
     """AutoMLTextDataApi unit test stubs"""
 
