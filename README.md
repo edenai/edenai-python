@@ -8,21 +8,21 @@ This is the official Eden AI Python Github for interacting with our powerful API
 * Eden AI support: contact@edenai.co              
 * Check our website: https://www.edenai.co
 * Sign-up for a free account: https://app.edenai.run/user/login
-* Read our documentation: https://api.edenai.run/v1/redoc/
+* Read our documentation: https://docs.edenai.co/
 
 
 Eden AI simplifies the use and integration of AI technologies by providing a unique API connected to the best AI engines and combined with a powerful management platform. The platform covers a wide range of AI technologies:
-* Vision: www.edenai.co/vision
-* Text & NLP: www.edenai.co/text
-* Speech & Audio: www.edenai.co/speech
-* OCR: www.edenai.co/ocr
-* Machine Translation: www.edenai.co/translation
-* Prediction: www.edenai.co/prediction
+* Vision: https://www.edenai.co/technologies/vision
+* Text & NLP: https://www.edenai.co/technologies/text
+* Speech & Audio: https://www.edenai.co/technologies/speech
+* OCR: https://www.edenai.co/technologies/ocr
+* Machine Translation: https://www.edenai.co/technologies/translation
+* Prediction: https://www.edenai.co/technologies/prediction
 
-For all the proposed technologies, we provide a single endpoint: the service provider is only a parameter that can be changed very easily. All the engines available on Eden AI are listed here: www.edenai.co/catalog
+For all the proposed technologies, we provide a single endpoint: the service provider is only a parameter that can be changed very easily.
 
 ## Getting started
-To start using Eden AI APIs, you first need to get your API Token.  You can get your token on your IAM [here](https://app.edenai.run/admin/account).
+To start using Eden AI APIs, you first need to get your API Token.  You can get your token on [homepage](https://app.edenai.run/bricks/default) or your account [here](https://app.edenai.run/admin/account).
 
 ## Install via pip 
 Just run:
@@ -69,4 +69,4 @@ If you'd like to contribute, please check the [CONTRIBUTING.md](https://github.c
 ## Documentation
 
 You can find the complete list of technologies we offer in the [SDK documentation](https://edenai-python.readthedocs.io/) .
-To have more information about platform and the API, you can check ou our [documentation](https://api.edenai.run/v1/redoc/)
+To have more information about platform and the API, you can check ou our [documentation](https://docs.edenai.co/)
