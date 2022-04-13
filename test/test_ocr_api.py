@@ -21,6 +21,8 @@ from edenai.rest import ApiException
 import os
 from dotenv import load_dotenv
 
+from .settings import PDF_FILE
+
 
 load_dotenv()
 
@@ -45,10 +47,9 @@ class TestOCRApi(unittest.TestCase):
 
     def test_ocr_invoice(self):
         result = self.api.ocr_invoice(
-
             providers=["microsoft", "mindee"],
             language="en-US",
-            files="test.pdf")
+            files=PDF_FILE)
         assert result != None
 
 

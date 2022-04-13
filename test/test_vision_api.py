@@ -20,7 +20,7 @@ from edenai.rest import ApiException
 
 import os
 from dotenv import load_dotenv
-
+from .settings import IMAGE_1
 
 load_dotenv()
 
@@ -38,7 +38,7 @@ class TestVisionApi(unittest.TestCase):
         result = self.vision_apis.explicit_content_detection(
 
             providers=["google", "amazon"],
-            files="pomme.png")
+            files=IMAGE_1)
 
         print(result)
 
@@ -49,8 +49,7 @@ class TestVisionApi(unittest.TestCase):
         result = self.vision_apis.face_detection(
 
             providers=["google", "amazon"],
-            files="elon.png")
-        # file="elon.png")
+            files=IMAGE_1)
 
         print(result)
         assert result.file != None
@@ -59,8 +58,7 @@ class TestVisionApi(unittest.TestCase):
         result = self.vision_apis.object_detection(
 
             providers=["google", "amazon"],
-            # files="pomme.png"
-            files="pomme.png")
+            files=IMAGE_1)
 
         print(result)
         assert result.file != None

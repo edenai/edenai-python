@@ -20,7 +20,7 @@ from edenai.rest import ApiException
 
 import os
 from dotenv import load_dotenv
-
+from .settings import PDF_FILE
 
 load_dotenv()
 
@@ -53,7 +53,9 @@ class TestPipelinesApi(unittest.TestCase):
                     }
                 }
             ],
-            input_file="test.pdf",
+
+            return_only_last=False,
+            files=PDF_FILE,
             text="mytext"
         )
 
