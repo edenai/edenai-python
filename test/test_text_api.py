@@ -71,7 +71,7 @@ class TestTextApi(unittest.TestCase):
         result = self.api.syntax_analysis(
 
             text="Your text",
-            providers=["lettria", "microsoft"],
+            providers=["google"],
             language="en-US")
         assert result != None
 

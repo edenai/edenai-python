@@ -42,17 +42,17 @@ class TestVisionApi(unittest.TestCase):
 
         print(result)
 
-        assert result.file != None
+        assert result != None
 
     def test_face_detection(self):
 
         result = self.vision_apis.face_detection(
 
-            providers=["google", "amazon"],
+            providers=["google"],
             files=IMAGE_1)
 
         print(result)
-        assert result.file != None
+        assert result != None
 
     def test_object_detection(self):
         result = self.vision_apis.object_detection(
@@ -61,7 +61,7 @@ class TestVisionApi(unittest.TestCase):
             files=IMAGE_1)
 
         print(result)
-        assert result.file != None
+        assert result != None
 
 
 if __name__ == '__main__':

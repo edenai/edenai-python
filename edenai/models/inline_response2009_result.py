@@ -3,23 +3,28 @@
 """
     Eden AI API Documentation
 
-    <a href=\"https://app.edenai.run/user/login\" target=\"_blank\"><img src=\"/static/images/welcome.png\"></a>. # Welcome  Eden AI simplifies the use and integration of AI technologies by providing a unique API connected to the best AI engines and combined with a powerful management platform. The platform covers a wide range of AI technologies: * Vision:  <a href=\"https://www.edenai.co/vision\" target=\"_blank\">www.edenai.co/vision</a>. * Text & NLP: <a href=\"https://www.edenai.co/text\" target=\"_blank\">www.edenai.co/text</a>. * Speech & Audio: <a href=\"https://www.edenai.co/speech\" target=\"_blank\">www.edenai.co/speech</a>. * OCR: <a href=\"https://www.edenai.co/ocr\" target=\"_blank\">www.edenai.co/ocr</a>. * Machine Translation: <a href=\"https://www.edenai.co/translation\" target=\"_blank\">www.edenai.co/translation</a>. * Prediction: <a href=\"https://www.edenai.co/prediction\" target=\"_blank\">www.edenai.co/prediction</a>.  For all the proposed technologies, we provide a single endpoint:  the service provider is only a parameter that can be changed very easily. All the engines available on Eden AI are listed here: www.edenai.co/catalog  # Support & community  ### 1- Support If you have any problems, please contact us at this email address: contact@edenai.co. We will be happy to help you in the use of Eden AI.   ### 2- Community  You can interact personally with other people actively using and working with Eden AI and join our  <a href=\"https://join.slack.com/t/edenai/shared_invite/zt-t68c2pr9-4lDKQ_qEqmLiWNptQzB_6w\" target=\"_blank\">Slack community</a>.  We are always updating our docs, so a good way to always stay up to date is to watch our documentation repo on Github: <a href=\"https://github.com/edenai\" target=\"_blank\">https://github.com/edenai</a>.  ### 3- Blog  We also regularly publish various articles with Eden AI news and technical articles on the different AI engines that exist. You can find these articles here: <a href=\"https://www.edenai.co/blog\" target=\"_blank\">https://www.edenai.co/blog</a>.   # Authentication  ## Create account ![Register](/static/images/register.png)  To create an account, please go to this link: <a href=\"https://app.edenai.run/user/login\" target=\"_blank\">app.edenai.run/user/login</a>. You can create an account with your email address or by using your account on available platforms (Gmail, Github, etc.).   By creating an account with your email address, you will receive a confirmation email with a link to click. Check your spam if needed and contact us if you have any problem: contact@edenai.co  ![Login](/static/images/login.png) ## API key  By going to your account page on the platform: <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">https://app.edenai.run/admin/account</a>, you will have access to your API key to start using the different AI engines offered by Eden AI.   ![api_key](/static/images/api_key.png) # Portal Guide  Eden AI provides a web portal that allows you to do several tasks:  ![portal](/static/images/portal.png)  ### 1- Benchmark and test The platform allows you to easily compare competing engines without having to code. By uploading your data, you have access to the prediction results of the different engines. This gives you a first overview of the performance of AI engines.   ![benchmark](/static/images/benchmark.png)  ### 2- Cost management The <a href=\"https://app.edenai.run/admin/cost-management\" target=\"_blank\">cost management page</a> also allows you to centralize the costs associated with the different engines with various filters to simplify the analysis.   This page also allows you to define monthly budget limits not to be exceeded to secure the use of different AI engines.   ![cost-management](/static/images/cost_management.png) ### 3- Account The <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">account page</a> allows you to change your information and password. It also gives you access to your API key that you can renew if needed.   This page also allows you to add a credit card and to buy with credits to use all the engines offered by Eden AI.   ![account](/static/images/account.png)   # API Guide  Eden AI API has different endpoints that refer to different AI services. The connected providers are thus parameters that the user can easily change.   # noqa: E501
+    <a href=\"https://app.edenai.run/user/login\" target=\"_blank\"><img src=\"/static/images/welcome.png\"></a>. # Welcome  Eden AI simplifies the use and integration of AI technologies by providing a unique API connected to the best AI engines and combined with a powerful management platform. The platform covers a wide range of AI technologies: * Vision:  <a href=\"https://www.edenai.co/vision\" target=\"_blank\">www.edenai.co/vision</a>. * Text & NLP: <a href=\"https://www.edenai.co/text\" target=\"_blank\">www.edenai.co/text</a>. * Speech & Audio: <a href=\"https://www.edenai.co/speech\" target=\"_blank\">www.edenai.co/speech</a>. * OCR: <a href=\"https://www.edenai.co/ocr\" target=\"_blank\">www.edenai.co/ocr</a>. * Machine Translation: <a href=\"https://www.edenai.co/translation\" target=\"_blank\">www.edenai.co/translation</a>. * Prediction: <a href=\"https://www.edenai.co/prediction\" target=\"_blank\">www.edenai.co/prediction</a>.  For all the proposed technologies, we provide a single endpoint:  the service provider is only a parameter that can be changed very easily. All the engines available on Eden AI are listed here: www.edenai.co/catalog  # Support & community  ### 1- Support If you have any problems, please contact us at this email address: contact@edenai.co. We will be happy to help you in the use of Eden AI.   ### 2- Community  You can interact personally with other people actively using and working with Eden AI and join our  <a href=\"https://join.slack.com/t/edenai/shared_invite/zt-t68c2pr9-4lDKQ_qEqmLiWNptQzB_6w\" target=\"_blank\">Slack community</a>.  We are always updating our docs, so a good way to always stay up to date is to watch our documentation repo on Github: <a href=\"https://github.com/edenai\" target=\"_blank\">https://github.com/edenai</a>.  ### 3- Blog  We also regularly publish various articles with Eden AI news and technical articles on the different AI engines that exist. You can find these articles here: <a href=\"https://www.edenai.co/blog\" target=\"_blank\">https://www.edenai.co/blog</a>.   # Authentication  ## Create account ![Register](/static/images/register.png)  To create an account, please go to this link: <a href=\"https://app.edenai.run/user/login\" target=\"_blank\">app.edenai.run/user/login</a>. You can create an account with your email address or by using your account on available platforms (Gmail, Github, etc.).   By creating an account with your email address, you will receive a confirmation email with a link to click. Check your spam if needed and contact us if you have any problem: contact@edenai.co  ![Login](/static/images/login.png) ## API key  By going to your account page on the platform: <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">https://app.edenai.run/admin/account</a>, you will have access to your API key to start using the different AI engines offered by Eden AI.   ![api_key](/static/images/api_key.png)  ## Sandbox API key  By going to your account page on the platform: <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">https://app.edenai.run/admin/account</a>, you will also have access to your **Sandbox** API key that will allow you to make free calls and get dummy responses in order to implement and debug Eden AI without consuming credits.   ![api_key](/static/images/sandbox_api_key.png)  # Portal Guide  Eden AI provides a web portal that allows you to do several tasks:  ![portal](/static/images/portal.png)  ### 1- Benchmark and test The platform allows you to easily compare competing engines without having to code. By uploading your data, you have access to the prediction results of the different engines. This gives you a first overview of the performance of AI engines.   ![benchmark](/static/images/benchmark.png)  ### 2- Cost management The <a href=\"https://app.edenai.run/admin/cost-management\" target=\"_blank\">cost management page</a> also allows you to centralize the costs associated with the different engines with various filters to simplify the analysis.   This page also allows you to define monthly budget limits not to be exceeded to secure the use of different AI engines.   ![cost-management](/static/images/cost_management.png) ### 3- Account The <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">account page</a> allows you to change your information and password. It also gives you access to your API key that you can renew if needed.   This page also allows you to add a credit card and to buy with credits to use all the engines offered by Eden AI.   ![account](/static/images/account.png)   # API Guide  Eden AI API has different endpoints that refer to different AI services. The connected providers are thus parameters that the user can easily change.   # noqa: E501
 
     OpenAPI spec version: v1
     Contact: contact@edenai.co
     Generated by: https://github.com/swagger-api/swagger-codegen.git
 """
 
+
 import pprint
 import re  # noqa: F401
 
 import six
+
+from edenai.configuration import Configuration
+
 
 class InlineResponse2009Result(object):
     """NOTE: This class is auto generated by the swagger code generator program.
 
     Do not edit the class manually.
     """
+
     """
     Attributes:
       swagger_types (dict): The key is attribute name
@@ -28,92 +33,97 @@ class InlineResponse2009Result(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'image_path': 'str',
-        'labels': 'list[str]',
-        'likelihood': 'list[float]'
+        'source_language': 'str',
+        'target_language': 'str',
+        'translated_text': 'str'
     }
 
     attribute_map = {
-        'image_path': 'image_path',
-        'labels': 'labels',
-        'likelihood': 'likelihood'
+        'source_language': 'source_language',
+        'target_language': 'target_language',
+        'translated_text': 'translated_text'
     }
 
-    def __init__(self, image_path=None, labels=None, likelihood=None):  # noqa: E501
+    def __init__(self, source_language=None, target_language=None, translated_text=None, _configuration=None):  # noqa: E501
         """InlineResponse2009Result - a model defined in Swagger"""  # noqa: E501
-        self._image_path = None
-        self._labels = None
-        self._likelihood = None
+        if _configuration is None:
+            _configuration = Configuration()
+        self._configuration = _configuration
+
+        self._source_language = None
+        self._target_language = None
+        self._translated_text = None
         self.discriminator = None
-        if image_path is not None:
-            self.image_path = image_path
-        if labels is not None:
-            self.labels = labels
-        if likelihood is not None:
-            self.likelihood = likelihood
+
+        if source_language is not None:
+            self.source_language = source_language
+        if target_language is not None:
+            self.target_language = target_language
+        if translated_text is not None:
+            self.translated_text = translated_text
 
     @property
-    def image_path(self):
-        """Gets the image_path of this InlineResponse2009Result.  # noqa: E501
+    def source_language(self):
+        """Gets the source_language of this InlineResponse2009Result.  # noqa: E501
 
 
-        :return: The image_path of this InlineResponse2009Result.  # noqa: E501
+        :return: The source_language of this InlineResponse2009Result.  # noqa: E501
         :rtype: str
         """
-        return self._image_path
+        return self._source_language
 
-    @image_path.setter
-    def image_path(self, image_path):
-        """Sets the image_path of this InlineResponse2009Result.
+    @source_language.setter
+    def source_language(self, source_language):
+        """Sets the source_language of this InlineResponse2009Result.
 
 
-        :param image_path: The image_path of this InlineResponse2009Result.  # noqa: E501
+        :param source_language: The source_language of this InlineResponse2009Result.  # noqa: E501
         :type: str
         """
 
-        self._image_path = image_path
+        self._source_language = source_language
 
     @property
-    def labels(self):
-        """Gets the labels of this InlineResponse2009Result.  # noqa: E501
+    def target_language(self):
+        """Gets the target_language of this InlineResponse2009Result.  # noqa: E501
 
 
-        :return: The labels of this InlineResponse2009Result.  # noqa: E501
-        :rtype: list[str]
+        :return: The target_language of this InlineResponse2009Result.  # noqa: E501
+        :rtype: str
         """
-        return self._labels
+        return self._target_language
 
-    @labels.setter
-    def labels(self, labels):
-        """Sets the labels of this InlineResponse2009Result.
+    @target_language.setter
+    def target_language(self, target_language):
+        """Sets the target_language of this InlineResponse2009Result.
 
 
-        :param labels: The labels of this InlineResponse2009Result.  # noqa: E501
-        :type: list[str]
+        :param target_language: The target_language of this InlineResponse2009Result.  # noqa: E501
+        :type: str
         """
 
-        self._labels = labels
+        self._target_language = target_language
 
     @property
-    def likelihood(self):
-        """Gets the likelihood of this InlineResponse2009Result.  # noqa: E501
+    def translated_text(self):
+        """Gets the translated_text of this InlineResponse2009Result.  # noqa: E501
 
 
-        :return: The likelihood of this InlineResponse2009Result.  # noqa: E501
-        :rtype: list[float]
+        :return: The translated_text of this InlineResponse2009Result.  # noqa: E501
+        :rtype: str
         """
-        return self._likelihood
+        return self._translated_text
 
-    @likelihood.setter
-    def likelihood(self, likelihood):
-        """Sets the likelihood of this InlineResponse2009Result.
+    @translated_text.setter
+    def translated_text(self, translated_text):
+        """Sets the translated_text of this InlineResponse2009Result.
 
 
-        :param likelihood: The likelihood of this InlineResponse2009Result.  # noqa: E501
-        :type: list[float]
+        :param translated_text: The translated_text of this InlineResponse2009Result.  # noqa: E501
+        :type: str
         """
 
-        self._likelihood = likelihood
+        self._translated_text = translated_text
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -155,8 +165,11 @@ class InlineResponse2009Result(object):
         if not isinstance(other, InlineResponse2009Result):
             return False
 
-        return self.__dict__ == other.__dict__
+        return self.to_dict() == other.to_dict()
 
     def __ne__(self, other):
         """Returns true if both objects are not equal"""
-        return not self == other
+        if not isinstance(other, InlineResponse2009Result):
+            return True
+
+        return self.to_dict() != other.to_dict()

@@ -3,12 +3,13 @@
 """
     Eden AI API Documentation
 
-    <a href=\"https://app.edenai.run/user/login\" target=\"_blank\"><img src=\"/static/images/welcome.png\"></a>. # Welcome  Eden AI simplifies the use and integration of AI technologies by providing a unique API connected to the best AI engines and combined with a powerful management platform. The platform covers a wide range of AI technologies: * Vision:  <a href=\"https://www.edenai.co/vision\" target=\"_blank\">www.edenai.co/vision</a>. * Text & NLP: <a href=\"https://www.edenai.co/text\" target=\"_blank\">www.edenai.co/text</a>. * Speech & Audio: <a href=\"https://www.edenai.co/speech\" target=\"_blank\">www.edenai.co/speech</a>. * OCR: <a href=\"https://www.edenai.co/ocr\" target=\"_blank\">www.edenai.co/ocr</a>. * Machine Translation: <a href=\"https://www.edenai.co/translation\" target=\"_blank\">www.edenai.co/translation</a>. * Prediction: <a href=\"https://www.edenai.co/prediction\" target=\"_blank\">www.edenai.co/prediction</a>.  For all the proposed technologies, we provide a single endpoint:  the service provider is only a parameter that can be changed very easily. All the engines available on Eden AI are listed here: www.edenai.co/catalog  # Support & community  ### 1- Support If you have any problems, please contact us at this email address: contact@edenai.co. We will be happy to help you in the use of Eden AI.   ### 2- Community  You can interact personally with other people actively using and working with Eden AI and join our  <a href=\"https://join.slack.com/t/edenai/shared_invite/zt-t68c2pr9-4lDKQ_qEqmLiWNptQzB_6w\" target=\"_blank\">Slack community</a>.  We are always updating our docs, so a good way to always stay up to date is to watch our documentation repo on Github: <a href=\"https://github.com/edenai\" target=\"_blank\">https://github.com/edenai</a>.  ### 3- Blog  We also regularly publish various articles with Eden AI news and technical articles on the different AI engines that exist. You can find these articles here: <a href=\"https://www.edenai.co/blog\" target=\"_blank\">https://www.edenai.co/blog</a>.   # Authentication  ## Create account ![Register](/static/images/register.png)  To create an account, please go to this link: <a href=\"https://app.edenai.run/user/login\" target=\"_blank\">app.edenai.run/user/login</a>. You can create an account with your email address or by using your account on available platforms (Gmail, Github, etc.).   By creating an account with your email address, you will receive a confirmation email with a link to click. Check your spam if needed and contact us if you have any problem: contact@edenai.co  ![Login](/static/images/login.png) ## API key  By going to your account page on the platform: <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">https://app.edenai.run/admin/account</a>, you will have access to your API key to start using the different AI engines offered by Eden AI.   ![api_key](/static/images/api_key.png) # Portal Guide  Eden AI provides a web portal that allows you to do several tasks:  ![portal](/static/images/portal.png)  ### 1- Benchmark and test The platform allows you to easily compare competing engines without having to code. By uploading your data, you have access to the prediction results of the different engines. This gives you a first overview of the performance of AI engines.   ![benchmark](/static/images/benchmark.png)  ### 2- Cost management The <a href=\"https://app.edenai.run/admin/cost-management\" target=\"_blank\">cost management page</a> also allows you to centralize the costs associated with the different engines with various filters to simplify the analysis.   This page also allows you to define monthly budget limits not to be exceeded to secure the use of different AI engines.   ![cost-management](/static/images/cost_management.png) ### 3- Account The <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">account page</a> allows you to change your information and password. It also gives you access to your API key that you can renew if needed.   This page also allows you to add a credit card and to buy with credits to use all the engines offered by Eden AI.   ![account](/static/images/account.png)   # API Guide  Eden AI API has different endpoints that refer to different AI services. The connected providers are thus parameters that the user can easily change.   # noqa: E501
+    <a href=\"https://app.edenai.run/user/login\" target=\"_blank\"><img src=\"/static/images/welcome.png\"></a>. # Welcome  Eden AI simplifies the use and integration of AI technologies by providing a unique API connected to the best AI engines and combined with a powerful management platform. The platform covers a wide range of AI technologies: * Vision:  <a href=\"https://www.edenai.co/vision\" target=\"_blank\">www.edenai.co/vision</a>. * Text & NLP: <a href=\"https://www.edenai.co/text\" target=\"_blank\">www.edenai.co/text</a>. * Speech & Audio: <a href=\"https://www.edenai.co/speech\" target=\"_blank\">www.edenai.co/speech</a>. * OCR: <a href=\"https://www.edenai.co/ocr\" target=\"_blank\">www.edenai.co/ocr</a>. * Machine Translation: <a href=\"https://www.edenai.co/translation\" target=\"_blank\">www.edenai.co/translation</a>. * Prediction: <a href=\"https://www.edenai.co/prediction\" target=\"_blank\">www.edenai.co/prediction</a>.  For all the proposed technologies, we provide a single endpoint:  the service provider is only a parameter that can be changed very easily. All the engines available on Eden AI are listed here: www.edenai.co/catalog  # Support & community  ### 1- Support If you have any problems, please contact us at this email address: contact@edenai.co. We will be happy to help you in the use of Eden AI.   ### 2- Community  You can interact personally with other people actively using and working with Eden AI and join our  <a href=\"https://join.slack.com/t/edenai/shared_invite/zt-t68c2pr9-4lDKQ_qEqmLiWNptQzB_6w\" target=\"_blank\">Slack community</a>.  We are always updating our docs, so a good way to always stay up to date is to watch our documentation repo on Github: <a href=\"https://github.com/edenai\" target=\"_blank\">https://github.com/edenai</a>.  ### 3- Blog  We also regularly publish various articles with Eden AI news and technical articles on the different AI engines that exist. You can find these articles here: <a href=\"https://www.edenai.co/blog\" target=\"_blank\">https://www.edenai.co/blog</a>.   # Authentication  ## Create account ![Register](/static/images/register.png)  To create an account, please go to this link: <a href=\"https://app.edenai.run/user/login\" target=\"_blank\">app.edenai.run/user/login</a>. You can create an account with your email address or by using your account on available platforms (Gmail, Github, etc.).   By creating an account with your email address, you will receive a confirmation email with a link to click. Check your spam if needed and contact us if you have any problem: contact@edenai.co  ![Login](/static/images/login.png) ## API key  By going to your account page on the platform: <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">https://app.edenai.run/admin/account</a>, you will have access to your API key to start using the different AI engines offered by Eden AI.   ![api_key](/static/images/api_key.png)  ## Sandbox API key  By going to your account page on the platform: <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">https://app.edenai.run/admin/account</a>, you will also have access to your **Sandbox** API key that will allow you to make free calls and get dummy responses in order to implement and debug Eden AI without consuming credits.   ![api_key](/static/images/sandbox_api_key.png)  # Portal Guide  Eden AI provides a web portal that allows you to do several tasks:  ![portal](/static/images/portal.png)  ### 1- Benchmark and test The platform allows you to easily compare competing engines without having to code. By uploading your data, you have access to the prediction results of the different engines. This gives you a first overview of the performance of AI engines.   ![benchmark](/static/images/benchmark.png)  ### 2- Cost management The <a href=\"https://app.edenai.run/admin/cost-management\" target=\"_blank\">cost management page</a> also allows you to centralize the costs associated with the different engines with various filters to simplify the analysis.   This page also allows you to define monthly budget limits not to be exceeded to secure the use of different AI engines.   ![cost-management](/static/images/cost_management.png) ### 3- Account The <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">account page</a> allows you to change your information and password. It also gives you access to your API key that you can renew if needed.   This page also allows you to add a credit card and to buy with credits to use all the engines offered by Eden AI.   ![account](/static/images/account.png)   # API Guide  Eden AI API has different endpoints that refer to different AI services. The connected providers are thus parameters that the user can easily change.   # noqa: E501
 
     OpenAPI spec version: v1
     Contact: contact@edenai.co
     Generated by: https://github.com/swagger-api/swagger-codegen.git
 """
+
 
 from __future__ import absolute_import
 
@@ -32,13 +33,13 @@ class AutoMLTextDataApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def auto_ml_text_data_delete(self, project_id, train_id, **kwargs):  # noqa: E501
-        """auto_ml_text_data_delete  # noqa: E501
+    def automl_text_data_delete(self, project_id, train_id, **kwargs):  # noqa: E501
+        """automl_text_data_delete  # noqa: E501
 
         AutoML Text Data Delete  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_data_delete(project_id, train_id, async_req=True)
+        >>> thread = api.automl_text_data_delete(project_id, train_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -50,18 +51,18 @@ class AutoMLTextDataApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.auto_ml_text_data_delete_with_http_info(project_id, train_id, **kwargs)  # noqa: E501
+            return self.automl_text_data_delete_with_http_info(project_id, train_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.auto_ml_text_data_delete_with_http_info(project_id, train_id, **kwargs)  # noqa: E501
+            (data) = self.automl_text_data_delete_with_http_info(project_id, train_id, **kwargs)  # noqa: E501
             return data
 
-    def auto_ml_text_data_delete_with_http_info(self, project_id, train_id, **kwargs):  # noqa: E501
-        """auto_ml_text_data_delete  # noqa: E501
+    def automl_text_data_delete_with_http_info(self, project_id, train_id, **kwargs):  # noqa: E501
+        """automl_text_data_delete  # noqa: E501
 
         AutoML Text Data Delete  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_data_delete_with_http_info(project_id, train_id, async_req=True)
+        >>> thread = api.automl_text_data_delete_with_http_info(project_id, train_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -83,18 +84,18 @@ class AutoMLTextDataApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method auto_ml_text_data_delete" % key
+                    " to method automl_text_data_delete" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'project_id' is set
-        if ('project_id' not in params or
-                params['project_id'] is None):
-            raise ValueError("Missing the required parameter `project_id` when calling `auto_ml_text_data_delete`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_id' not in params or
+                                                       params['project_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_id` when calling `automl_text_data_delete`")  # noqa: E501
         # verify the required parameter 'train_id' is set
-        if ('train_id' not in params or
-                params['train_id'] is None):
-            raise ValueError("Missing the required parameter `train_id` when calling `auto_ml_text_data_delete`")  # noqa: E501
+        if self.api_client.client_side_validation and ('train_id' not in params or
+                                                       params['train_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `train_id` when calling `automl_text_data_delete`")  # noqa: E501
 
         collection_formats = {}
 
@@ -116,6 +117,10 @@ class AutoMLTextDataApi(object):
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
 
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
+
         # Authentication setting
         auth_settings = ['Bearer']  # noqa: E501
 
@@ -135,49 +140,49 @@ class AutoMLTextDataApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def auto_ml_text_data_launch_prediction(self, files, project_id, train_id, **kwargs):  # noqa: E501
-        """auto_ml_text_data_launch_prediction  # noqa: E501
+    def automl_text_data_launch_prediction(self, project_id, train_id, files, **kwargs):  # noqa: E501
+        """automl_text_data_launch_prediction  # noqa: E501
 
           **SUPPORTED FILES**  The API takes a csv file with no header and only one column, where each line contains a document to classify.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_data_launch_prediction(files, project_id, train_id, async_req=True)
+        >>> thread = api.automl_text_data_launch_prediction(project_id, train_id, files, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str files: (required)
         :param str project_id: (required)
         :param str train_id: (required)
+        :param file files: (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.auto_ml_text_data_launch_prediction_with_http_info(files, project_id, train_id, **kwargs)  # noqa: E501
+            return self.automl_text_data_launch_prediction_with_http_info(project_id, train_id, files, **kwargs)  # noqa: E501
         else:
-            (data) = self.auto_ml_text_data_launch_prediction_with_http_info(files, project_id, train_id, **kwargs)  # noqa: E501
+            (data) = self.automl_text_data_launch_prediction_with_http_info(project_id, train_id, files, **kwargs)  # noqa: E501
             return data
 
-    def auto_ml_text_data_launch_prediction_with_http_info(self, files, project_id, train_id, **kwargs):  # noqa: E501
-        """auto_ml_text_data_launch_prediction  # noqa: E501
+    def automl_text_data_launch_prediction_with_http_info(self, project_id, train_id, files, **kwargs):  # noqa: E501
+        """automl_text_data_launch_prediction  # noqa: E501
 
           **SUPPORTED FILES**  The API takes a csv file with no header and only one column, where each line contains a document to classify.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_data_launch_prediction_with_http_info(files, project_id, train_id, async_req=True)
+        >>> thread = api.automl_text_data_launch_prediction_with_http_info(project_id, train_id, files, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str files: (required)
         :param str project_id: (required)
         :param str train_id: (required)
+        :param file files: (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['files', 'project_id', 'train_id']  # noqa: E501
+        all_params = ['project_id', 'train_id', 'files']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -188,22 +193,22 @@ class AutoMLTextDataApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method auto_ml_text_data_launch_prediction" % key
+                    " to method automl_text_data_launch_prediction" % key
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'files' is set
-        if ('files' not in params or
-                params['files'] is None):
-            raise ValueError("Missing the required parameter `files` when calling `auto_ml_text_data_launch_prediction`")  # noqa: E501
         # verify the required parameter 'project_id' is set
-        if ('project_id' not in params or
-                params['project_id'] is None):
-            raise ValueError("Missing the required parameter `project_id` when calling `auto_ml_text_data_launch_prediction`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_id' not in params or
+                                                       params['project_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_id` when calling `automl_text_data_launch_prediction`")  # noqa: E501
         # verify the required parameter 'train_id' is set
-        if ('train_id' not in params or
-                params['train_id'] is None):
-            raise ValueError("Missing the required parameter `train_id` when calling `auto_ml_text_data_launch_prediction`")  # noqa: E501
+        if self.api_client.client_side_validation and ('train_id' not in params or
+                                                       params['train_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `train_id` when calling `automl_text_data_launch_prediction`")  # noqa: E501
+        # verify the required parameter 'files' is set
+        if self.api_client.client_side_validation and ('files' not in params or
+                                                       params['files'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `files` when calling `automl_text_data_launch_prediction`")  # noqa: E501
 
         collection_formats = {}
 
@@ -250,13 +255,13 @@ class AutoMLTextDataApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def auto_ml_text_data_prediction_detail(self, predict_id, project_id, train_id, **kwargs):  # noqa: E501
-        """auto_ml_text_data_prediction_detail  # noqa: E501
+    def automl_text_data_prediction_detail(self, predict_id, project_id, train_id, **kwargs):  # noqa: E501
+        """automl_text_data_prediction_detail  # noqa: E501
 
           **SUPPORTED FILES**  The API takes a csv file with no header and only one column, where each line contains a document to classify.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_data_prediction_detail(predict_id, project_id, train_id, async_req=True)
+        >>> thread = api.automl_text_data_prediction_detail(predict_id, project_id, train_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -269,18 +274,18 @@ class AutoMLTextDataApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.auto_ml_text_data_prediction_detail_with_http_info(predict_id, project_id, train_id, **kwargs)  # noqa: E501
+            return self.automl_text_data_prediction_detail_with_http_info(predict_id, project_id, train_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.auto_ml_text_data_prediction_detail_with_http_info(predict_id, project_id, train_id, **kwargs)  # noqa: E501
+            (data) = self.automl_text_data_prediction_detail_with_http_info(predict_id, project_id, train_id, **kwargs)  # noqa: E501
             return data
 
-    def auto_ml_text_data_prediction_detail_with_http_info(self, predict_id, project_id, train_id, **kwargs):  # noqa: E501
-        """auto_ml_text_data_prediction_detail  # noqa: E501
+    def automl_text_data_prediction_detail_with_http_info(self, predict_id, project_id, train_id, **kwargs):  # noqa: E501
+        """automl_text_data_prediction_detail  # noqa: E501
 
           **SUPPORTED FILES**  The API takes a csv file with no header and only one column, where each line contains a document to classify.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_data_prediction_detail_with_http_info(predict_id, project_id, train_id, async_req=True)
+        >>> thread = api.automl_text_data_prediction_detail_with_http_info(predict_id, project_id, train_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -303,22 +308,22 @@ class AutoMLTextDataApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method auto_ml_text_data_prediction_detail" % key
+                    " to method automl_text_data_prediction_detail" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'predict_id' is set
-        if ('predict_id' not in params or
-                params['predict_id'] is None):
-            raise ValueError("Missing the required parameter `predict_id` when calling `auto_ml_text_data_prediction_detail`")  # noqa: E501
+        if self.api_client.client_side_validation and ('predict_id' not in params or
+                                                       params['predict_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `predict_id` when calling `automl_text_data_prediction_detail`")  # noqa: E501
         # verify the required parameter 'project_id' is set
-        if ('project_id' not in params or
-                params['project_id'] is None):
-            raise ValueError("Missing the required parameter `project_id` when calling `auto_ml_text_data_prediction_detail`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_id' not in params or
+                                                       params['project_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_id` when calling `automl_text_data_prediction_detail`")  # noqa: E501
         # verify the required parameter 'train_id' is set
-        if ('train_id' not in params or
-                params['train_id'] is None):
-            raise ValueError("Missing the required parameter `train_id` when calling `auto_ml_text_data_prediction_detail`")  # noqa: E501
+        if self.api_client.client_side_validation and ('train_id' not in params or
+                                                       params['train_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `train_id` when calling `automl_text_data_prediction_detail`")  # noqa: E501
 
         collection_formats = {}
 
@@ -341,6 +346,10 @@ class AutoMLTextDataApi(object):
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['Bearer']  # noqa: E501
@@ -361,13 +370,13 @@ class AutoMLTextDataApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def auto_ml_text_data_prediction_results(self, predict_id, project_id, train_id, **kwargs):  # noqa: E501
-        """auto_ml_text_data_prediction_results  # noqa: E501
+    def automl_text_data_prediction_results(self, predict_id, project_id, train_id, **kwargs):  # noqa: E501
+        """automl_text_data_prediction_results  # noqa: E501
 
           **SUPPORTED FILES**  The API takes a csv file with no header and only one column, where each line contains a document to classify.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_data_prediction_results(predict_id, project_id, train_id, async_req=True)
+        >>> thread = api.automl_text_data_prediction_results(predict_id, project_id, train_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -380,18 +389,18 @@ class AutoMLTextDataApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.auto_ml_text_data_prediction_results_with_http_info(predict_id, project_id, train_id, **kwargs)  # noqa: E501
+            return self.automl_text_data_prediction_results_with_http_info(predict_id, project_id, train_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.auto_ml_text_data_prediction_results_with_http_info(predict_id, project_id, train_id, **kwargs)  # noqa: E501
+            (data) = self.automl_text_data_prediction_results_with_http_info(predict_id, project_id, train_id, **kwargs)  # noqa: E501
             return data
 
-    def auto_ml_text_data_prediction_results_with_http_info(self, predict_id, project_id, train_id, **kwargs):  # noqa: E501
-        """auto_ml_text_data_prediction_results  # noqa: E501
+    def automl_text_data_prediction_results_with_http_info(self, predict_id, project_id, train_id, **kwargs):  # noqa: E501
+        """automl_text_data_prediction_results  # noqa: E501
 
           **SUPPORTED FILES**  The API takes a csv file with no header and only one column, where each line contains a document to classify.    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_data_prediction_results_with_http_info(predict_id, project_id, train_id, async_req=True)
+        >>> thread = api.automl_text_data_prediction_results_with_http_info(predict_id, project_id, train_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -414,22 +423,22 @@ class AutoMLTextDataApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method auto_ml_text_data_prediction_results" % key
+                    " to method automl_text_data_prediction_results" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'predict_id' is set
-        if ('predict_id' not in params or
-                params['predict_id'] is None):
-            raise ValueError("Missing the required parameter `predict_id` when calling `auto_ml_text_data_prediction_results`")  # noqa: E501
+        if self.api_client.client_side_validation and ('predict_id' not in params or
+                                                       params['predict_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `predict_id` when calling `automl_text_data_prediction_results`")  # noqa: E501
         # verify the required parameter 'project_id' is set
-        if ('project_id' not in params or
-                params['project_id'] is None):
-            raise ValueError("Missing the required parameter `project_id` when calling `auto_ml_text_data_prediction_results`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_id' not in params or
+                                                       params['project_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_id` when calling `automl_text_data_prediction_results`")  # noqa: E501
         # verify the required parameter 'train_id' is set
-        if ('train_id' not in params or
-                params['train_id'] is None):
-            raise ValueError("Missing the required parameter `train_id` when calling `auto_ml_text_data_prediction_results`")  # noqa: E501
+        if self.api_client.client_side_validation and ('train_id' not in params or
+                                                       params['train_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `train_id` when calling `automl_text_data_prediction_results`")  # noqa: E501
 
         collection_formats = {}
 
@@ -453,6 +462,10 @@ class AutoMLTextDataApi(object):
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
 
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
+
         # Authentication setting
         auth_settings = ['Bearer']  # noqa: E501
 
@@ -472,49 +485,49 @@ class AutoMLTextDataApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def auto_ml_text_data_train(self, provider, training_name, project_id, **kwargs):  # noqa: E501
-        """auto_ml_text_data_train  # noqa: E501
+    def automl_text_data_train(self, project_id, provider, training_name, **kwargs):  # noqa: E501
+        """automl_text_data_train  # noqa: E501
 
           **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| |[**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_data_train(provider, training_name, project_id, async_req=True)
+        >>> thread = api.automl_text_data_train(project_id, provider, training_name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
+        :param str project_id: (required)
         :param str provider: (required)
         :param str training_name: (required)
-        :param str project_id: (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.auto_ml_text_data_train_with_http_info(provider, training_name, project_id, **kwargs)  # noqa: E501
+            return self.automl_text_data_train_with_http_info(project_id, provider, training_name, **kwargs)  # noqa: E501
         else:
-            (data) = self.auto_ml_text_data_train_with_http_info(provider, training_name, project_id, **kwargs)  # noqa: E501
+            (data) = self.automl_text_data_train_with_http_info(project_id, provider, training_name, **kwargs)  # noqa: E501
             return data
 
-    def auto_ml_text_data_train_with_http_info(self, provider, training_name, project_id, **kwargs):  # noqa: E501
-        """auto_ml_text_data_train  # noqa: E501
+    def automl_text_data_train_with_http_info(self, project_id, provider, training_name, **kwargs):  # noqa: E501
+        """automl_text_data_train  # noqa: E501
 
           **AVAILABLE PROVIDERS**  |Name|Value| |-------------------------------|---------------| |[**Google Cloud Services**](https://www.edenai.co/catalog/google-cloud-natural-language)|`google`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-comprehend)|`amazon`|    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_data_train_with_http_info(provider, training_name, project_id, async_req=True)
+        >>> thread = api.automl_text_data_train_with_http_info(project_id, provider, training_name, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
+        :param str project_id: (required)
         :param str provider: (required)
         :param str training_name: (required)
-        :param str project_id: (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['provider', 'training_name', 'project_id']  # noqa: E501
+        all_params = ['project_id', 'provider', 'training_name']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -525,23 +538,29 @@ class AutoMLTextDataApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method auto_ml_text_data_train" % key
+                    " to method automl_text_data_train" % key
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'provider' is set
-        if ('provider' not in params or
-                params['provider'] is None):
-            raise ValueError("Missing the required parameter `provider` when calling `auto_ml_text_data_train`")  # noqa: E501
-        # verify the required parameter 'training_name' is set
-        if ('training_name' not in params or
-                params['training_name'] is None):
-            raise ValueError("Missing the required parameter `training_name` when calling `auto_ml_text_data_train`")  # noqa: E501
         # verify the required parameter 'project_id' is set
-        if ('project_id' not in params or
-                params['project_id'] is None):
-            raise ValueError("Missing the required parameter `project_id` when calling `auto_ml_text_data_train`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_id' not in params or
+                                                       params['project_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_id` when calling `automl_text_data_train`")  # noqa: E501
+        # verify the required parameter 'provider' is set
+        if self.api_client.client_side_validation and ('provider' not in params or
+                                                       params['provider'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `provider` when calling `automl_text_data_train`")  # noqa: E501
+        # verify the required parameter 'training_name' is set
+        if self.api_client.client_side_validation and ('training_name' not in params or
+                                                       params['training_name'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `training_name` when calling `automl_text_data_train`")  # noqa: E501
 
+        if self.api_client.client_side_validation and ('provider' in params and
+                                                       len(params['provider']) < 1):
+            raise ValueError("Invalid value for parameter `provider` when calling `automl_text_data_train`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('training_name' in params and
+                                                       len(params['training_name']) < 1):
+            raise ValueError("Invalid value for parameter `training_name` when calling `automl_text_data_train`, length must be greater than or equal to `1`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -587,13 +606,13 @@ class AutoMLTextDataApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def auto_ml_text_data_train_detail(self, project_id, train_id, **kwargs):  # noqa: E501
-        """auto_ml_text_data_train_detail  # noqa: E501
+    def automl_text_data_train_detail(self, project_id, train_id, **kwargs):  # noqa: E501
+        """automl_text_data_train_detail  # noqa: E501
 
         AutoML Text Data Train Detail  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_data_train_detail(project_id, train_id, async_req=True)
+        >>> thread = api.automl_text_data_train_detail(project_id, train_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -605,18 +624,18 @@ class AutoMLTextDataApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.auto_ml_text_data_train_detail_with_http_info(project_id, train_id, **kwargs)  # noqa: E501
+            return self.automl_text_data_train_detail_with_http_info(project_id, train_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.auto_ml_text_data_train_detail_with_http_info(project_id, train_id, **kwargs)  # noqa: E501
+            (data) = self.automl_text_data_train_detail_with_http_info(project_id, train_id, **kwargs)  # noqa: E501
             return data
 
-    def auto_ml_text_data_train_detail_with_http_info(self, project_id, train_id, **kwargs):  # noqa: E501
-        """auto_ml_text_data_train_detail  # noqa: E501
+    def automl_text_data_train_detail_with_http_info(self, project_id, train_id, **kwargs):  # noqa: E501
+        """automl_text_data_train_detail  # noqa: E501
 
         AutoML Text Data Train Detail  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_data_train_detail_with_http_info(project_id, train_id, async_req=True)
+        >>> thread = api.automl_text_data_train_detail_with_http_info(project_id, train_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -638,18 +657,18 @@ class AutoMLTextDataApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method auto_ml_text_data_train_detail" % key
+                    " to method automl_text_data_train_detail" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'project_id' is set
-        if ('project_id' not in params or
-                params['project_id'] is None):
-            raise ValueError("Missing the required parameter `project_id` when calling `auto_ml_text_data_train_detail`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_id' not in params or
+                                                       params['project_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_id` when calling `automl_text_data_train_detail`")  # noqa: E501
         # verify the required parameter 'train_id' is set
-        if ('train_id' not in params or
-                params['train_id'] is None):
-            raise ValueError("Missing the required parameter `train_id` when calling `auto_ml_text_data_train_detail`")  # noqa: E501
+        if self.api_client.client_side_validation and ('train_id' not in params or
+                                                       params['train_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `train_id` when calling `automl_text_data_train_detail`")  # noqa: E501
 
         collection_formats = {}
 
@@ -671,6 +690,10 @@ class AutoMLTextDataApi(object):
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
 
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
+
         # Authentication setting
         auth_settings = ['Bearer']  # noqa: E501
 
@@ -690,19 +713,19 @@ class AutoMLTextDataApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def auto_ml_text_project_create(self, project_name, project_description, files, type, language, **kwargs):  # noqa: E501
-        """auto_ml_text_project_create  # noqa: E501
+    def automl_text_project_create(self, project_name, project_description, files, type, language, **kwargs):  # noqa: E501
+        """automl_text_project_create  # noqa: E501
 
-          **SUPPORTED FILES**  The API takes csv files separated using ','. The csv must contain a header and exactly two columns, named `docs` and `labels` In case a document might have several labels, please separate your labels using '|'     **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en`| | **French**      |*`string`*|`fr`| | **German**      |*`string`*|`de`| | **Italian**     |*`string`*|`it`| | **Portuguese**  |*`string`*|`pt`| | **Arabic**      |*`string`*|`ar`| | **Chinese-Simplified**|*`string`*|`zh`| | **Chinese-Traditional**|*`string`*|`zh-TW`| | **Korean**      |*`string`*|`ko`| | **Japanese**    |*`string`*|`ja`| | **Hindi**       |*`string`*|`hi`| | **Spanish**     |*`string`*|`es`|    **AVAILABLE CLASSIFICATION TYPES**  |Type|Value|Description| |---------------------------|-------------------------------|---------------| | **Single Label Classification **|`single_label_classification`|Each document belongs to one category (label)| | **Multi Label Classification**|`multi_label_classification`|Documents might have several labels|    # noqa: E501
+          **SUPPORTED FILES**  The API takes csv files separated using ','. The csv must contain a header and exactly two columns, named `docs` and `labels` In case a document might have several labels, please separate your labels using '|'     **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en`| | **French**      |*`string`*|`fr`| | **German**      |*`string`*|`de`| | **Italian**     |*`string`*|`it`| | **Portuguese**  |*`string`*|`pt`| | **Arabic**      |*`string`*|`ar`| | **Chinese-Simplified**|*`string`*|`zh`| | **Chinese-Traditional**|*`string`*|`zh-TW`| | **Korean**      |*`string`*|`ko`| | **Japanese**    |*`string`*|`ja`| | **Hindi**       |*`string`*|`hi`| | **Spanish**     |*`string`*|`es`|    **AVAILABLE CLASSIFICATION TYPES**  |Type|Value|Description| |---------------------------|-------------------------------|---------------| | **Single Label Classification**|`single_label_classification`|Each document belongs to one category (label)| | **Multi Label Classification**|`multi_label_classification`|Documents might have several labels|    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_project_create(project_name, project_description, files, type, language, async_req=True)
+        >>> thread = api.automl_text_project_create(project_name, project_description, files, type, language, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str project_name: (required)
         :param str project_description: (required)
-        :param str files: (required)
+        :param file files: (required)
         :param str type: (required)
         :param str language: (required)
         :return: None
@@ -711,24 +734,24 @@ class AutoMLTextDataApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.auto_ml_text_project_create_with_http_info(project_name, project_description, files, type, language, **kwargs)  # noqa: E501
+            return self.automl_text_project_create_with_http_info(project_name, project_description, files, type, language, **kwargs)  # noqa: E501
         else:
-            (data) = self.auto_ml_text_project_create_with_http_info(project_name, project_description, files, type, language, **kwargs)  # noqa: E501
+            (data) = self.automl_text_project_create_with_http_info(project_name, project_description, files, type, language, **kwargs)  # noqa: E501
             return data
 
-    def auto_ml_text_project_create_with_http_info(self, project_name, project_description, files, type, language, **kwargs):  # noqa: E501
-        """auto_ml_text_project_create  # noqa: E501
+    def automl_text_project_create_with_http_info(self, project_name, project_description, files, type, language, **kwargs):  # noqa: E501
+        """automl_text_project_create  # noqa: E501
 
-          **SUPPORTED FILES**  The API takes csv files separated using ','. The csv must contain a header and exactly two columns, named `docs` and `labels` In case a document might have several labels, please separate your labels using '|'     **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en`| | **French**      |*`string`*|`fr`| | **German**      |*`string`*|`de`| | **Italian**     |*`string`*|`it`| | **Portuguese**  |*`string`*|`pt`| | **Arabic**      |*`string`*|`ar`| | **Chinese-Simplified**|*`string`*|`zh`| | **Chinese-Traditional**|*`string`*|`zh-TW`| | **Korean**      |*`string`*|`ko`| | **Japanese**    |*`string`*|`ja`| | **Hindi**       |*`string`*|`hi`| | **Spanish**     |*`string`*|`es`|    **AVAILABLE CLASSIFICATION TYPES**  |Type|Value|Description| |---------------------------|-------------------------------|---------------| | **Single Label Classification **|`single_label_classification`|Each document belongs to one category (label)| | **Multi Label Classification**|`multi_label_classification`|Documents might have several labels|    # noqa: E501
+          **SUPPORTED FILES**  The API takes csv files separated using ','. The csv must contain a header and exactly two columns, named `docs` and `labels` In case a document might have several labels, please separate your labels using '|'     **SUPPORTED LANGUAGE**  |Name|Type|Value| |---------------------------|-------------------------------|---------------| | **English (US)**|*`string`*|`en`| | **French**      |*`string`*|`fr`| | **German**      |*`string`*|`de`| | **Italian**     |*`string`*|`it`| | **Portuguese**  |*`string`*|`pt`| | **Arabic**      |*`string`*|`ar`| | **Chinese-Simplified**|*`string`*|`zh`| | **Chinese-Traditional**|*`string`*|`zh-TW`| | **Korean**      |*`string`*|`ko`| | **Japanese**    |*`string`*|`ja`| | **Hindi**       |*`string`*|`hi`| | **Spanish**     |*`string`*|`es`|    **AVAILABLE CLASSIFICATION TYPES**  |Type|Value|Description| |---------------------------|-------------------------------|---------------| | **Single Label Classification**|`single_label_classification`|Each document belongs to one category (label)| | **Multi Label Classification**|`multi_label_classification`|Documents might have several labels|    # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_project_create_with_http_info(project_name, project_description, files, type, language, async_req=True)
+        >>> thread = api.automl_text_project_create_with_http_info(project_name, project_description, files, type, language, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str project_name: (required)
         :param str project_description: (required)
-        :param str files: (required)
+        :param file files: (required)
         :param str type: (required)
         :param str language: (required)
         :return: None
@@ -747,31 +770,55 @@ class AutoMLTextDataApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method auto_ml_text_project_create" % key
+                    " to method automl_text_project_create" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'project_name' is set
-        if ('project_name' not in params or
-                params['project_name'] is None):
-            raise ValueError("Missing the required parameter `project_name` when calling `auto_ml_text_project_create`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_name' not in params or
+                                                       params['project_name'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_name` when calling `automl_text_project_create`")  # noqa: E501
         # verify the required parameter 'project_description' is set
-        if ('project_description' not in params or
-                params['project_description'] is None):
-            raise ValueError("Missing the required parameter `project_description` when calling `auto_ml_text_project_create`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_description' not in params or
+                                                       params['project_description'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_description` when calling `automl_text_project_create`")  # noqa: E501
         # verify the required parameter 'files' is set
-        if ('files' not in params or
-                params['files'] is None):
-            raise ValueError("Missing the required parameter `files` when calling `auto_ml_text_project_create`")  # noqa: E501
+        if self.api_client.client_side_validation and ('files' not in params or
+                                                       params['files'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `files` when calling `automl_text_project_create`")  # noqa: E501
         # verify the required parameter 'type' is set
-        if ('type' not in params or
-                params['type'] is None):
-            raise ValueError("Missing the required parameter `type` when calling `auto_ml_text_project_create`")  # noqa: E501
+        if self.api_client.client_side_validation and ('type' not in params or
+                                                       params['type'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `type` when calling `automl_text_project_create`")  # noqa: E501
         # verify the required parameter 'language' is set
-        if ('language' not in params or
-                params['language'] is None):
-            raise ValueError("Missing the required parameter `language` when calling `auto_ml_text_project_create`")  # noqa: E501
+        if self.api_client.client_side_validation and ('language' not in params or
+                                                       params['language'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `language` when calling `automl_text_project_create`")  # noqa: E501
 
+        if self.api_client.client_side_validation and ('project_name' in params and
+                                                       len(params['project_name']) > 100):
+            raise ValueError("Invalid value for parameter `project_name` when calling `automl_text_project_create`, length must be less than or equal to `100`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_name' in params and
+                                                       len(params['project_name']) < 1):
+            raise ValueError("Invalid value for parameter `project_name` when calling `automl_text_project_create`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_description' in params and
+                                                       len(params['project_description']) > 300):
+            raise ValueError("Invalid value for parameter `project_description` when calling `automl_text_project_create`, length must be less than or equal to `300`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_description' in params and
+                                                       len(params['project_description']) < 1):
+            raise ValueError("Invalid value for parameter `project_description` when calling `automl_text_project_create`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('type' in params and
+                                                       len(params['type']) > 100):
+            raise ValueError("Invalid value for parameter `type` when calling `automl_text_project_create`, length must be less than or equal to `100`")  # noqa: E501
+        if self.api_client.client_side_validation and ('type' in params and
+                                                       len(params['type']) < 1):
+            raise ValueError("Invalid value for parameter `type` when calling `automl_text_project_create`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('language' in params and
+                                                       len(params['language']) > 100):
+            raise ValueError("Invalid value for parameter `language` when calling `automl_text_project_create`, length must be less than or equal to `100`")  # noqa: E501
+        if self.api_client.client_side_validation and ('language' in params and
+                                                       len(params['language']) < 1):
+            raise ValueError("Invalid value for parameter `language` when calling `automl_text_project_create`, length must be greater than or equal to `1`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -821,13 +868,13 @@ class AutoMLTextDataApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def auto_ml_text_project_delete(self, project_id, **kwargs):  # noqa: E501
-        """auto_ml_text_project_delete  # noqa: E501
+    def automl_text_project_delete(self, project_id, **kwargs):  # noqa: E501
+        """automl_text_project_delete  # noqa: E501
 
         AutoML Text Project Delete  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_project_delete(project_id, async_req=True)
+        >>> thread = api.automl_text_project_delete(project_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -838,18 +885,18 @@ class AutoMLTextDataApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.auto_ml_text_project_delete_with_http_info(project_id, **kwargs)  # noqa: E501
+            return self.automl_text_project_delete_with_http_info(project_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.auto_ml_text_project_delete_with_http_info(project_id, **kwargs)  # noqa: E501
+            (data) = self.automl_text_project_delete_with_http_info(project_id, **kwargs)  # noqa: E501
             return data
 
-    def auto_ml_text_project_delete_with_http_info(self, project_id, **kwargs):  # noqa: E501
-        """auto_ml_text_project_delete  # noqa: E501
+    def automl_text_project_delete_with_http_info(self, project_id, **kwargs):  # noqa: E501
+        """automl_text_project_delete  # noqa: E501
 
         AutoML Text Project Delete  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_project_delete_with_http_info(project_id, async_req=True)
+        >>> thread = api.automl_text_project_delete_with_http_info(project_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -870,14 +917,14 @@ class AutoMLTextDataApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method auto_ml_text_project_delete" % key
+                    " to method automl_text_project_delete" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'project_id' is set
-        if ('project_id' not in params or
-                params['project_id'] is None):
-            raise ValueError("Missing the required parameter `project_id` when calling `auto_ml_text_project_delete`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_id' not in params or
+                                                       params['project_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_id` when calling `automl_text_project_delete`")  # noqa: E501
 
         collection_formats = {}
 
@@ -896,6 +943,10 @@ class AutoMLTextDataApi(object):
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['Bearer']  # noqa: E501
@@ -916,13 +967,13 @@ class AutoMLTextDataApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def auto_ml_text_project_detail(self, project_id, **kwargs):  # noqa: E501
-        """auto_ml_text_project_detail  # noqa: E501
+    def automl_text_project_detail(self, project_id, **kwargs):  # noqa: E501
+        """automl_text_project_detail  # noqa: E501
 
         AutoML Text Project Detail  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_project_detail(project_id, async_req=True)
+        >>> thread = api.automl_text_project_detail(project_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -933,18 +984,18 @@ class AutoMLTextDataApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.auto_ml_text_project_detail_with_http_info(project_id, **kwargs)  # noqa: E501
+            return self.automl_text_project_detail_with_http_info(project_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.auto_ml_text_project_detail_with_http_info(project_id, **kwargs)  # noqa: E501
+            (data) = self.automl_text_project_detail_with_http_info(project_id, **kwargs)  # noqa: E501
             return data
 
-    def auto_ml_text_project_detail_with_http_info(self, project_id, **kwargs):  # noqa: E501
-        """auto_ml_text_project_detail  # noqa: E501
+    def automl_text_project_detail_with_http_info(self, project_id, **kwargs):  # noqa: E501
+        """automl_text_project_detail  # noqa: E501
 
         AutoML Text Project Detail  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_project_detail_with_http_info(project_id, async_req=True)
+        >>> thread = api.automl_text_project_detail_with_http_info(project_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -965,14 +1016,14 @@ class AutoMLTextDataApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method auto_ml_text_project_detail" % key
+                    " to method automl_text_project_detail" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'project_id' is set
-        if ('project_id' not in params or
-                params['project_id'] is None):
-            raise ValueError("Missing the required parameter `project_id` when calling `auto_ml_text_project_detail`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_id' not in params or
+                                                       params['project_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_id` when calling `automl_text_project_detail`")  # noqa: E501
 
         collection_formats = {}
 
@@ -991,6 +1042,10 @@ class AutoMLTextDataApi(object):
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['Bearer']  # noqa: E501
@@ -1011,13 +1066,13 @@ class AutoMLTextDataApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def auto_ml_text_project_list(self, **kwargs):  # noqa: E501
-        """auto_ml_text_project_list  # noqa: E501
+    def automl_text_project_list(self, **kwargs):  # noqa: E501
+        """automl_text_project_list  # noqa: E501
 
         AutoML Text Project List  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_project_list(async_req=True)
+        >>> thread = api.automl_text_project_list(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1027,18 +1082,18 @@ class AutoMLTextDataApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.auto_ml_text_project_list_with_http_info(**kwargs)  # noqa: E501
+            return self.automl_text_project_list_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.auto_ml_text_project_list_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.automl_text_project_list_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def auto_ml_text_project_list_with_http_info(self, **kwargs):  # noqa: E501
-        """auto_ml_text_project_list  # noqa: E501
+    def automl_text_project_list_with_http_info(self, **kwargs):  # noqa: E501
+        """automl_text_project_list  # noqa: E501
 
         AutoML Text Project List  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_project_list_with_http_info(async_req=True)
+        >>> thread = api.automl_text_project_list_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1058,7 +1113,7 @@ class AutoMLTextDataApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method auto_ml_text_project_list" % key
+                    " to method automl_text_project_list" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1079,6 +1134,10 @@ class AutoMLTextDataApi(object):
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
 
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
+
         # Authentication setting
         auth_settings = ['Bearer']  # noqa: E501
 
@@ -1098,53 +1157,53 @@ class AutoMLTextDataApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def auto_ml_text_project_update(self, project_name, project_description, type, language, project_id, **kwargs):  # noqa: E501
-        """auto_ml_text_project_update  # noqa: E501
+    def automl_text_project_update(self, project_id, project_name, project_description, type, language, **kwargs):  # noqa: E501
+        """automl_text_project_update  # noqa: E501
 
         AutoML Text Project Update  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_project_update(project_name, project_description, type, language, project_id, async_req=True)
+        >>> thread = api.automl_text_project_update(project_id, project_name, project_description, type, language, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
+        :param str project_id: (required)
         :param str project_name: (required)
         :param str project_description: (required)
         :param str type: (required)
         :param str language: (required)
-        :param str project_id: (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.auto_ml_text_project_update_with_http_info(project_name, project_description, type, language, project_id, **kwargs)  # noqa: E501
+            return self.automl_text_project_update_with_http_info(project_id, project_name, project_description, type, language, **kwargs)  # noqa: E501
         else:
-            (data) = self.auto_ml_text_project_update_with_http_info(project_name, project_description, type, language, project_id, **kwargs)  # noqa: E501
+            (data) = self.automl_text_project_update_with_http_info(project_id, project_name, project_description, type, language, **kwargs)  # noqa: E501
             return data
 
-    def auto_ml_text_project_update_with_http_info(self, project_name, project_description, type, language, project_id, **kwargs):  # noqa: E501
-        """auto_ml_text_project_update  # noqa: E501
+    def automl_text_project_update_with_http_info(self, project_id, project_name, project_description, type, language, **kwargs):  # noqa: E501
+        """automl_text_project_update  # noqa: E501
 
         AutoML Text Project Update  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.auto_ml_text_project_update_with_http_info(project_name, project_description, type, language, project_id, async_req=True)
+        >>> thread = api.automl_text_project_update_with_http_info(project_id, project_name, project_description, type, language, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
+        :param str project_id: (required)
         :param str project_name: (required)
         :param str project_description: (required)
         :param str type: (required)
         :param str language: (required)
-        :param str project_id: (required)
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['project_name', 'project_description', 'type', 'language', 'project_id']  # noqa: E501
+        all_params = ['project_id', 'project_name', 'project_description', 'type', 'language']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1155,31 +1214,55 @@ class AutoMLTextDataApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method auto_ml_text_project_update" % key
+                    " to method automl_text_project_update" % key
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'project_name' is set
-        if ('project_name' not in params or
-                params['project_name'] is None):
-            raise ValueError("Missing the required parameter `project_name` when calling `auto_ml_text_project_update`")  # noqa: E501
-        # verify the required parameter 'project_description' is set
-        if ('project_description' not in params or
-                params['project_description'] is None):
-            raise ValueError("Missing the required parameter `project_description` when calling `auto_ml_text_project_update`")  # noqa: E501
-        # verify the required parameter 'type' is set
-        if ('type' not in params or
-                params['type'] is None):
-            raise ValueError("Missing the required parameter `type` when calling `auto_ml_text_project_update`")  # noqa: E501
-        # verify the required parameter 'language' is set
-        if ('language' not in params or
-                params['language'] is None):
-            raise ValueError("Missing the required parameter `language` when calling `auto_ml_text_project_update`")  # noqa: E501
         # verify the required parameter 'project_id' is set
-        if ('project_id' not in params or
-                params['project_id'] is None):
-            raise ValueError("Missing the required parameter `project_id` when calling `auto_ml_text_project_update`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_id' not in params or
+                                                       params['project_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_id` when calling `automl_text_project_update`")  # noqa: E501
+        # verify the required parameter 'project_name' is set
+        if self.api_client.client_side_validation and ('project_name' not in params or
+                                                       params['project_name'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_name` when calling `automl_text_project_update`")  # noqa: E501
+        # verify the required parameter 'project_description' is set
+        if self.api_client.client_side_validation and ('project_description' not in params or
+                                                       params['project_description'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `project_description` when calling `automl_text_project_update`")  # noqa: E501
+        # verify the required parameter 'type' is set
+        if self.api_client.client_side_validation and ('type' not in params or
+                                                       params['type'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `type` when calling `automl_text_project_update`")  # noqa: E501
+        # verify the required parameter 'language' is set
+        if self.api_client.client_side_validation and ('language' not in params or
+                                                       params['language'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `language` when calling `automl_text_project_update`")  # noqa: E501
 
+        if self.api_client.client_side_validation and ('project_name' in params and
+                                                       len(params['project_name']) > 100):
+            raise ValueError("Invalid value for parameter `project_name` when calling `automl_text_project_update`, length must be less than or equal to `100`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_name' in params and
+                                                       len(params['project_name']) < 1):
+            raise ValueError("Invalid value for parameter `project_name` when calling `automl_text_project_update`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_description' in params and
+                                                       len(params['project_description']) > 300):
+            raise ValueError("Invalid value for parameter `project_description` when calling `automl_text_project_update`, length must be less than or equal to `300`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_description' in params and
+                                                       len(params['project_description']) < 1):
+            raise ValueError("Invalid value for parameter `project_description` when calling `automl_text_project_update`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('type' in params and
+                                                       len(params['type']) > 100):
+            raise ValueError("Invalid value for parameter `type` when calling `automl_text_project_update`, length must be less than or equal to `100`")  # noqa: E501
+        if self.api_client.client_side_validation and ('type' in params and
+                                                       len(params['type']) < 1):
+            raise ValueError("Invalid value for parameter `type` when calling `automl_text_project_update`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('language' in params and
+                                                       len(params['language']) > 100):
+            raise ValueError("Invalid value for parameter `language` when calling `automl_text_project_update`, length must be less than or equal to `100`")  # noqa: E501
+        if self.api_client.client_side_validation and ('language' in params and
+                                                       len(params['language']) < 1):
+            raise ValueError("Invalid value for parameter `language` when calling `automl_text_project_update`, length must be greater than or equal to `1`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

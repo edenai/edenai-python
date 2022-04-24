@@ -18,6 +18,8 @@ import edenai
 from edenai import Speech  # noqa: E501
 from edenai.rest import ApiException
 
+from .settings import AUDIO_FILE
+
 import os
 from dotenv import load_dotenv
 
@@ -36,19 +38,21 @@ class TestSpeechApi(unittest.TestCase):
     def test_speech_recognition(self):
         result = self.api.speech_to_text(
 
-            file="your_audio.wav",
-            providers=["amazon", "ibm"],
+            files=AUDIO_FILE,
+            providers=["google"],
             language="en-US")
 
+        print(result)
         assert result != None
 
     def test_text_to_speech(self):
         result = self.api.text_to_speech(
 
-            text="Your text",
+            text="Hello everybody ! How are things ?",
             option="FEMALE",
             providers=["microsoft", "google"],
             language="en-US")
+
         assert result != None
 
 

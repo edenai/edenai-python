@@ -27,3 +27,5 @@ setup.py
 README.md
 .gitignore
 .swagger-codegen-ignore
+test/
+test-requirements.txt

@@ -3,23 +3,28 @@
 """
     Eden AI API Documentation
 
-    <a href=\"https://app.edenai.run/user/login\" target=\"_blank\"><img src=\"/static/images/welcome.png\"></a>. # Welcome  Eden AI simplifies the use and integration of AI technologies by providing a unique API connected to the best AI engines and combined with a powerful management platform. The platform covers a wide range of AI technologies: * Vision:  <a href=\"https://www.edenai.co/vision\" target=\"_blank\">www.edenai.co/vision</a>. * Text & NLP: <a href=\"https://www.edenai.co/text\" target=\"_blank\">www.edenai.co/text</a>. * Speech & Audio: <a href=\"https://www.edenai.co/speech\" target=\"_blank\">www.edenai.co/speech</a>. * OCR: <a href=\"https://www.edenai.co/ocr\" target=\"_blank\">www.edenai.co/ocr</a>. * Machine Translation: <a href=\"https://www.edenai.co/translation\" target=\"_blank\">www.edenai.co/translation</a>. * Prediction: <a href=\"https://www.edenai.co/prediction\" target=\"_blank\">www.edenai.co/prediction</a>.  For all the proposed technologies, we provide a single endpoint:  the service provider is only a parameter that can be changed very easily. All the engines available on Eden AI are listed here: www.edenai.co/catalog  # Support & community  ### 1- Support If you have any problems, please contact us at this email address: contact@edenai.co. We will be happy to help you in the use of Eden AI.   ### 2- Community  You can interact personally with other people actively using and working with Eden AI and join our  <a href=\"https://join.slack.com/t/edenai/shared_invite/zt-t68c2pr9-4lDKQ_qEqmLiWNptQzB_6w\" target=\"_blank\">Slack community</a>.  We are always updating our docs, so a good way to always stay up to date is to watch our documentation repo on Github: <a href=\"https://github.com/edenai\" target=\"_blank\">https://github.com/edenai</a>.  ### 3- Blog  We also regularly publish various articles with Eden AI news and technical articles on the different AI engines that exist. You can find these articles here: <a href=\"https://www.edenai.co/blog\" target=\"_blank\">https://www.edenai.co/blog</a>.   # Authentication  ## Create account ![Register](/static/images/register.png)  To create an account, please go to this link: <a href=\"https://app.edenai.run/user/login\" target=\"_blank\">app.edenai.run/user/login</a>. You can create an account with your email address or by using your account on available platforms (Gmail, Github, etc.).   By creating an account with your email address, you will receive a confirmation email with a link to click. Check your spam if needed and contact us if you have any problem: contact@edenai.co  ![Login](/static/images/login.png) ## API key  By going to your account page on the platform: <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">https://app.edenai.run/admin/account</a>, you will have access to your API key to start using the different AI engines offered by Eden AI.   ![api_key](/static/images/api_key.png) # Portal Guide  Eden AI provides a web portal that allows you to do several tasks:  ![portal](/static/images/portal.png)  ### 1- Benchmark and test The platform allows you to easily compare competing engines without having to code. By uploading your data, you have access to the prediction results of the different engines. This gives you a first overview of the performance of AI engines.   ![benchmark](/static/images/benchmark.png)  ### 2- Cost management The <a href=\"https://app.edenai.run/admin/cost-management\" target=\"_blank\">cost management page</a> also allows you to centralize the costs associated with the different engines with various filters to simplify the analysis.   This page also allows you to define monthly budget limits not to be exceeded to secure the use of different AI engines.   ![cost-management](/static/images/cost_management.png) ### 3- Account The <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">account page</a> allows you to change your information and password. It also gives you access to your API key that you can renew if needed.   This page also allows you to add a credit card and to buy with credits to use all the engines offered by Eden AI.   ![account](/static/images/account.png)   # API Guide  Eden AI API has different endpoints that refer to different AI services. The connected providers are thus parameters that the user can easily change.   # noqa: E501
+    <a href=\"https://app.edenai.run/user/login\" target=\"_blank\"><img src=\"/static/images/welcome.png\"></a>. # Welcome  Eden AI simplifies the use and integration of AI technologies by providing a unique API connected to the best AI engines and combined with a powerful management platform. The platform covers a wide range of AI technologies: * Vision:  <a href=\"https://www.edenai.co/vision\" target=\"_blank\">www.edenai.co/vision</a>. * Text & NLP: <a href=\"https://www.edenai.co/text\" target=\"_blank\">www.edenai.co/text</a>. * Speech & Audio: <a href=\"https://www.edenai.co/speech\" target=\"_blank\">www.edenai.co/speech</a>. * OCR: <a href=\"https://www.edenai.co/ocr\" target=\"_blank\">www.edenai.co/ocr</a>. * Machine Translation: <a href=\"https://www.edenai.co/translation\" target=\"_blank\">www.edenai.co/translation</a>. * Prediction: <a href=\"https://www.edenai.co/prediction\" target=\"_blank\">www.edenai.co/prediction</a>.  For all the proposed technologies, we provide a single endpoint:  the service provider is only a parameter that can be changed very easily. All the engines available on Eden AI are listed here: www.edenai.co/catalog  # Support & community  ### 1- Support If you have any problems, please contact us at this email address: contact@edenai.co. We will be happy to help you in the use of Eden AI.   ### 2- Community  You can interact personally with other people actively using and working with Eden AI and join our  <a href=\"https://join.slack.com/t/edenai/shared_invite/zt-t68c2pr9-4lDKQ_qEqmLiWNptQzB_6w\" target=\"_blank\">Slack community</a>.  We are always updating our docs, so a good way to always stay up to date is to watch our documentation repo on Github: <a href=\"https://github.com/edenai\" target=\"_blank\">https://github.com/edenai</a>.  ### 3- Blog  We also regularly publish various articles with Eden AI news and technical articles on the different AI engines that exist. You can find these articles here: <a href=\"https://www.edenai.co/blog\" target=\"_blank\">https://www.edenai.co/blog</a>.   # Authentication  ## Create account ![Register](/static/images/register.png)  To create an account, please go to this link: <a href=\"https://app.edenai.run/user/login\" target=\"_blank\">app.edenai.run/user/login</a>. You can create an account with your email address or by using your account on available platforms (Gmail, Github, etc.).   By creating an account with your email address, you will receive a confirmation email with a link to click. Check your spam if needed and contact us if you have any problem: contact@edenai.co  ![Login](/static/images/login.png) ## API key  By going to your account page on the platform: <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">https://app.edenai.run/admin/account</a>, you will have access to your API key to start using the different AI engines offered by Eden AI.   ![api_key](/static/images/api_key.png)  ## Sandbox API key  By going to your account page on the platform: <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">https://app.edenai.run/admin/account</a>, you will also have access to your **Sandbox** API key that will allow you to make free calls and get dummy responses in order to implement and debug Eden AI without consuming credits.   ![api_key](/static/images/sandbox_api_key.png)  # Portal Guide  Eden AI provides a web portal that allows you to do several tasks:  ![portal](/static/images/portal.png)  ### 1- Benchmark and test The platform allows you to easily compare competing engines without having to code. By uploading your data, you have access to the prediction results of the different engines. This gives you a first overview of the performance of AI engines.   ![benchmark](/static/images/benchmark.png)  ### 2- Cost management The <a href=\"https://app.edenai.run/admin/cost-management\" target=\"_blank\">cost management page</a> also allows you to centralize the costs associated with the different engines with various filters to simplify the analysis.   This page also allows you to define monthly budget limits not to be exceeded to secure the use of different AI engines.   ![cost-management](/static/images/cost_management.png) ### 3- Account The <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">account page</a> allows you to change your information and password. It also gives you access to your API key that you can renew if needed.   This page also allows you to add a credit card and to buy with credits to use all the engines offered by Eden AI.   ![account](/static/images/account.png)   # API Guide  Eden AI API has different endpoints that refer to different AI services. The connected providers are thus parameters that the user can easily change.   # noqa: E501
 
     OpenAPI spec version: v1
     Contact: contact@edenai.co
     Generated by: https://github.com/swagger-api/swagger-codegen.git
 """
 
+
 import pprint
 import re  # noqa: F401
 
 import six
 
-class InlineResponse20010ResultLandmarks(object):
+from edenai.configuration import Configuration
+
+
+class InlineResponse20015ResultLandmarks(object):
     """NOTE: This class is auto generated by the swagger code generator program.
 
     Do not edit the class manually.
     """
+
     """
     Attributes:
       swagger_types (dict): The key is attribute name
@@ -101,8 +106,12 @@ class InlineResponse20010ResultLandmarks(object):
         'right_cheek_center': 'RIGHT_CHEEK_CENTER'
     }
 
-    def __init__(self, left_eye=None, right_eye=None, left_of_left_eyebrow=None, right_of_left_eyebrow=None, left_of_right_eyebrow=None, right_of_right_eyebrow=None, midpoint_between_eyes=None, nose_tip=None, upper_lip=None, lower_lip=None, mouth_left=None, mouth_right=None, mouth_center=None, nose_bottom_right=None, nose_bottom_left=None, nose_bottom_center=None, left_eye_top_boundary=None, left_eye_right_corner=None, left_eye_bottom_boundary=None, left_eye_left_corner=None, right_eye_top_boundary=None, right_eye_right_corner=None, right_eye_bottom_boundary=None, right_eye_left_corner=None, left_eyebrow_upper_midpoint=None, right_eyebrow_upper_midpoint=None, left_ear_tragion=None, right_ear_tragion=None, forehead_glabella=None, chin_gnathion=None, chin_left_gonion=None, chin_right_gonion=None, left_cheek_center=None, right_cheek_center=None):  # noqa: E501
-        """InlineResponse20010ResultLandmarks - a model defined in Swagger"""  # noqa: E501
+    def __init__(self, left_eye=None, right_eye=None, left_of_left_eyebrow=None, right_of_left_eyebrow=None, left_of_right_eyebrow=None, right_of_right_eyebrow=None, midpoint_between_eyes=None, nose_tip=None, upper_lip=None, lower_lip=None, mouth_left=None, mouth_right=None, mouth_center=None, nose_bottom_right=None, nose_bottom_left=None, nose_bottom_center=None, left_eye_top_boundary=None, left_eye_right_corner=None, left_eye_bottom_boundary=None, left_eye_left_corner=None, right_eye_top_boundary=None, right_eye_right_corner=None, right_eye_bottom_boundary=None, right_eye_left_corner=None, left_eyebrow_upper_midpoint=None, right_eyebrow_upper_midpoint=None, left_ear_tragion=None, right_ear_tragion=None, forehead_glabella=None, chin_gnathion=None, chin_left_gonion=None, chin_right_gonion=None, left_cheek_center=None, right_cheek_center=None, _configuration=None):  # noqa: E501
+        """InlineResponse20015ResultLandmarks - a model defined in Swagger"""  # noqa: E501
+        if _configuration is None:
+            _configuration = Configuration()
+        self._configuration = _configuration
+
         self._left_eye = None
         self._right_eye = None
         self._left_of_left_eyebrow = None
@@ -138,6 +147,7 @@ class InlineResponse20010ResultLandmarks(object):
         self._left_cheek_center = None
         self._right_cheek_center = None
         self.discriminator = None
+
         if left_eye is not None:
             self.left_eye = left_eye
         if right_eye is not None:
@@ -209,20 +219,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def left_eye(self):
-        """Gets the left_eye of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the left_eye of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The left_eye of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The left_eye of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._left_eye
 
     @left_eye.setter
     def left_eye(self, left_eye):
-        """Sets the left_eye of this InlineResponse20010ResultLandmarks.
+        """Sets the left_eye of this InlineResponse20015ResultLandmarks.
 
 
-        :param left_eye: The left_eye of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param left_eye: The left_eye of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -230,20 +240,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def right_eye(self):
-        """Gets the right_eye of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the right_eye of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The right_eye of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The right_eye of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._right_eye
 
     @right_eye.setter
     def right_eye(self, right_eye):
-        """Sets the right_eye of this InlineResponse20010ResultLandmarks.
+        """Sets the right_eye of this InlineResponse20015ResultLandmarks.
 
 
-        :param right_eye: The right_eye of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param right_eye: The right_eye of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -251,20 +261,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def left_of_left_eyebrow(self):
-        """Gets the left_of_left_eyebrow of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the left_of_left_eyebrow of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The left_of_left_eyebrow of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The left_of_left_eyebrow of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._left_of_left_eyebrow
 
     @left_of_left_eyebrow.setter
     def left_of_left_eyebrow(self, left_of_left_eyebrow):
-        """Sets the left_of_left_eyebrow of this InlineResponse20010ResultLandmarks.
+        """Sets the left_of_left_eyebrow of this InlineResponse20015ResultLandmarks.
 
 
-        :param left_of_left_eyebrow: The left_of_left_eyebrow of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param left_of_left_eyebrow: The left_of_left_eyebrow of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -272,20 +282,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def right_of_left_eyebrow(self):
-        """Gets the right_of_left_eyebrow of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the right_of_left_eyebrow of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The right_of_left_eyebrow of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The right_of_left_eyebrow of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._right_of_left_eyebrow
 
     @right_of_left_eyebrow.setter
     def right_of_left_eyebrow(self, right_of_left_eyebrow):
-        """Sets the right_of_left_eyebrow of this InlineResponse20010ResultLandmarks.
+        """Sets the right_of_left_eyebrow of this InlineResponse20015ResultLandmarks.
 
 
-        :param right_of_left_eyebrow: The right_of_left_eyebrow of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param right_of_left_eyebrow: The right_of_left_eyebrow of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -293,20 +303,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def left_of_right_eyebrow(self):
-        """Gets the left_of_right_eyebrow of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the left_of_right_eyebrow of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The left_of_right_eyebrow of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The left_of_right_eyebrow of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._left_of_right_eyebrow
 
     @left_of_right_eyebrow.setter
     def left_of_right_eyebrow(self, left_of_right_eyebrow):
-        """Sets the left_of_right_eyebrow of this InlineResponse20010ResultLandmarks.
+        """Sets the left_of_right_eyebrow of this InlineResponse20015ResultLandmarks.
 
 
-        :param left_of_right_eyebrow: The left_of_right_eyebrow of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param left_of_right_eyebrow: The left_of_right_eyebrow of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -314,20 +324,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def right_of_right_eyebrow(self):
-        """Gets the right_of_right_eyebrow of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the right_of_right_eyebrow of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The right_of_right_eyebrow of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The right_of_right_eyebrow of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._right_of_right_eyebrow
 
     @right_of_right_eyebrow.setter
     def right_of_right_eyebrow(self, right_of_right_eyebrow):
-        """Sets the right_of_right_eyebrow of this InlineResponse20010ResultLandmarks.
+        """Sets the right_of_right_eyebrow of this InlineResponse20015ResultLandmarks.
 
 
-        :param right_of_right_eyebrow: The right_of_right_eyebrow of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param right_of_right_eyebrow: The right_of_right_eyebrow of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -335,20 +345,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def midpoint_between_eyes(self):
-        """Gets the midpoint_between_eyes of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the midpoint_between_eyes of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The midpoint_between_eyes of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The midpoint_between_eyes of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._midpoint_between_eyes
 
     @midpoint_between_eyes.setter
     def midpoint_between_eyes(self, midpoint_between_eyes):
-        """Sets the midpoint_between_eyes of this InlineResponse20010ResultLandmarks.
+        """Sets the midpoint_between_eyes of this InlineResponse20015ResultLandmarks.
 
 
-        :param midpoint_between_eyes: The midpoint_between_eyes of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param midpoint_between_eyes: The midpoint_between_eyes of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -356,20 +366,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def nose_tip(self):
-        """Gets the nose_tip of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the nose_tip of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The nose_tip of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The nose_tip of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._nose_tip
 
     @nose_tip.setter
     def nose_tip(self, nose_tip):
-        """Sets the nose_tip of this InlineResponse20010ResultLandmarks.
+        """Sets the nose_tip of this InlineResponse20015ResultLandmarks.
 
 
-        :param nose_tip: The nose_tip of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param nose_tip: The nose_tip of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -377,20 +387,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def upper_lip(self):
-        """Gets the upper_lip of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the upper_lip of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The upper_lip of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The upper_lip of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._upper_lip
 
     @upper_lip.setter
     def upper_lip(self, upper_lip):
-        """Sets the upper_lip of this InlineResponse20010ResultLandmarks.
+        """Sets the upper_lip of this InlineResponse20015ResultLandmarks.
 
 
-        :param upper_lip: The upper_lip of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param upper_lip: The upper_lip of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -398,20 +408,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def lower_lip(self):
-        """Gets the lower_lip of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the lower_lip of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The lower_lip of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The lower_lip of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._lower_lip
 
     @lower_lip.setter
     def lower_lip(self, lower_lip):
-        """Sets the lower_lip of this InlineResponse20010ResultLandmarks.
+        """Sets the lower_lip of this InlineResponse20015ResultLandmarks.
 
 
-        :param lower_lip: The lower_lip of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param lower_lip: The lower_lip of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -419,20 +429,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def mouth_left(self):
-        """Gets the mouth_left of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the mouth_left of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The mouth_left of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The mouth_left of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._mouth_left
 
     @mouth_left.setter
     def mouth_left(self, mouth_left):
-        """Sets the mouth_left of this InlineResponse20010ResultLandmarks.
+        """Sets the mouth_left of this InlineResponse20015ResultLandmarks.
 
 
-        :param mouth_left: The mouth_left of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param mouth_left: The mouth_left of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -440,20 +450,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def mouth_right(self):
-        """Gets the mouth_right of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the mouth_right of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The mouth_right of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The mouth_right of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._mouth_right
 
     @mouth_right.setter
     def mouth_right(self, mouth_right):
-        """Sets the mouth_right of this InlineResponse20010ResultLandmarks.
+        """Sets the mouth_right of this InlineResponse20015ResultLandmarks.
 
 
-        :param mouth_right: The mouth_right of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param mouth_right: The mouth_right of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -461,20 +471,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def mouth_center(self):
-        """Gets the mouth_center of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the mouth_center of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The mouth_center of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The mouth_center of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._mouth_center
 
     @mouth_center.setter
     def mouth_center(self, mouth_center):
-        """Sets the mouth_center of this InlineResponse20010ResultLandmarks.
+        """Sets the mouth_center of this InlineResponse20015ResultLandmarks.
 
 
-        :param mouth_center: The mouth_center of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param mouth_center: The mouth_center of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -482,20 +492,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def nose_bottom_right(self):
-        """Gets the nose_bottom_right of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the nose_bottom_right of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The nose_bottom_right of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The nose_bottom_right of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._nose_bottom_right
 
     @nose_bottom_right.setter
     def nose_bottom_right(self, nose_bottom_right):
-        """Sets the nose_bottom_right of this InlineResponse20010ResultLandmarks.
+        """Sets the nose_bottom_right of this InlineResponse20015ResultLandmarks.
 
 
-        :param nose_bottom_right: The nose_bottom_right of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param nose_bottom_right: The nose_bottom_right of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -503,20 +513,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def nose_bottom_left(self):
-        """Gets the nose_bottom_left of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the nose_bottom_left of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The nose_bottom_left of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The nose_bottom_left of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._nose_bottom_left
 
     @nose_bottom_left.setter
     def nose_bottom_left(self, nose_bottom_left):
-        """Sets the nose_bottom_left of this InlineResponse20010ResultLandmarks.
+        """Sets the nose_bottom_left of this InlineResponse20015ResultLandmarks.
 
 
-        :param nose_bottom_left: The nose_bottom_left of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param nose_bottom_left: The nose_bottom_left of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -524,20 +534,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def nose_bottom_center(self):
-        """Gets the nose_bottom_center of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the nose_bottom_center of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The nose_bottom_center of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The nose_bottom_center of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._nose_bottom_center
 
     @nose_bottom_center.setter
     def nose_bottom_center(self, nose_bottom_center):
-        """Sets the nose_bottom_center of this InlineResponse20010ResultLandmarks.
+        """Sets the nose_bottom_center of this InlineResponse20015ResultLandmarks.
 
 
-        :param nose_bottom_center: The nose_bottom_center of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param nose_bottom_center: The nose_bottom_center of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -545,20 +555,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def left_eye_top_boundary(self):
-        """Gets the left_eye_top_boundary of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the left_eye_top_boundary of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The left_eye_top_boundary of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The left_eye_top_boundary of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._left_eye_top_boundary
 
     @left_eye_top_boundary.setter
     def left_eye_top_boundary(self, left_eye_top_boundary):
-        """Sets the left_eye_top_boundary of this InlineResponse20010ResultLandmarks.
+        """Sets the left_eye_top_boundary of this InlineResponse20015ResultLandmarks.
 
 
-        :param left_eye_top_boundary: The left_eye_top_boundary of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param left_eye_top_boundary: The left_eye_top_boundary of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -566,20 +576,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def left_eye_right_corner(self):
-        """Gets the left_eye_right_corner of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the left_eye_right_corner of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The left_eye_right_corner of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The left_eye_right_corner of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._left_eye_right_corner
 
     @left_eye_right_corner.setter
     def left_eye_right_corner(self, left_eye_right_corner):
-        """Sets the left_eye_right_corner of this InlineResponse20010ResultLandmarks.
+        """Sets the left_eye_right_corner of this InlineResponse20015ResultLandmarks.
 
 
-        :param left_eye_right_corner: The left_eye_right_corner of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param left_eye_right_corner: The left_eye_right_corner of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -587,20 +597,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def left_eye_bottom_boundary(self):
-        """Gets the left_eye_bottom_boundary of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the left_eye_bottom_boundary of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The left_eye_bottom_boundary of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The left_eye_bottom_boundary of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._left_eye_bottom_boundary
 
     @left_eye_bottom_boundary.setter
     def left_eye_bottom_boundary(self, left_eye_bottom_boundary):
-        """Sets the left_eye_bottom_boundary of this InlineResponse20010ResultLandmarks.
+        """Sets the left_eye_bottom_boundary of this InlineResponse20015ResultLandmarks.
 
 
-        :param left_eye_bottom_boundary: The left_eye_bottom_boundary of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param left_eye_bottom_boundary: The left_eye_bottom_boundary of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -608,20 +618,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def left_eye_left_corner(self):
-        """Gets the left_eye_left_corner of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the left_eye_left_corner of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The left_eye_left_corner of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The left_eye_left_corner of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._left_eye_left_corner
 
     @left_eye_left_corner.setter
     def left_eye_left_corner(self, left_eye_left_corner):
-        """Sets the left_eye_left_corner of this InlineResponse20010ResultLandmarks.
+        """Sets the left_eye_left_corner of this InlineResponse20015ResultLandmarks.
 
 
-        :param left_eye_left_corner: The left_eye_left_corner of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param left_eye_left_corner: The left_eye_left_corner of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -629,20 +639,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def right_eye_top_boundary(self):
-        """Gets the right_eye_top_boundary of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the right_eye_top_boundary of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The right_eye_top_boundary of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The right_eye_top_boundary of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._right_eye_top_boundary
 
     @right_eye_top_boundary.setter
     def right_eye_top_boundary(self, right_eye_top_boundary):
-        """Sets the right_eye_top_boundary of this InlineResponse20010ResultLandmarks.
+        """Sets the right_eye_top_boundary of this InlineResponse20015ResultLandmarks.
 
 
-        :param right_eye_top_boundary: The right_eye_top_boundary of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param right_eye_top_boundary: The right_eye_top_boundary of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -650,20 +660,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def right_eye_right_corner(self):
-        """Gets the right_eye_right_corner of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the right_eye_right_corner of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The right_eye_right_corner of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The right_eye_right_corner of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._right_eye_right_corner
 
     @right_eye_right_corner.setter
     def right_eye_right_corner(self, right_eye_right_corner):
-        """Sets the right_eye_right_corner of this InlineResponse20010ResultLandmarks.
+        """Sets the right_eye_right_corner of this InlineResponse20015ResultLandmarks.
 
 
-        :param right_eye_right_corner: The right_eye_right_corner of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param right_eye_right_corner: The right_eye_right_corner of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -671,20 +681,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def right_eye_bottom_boundary(self):
-        """Gets the right_eye_bottom_boundary of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the right_eye_bottom_boundary of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The right_eye_bottom_boundary of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The right_eye_bottom_boundary of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._right_eye_bottom_boundary
 
     @right_eye_bottom_boundary.setter
     def right_eye_bottom_boundary(self, right_eye_bottom_boundary):
-        """Sets the right_eye_bottom_boundary of this InlineResponse20010ResultLandmarks.
+        """Sets the right_eye_bottom_boundary of this InlineResponse20015ResultLandmarks.
 
 
-        :param right_eye_bottom_boundary: The right_eye_bottom_boundary of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param right_eye_bottom_boundary: The right_eye_bottom_boundary of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -692,20 +702,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def right_eye_left_corner(self):
-        """Gets the right_eye_left_corner of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the right_eye_left_corner of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The right_eye_left_corner of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The right_eye_left_corner of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._right_eye_left_corner
 
     @right_eye_left_corner.setter
     def right_eye_left_corner(self, right_eye_left_corner):
-        """Sets the right_eye_left_corner of this InlineResponse20010ResultLandmarks.
+        """Sets the right_eye_left_corner of this InlineResponse20015ResultLandmarks.
 
 
-        :param right_eye_left_corner: The right_eye_left_corner of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param right_eye_left_corner: The right_eye_left_corner of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -713,20 +723,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def left_eyebrow_upper_midpoint(self):
-        """Gets the left_eyebrow_upper_midpoint of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the left_eyebrow_upper_midpoint of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The left_eyebrow_upper_midpoint of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The left_eyebrow_upper_midpoint of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._left_eyebrow_upper_midpoint
 
     @left_eyebrow_upper_midpoint.setter
     def left_eyebrow_upper_midpoint(self, left_eyebrow_upper_midpoint):
-        """Sets the left_eyebrow_upper_midpoint of this InlineResponse20010ResultLandmarks.
+        """Sets the left_eyebrow_upper_midpoint of this InlineResponse20015ResultLandmarks.
 
 
-        :param left_eyebrow_upper_midpoint: The left_eyebrow_upper_midpoint of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param left_eyebrow_upper_midpoint: The left_eyebrow_upper_midpoint of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -734,20 +744,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def right_eyebrow_upper_midpoint(self):
-        """Gets the right_eyebrow_upper_midpoint of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the right_eyebrow_upper_midpoint of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The right_eyebrow_upper_midpoint of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The right_eyebrow_upper_midpoint of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._right_eyebrow_upper_midpoint
 
     @right_eyebrow_upper_midpoint.setter
     def right_eyebrow_upper_midpoint(self, right_eyebrow_upper_midpoint):
-        """Sets the right_eyebrow_upper_midpoint of this InlineResponse20010ResultLandmarks.
+        """Sets the right_eyebrow_upper_midpoint of this InlineResponse20015ResultLandmarks.
 
 
-        :param right_eyebrow_upper_midpoint: The right_eyebrow_upper_midpoint of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param right_eyebrow_upper_midpoint: The right_eyebrow_upper_midpoint of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -755,20 +765,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def left_ear_tragion(self):
-        """Gets the left_ear_tragion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the left_ear_tragion of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The left_ear_tragion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The left_ear_tragion of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._left_ear_tragion
 
     @left_ear_tragion.setter
     def left_ear_tragion(self, left_ear_tragion):
-        """Sets the left_ear_tragion of this InlineResponse20010ResultLandmarks.
+        """Sets the left_ear_tragion of this InlineResponse20015ResultLandmarks.
 
 
-        :param left_ear_tragion: The left_ear_tragion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param left_ear_tragion: The left_ear_tragion of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -776,20 +786,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def right_ear_tragion(self):
-        """Gets the right_ear_tragion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the right_ear_tragion of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The right_ear_tragion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The right_ear_tragion of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._right_ear_tragion
 
     @right_ear_tragion.setter
     def right_ear_tragion(self, right_ear_tragion):
-        """Sets the right_ear_tragion of this InlineResponse20010ResultLandmarks.
+        """Sets the right_ear_tragion of this InlineResponse20015ResultLandmarks.
 
 
-        :param right_ear_tragion: The right_ear_tragion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param right_ear_tragion: The right_ear_tragion of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -797,20 +807,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def forehead_glabella(self):
-        """Gets the forehead_glabella of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the forehead_glabella of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The forehead_glabella of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The forehead_glabella of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._forehead_glabella
 
     @forehead_glabella.setter
     def forehead_glabella(self, forehead_glabella):
-        """Sets the forehead_glabella of this InlineResponse20010ResultLandmarks.
+        """Sets the forehead_glabella of this InlineResponse20015ResultLandmarks.
 
 
-        :param forehead_glabella: The forehead_glabella of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param forehead_glabella: The forehead_glabella of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -818,20 +828,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def chin_gnathion(self):
-        """Gets the chin_gnathion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the chin_gnathion of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The chin_gnathion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The chin_gnathion of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._chin_gnathion
 
     @chin_gnathion.setter
     def chin_gnathion(self, chin_gnathion):
-        """Sets the chin_gnathion of this InlineResponse20010ResultLandmarks.
+        """Sets the chin_gnathion of this InlineResponse20015ResultLandmarks.
 
 
-        :param chin_gnathion: The chin_gnathion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param chin_gnathion: The chin_gnathion of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -839,20 +849,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def chin_left_gonion(self):
-        """Gets the chin_left_gonion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the chin_left_gonion of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The chin_left_gonion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The chin_left_gonion of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._chin_left_gonion
 
     @chin_left_gonion.setter
     def chin_left_gonion(self, chin_left_gonion):
-        """Sets the chin_left_gonion of this InlineResponse20010ResultLandmarks.
+        """Sets the chin_left_gonion of this InlineResponse20015ResultLandmarks.
 
 
-        :param chin_left_gonion: The chin_left_gonion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param chin_left_gonion: The chin_left_gonion of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -860,20 +870,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def chin_right_gonion(self):
-        """Gets the chin_right_gonion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the chin_right_gonion of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The chin_right_gonion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The chin_right_gonion of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._chin_right_gonion
 
     @chin_right_gonion.setter
     def chin_right_gonion(self, chin_right_gonion):
-        """Sets the chin_right_gonion of this InlineResponse20010ResultLandmarks.
+        """Sets the chin_right_gonion of this InlineResponse20015ResultLandmarks.
 
 
-        :param chin_right_gonion: The chin_right_gonion of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param chin_right_gonion: The chin_right_gonion of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -881,20 +891,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def left_cheek_center(self):
-        """Gets the left_cheek_center of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the left_cheek_center of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The left_cheek_center of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The left_cheek_center of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._left_cheek_center
 
     @left_cheek_center.setter
     def left_cheek_center(self, left_cheek_center):
-        """Sets the left_cheek_center of this InlineResponse20010ResultLandmarks.
+        """Sets the left_cheek_center of this InlineResponse20015ResultLandmarks.
 
 
-        :param left_cheek_center: The left_cheek_center of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param left_cheek_center: The left_cheek_center of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -902,20 +912,20 @@ class InlineResponse20010ResultLandmarks(object):
 
     @property
     def right_cheek_center(self):
-        """Gets the right_cheek_center of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        """Gets the right_cheek_center of this InlineResponse20015ResultLandmarks.  # noqa: E501
 
 
-        :return: The right_cheek_center of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :return: The right_cheek_center of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :rtype: list[float]
         """
         return self._right_cheek_center
 
     @right_cheek_center.setter
     def right_cheek_center(self, right_cheek_center):
-        """Sets the right_cheek_center of this InlineResponse20010ResultLandmarks.
+        """Sets the right_cheek_center of this InlineResponse20015ResultLandmarks.
 
 
-        :param right_cheek_center: The right_cheek_center of this InlineResponse20010ResultLandmarks.  # noqa: E501
+        :param right_cheek_center: The right_cheek_center of this InlineResponse20015ResultLandmarks.  # noqa: E501
         :type: list[float]
         """
 
@@ -942,7 +952,7 @@ class InlineResponse20010ResultLandmarks(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(InlineResponse20010ResultLandmarks, dict):
+        if issubclass(InlineResponse20015ResultLandmarks, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -958,11 +968,14 @@ class InlineResponse20010ResultLandmarks(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, InlineResponse20010ResultLandmarks):
+        if not isinstance(other, InlineResponse20015ResultLandmarks):
             return False
 
-        return self.__dict__ == other.__dict__
+        return self.to_dict() == other.to_dict()
 
     def __ne__(self, other):
         """Returns true if both objects are not equal"""
-        return not self == other
+        if not isinstance(other, InlineResponse20015ResultLandmarks):
+            return True
+
+        return self.to_dict() != other.to_dict()

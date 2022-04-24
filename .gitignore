@@ -70,3 +70,4 @@ scripts/
 docs/
 test/
 !test/*_api.py
+!test/settings.py

@@ -3,12 +3,13 @@
 """
     Eden AI API Documentation
 
-    <a href=\"https://app.edenai.run/user/login\" target=\"_blank\"><img src=\"/static/images/welcome.png\"></a>. # Welcome  Eden AI simplifies the use and integration of AI technologies by providing a unique API connected to the best AI engines and combined with a powerful management platform. The platform covers a wide range of AI technologies: * Vision:  <a href=\"https://www.edenai.co/vision\" target=\"_blank\">www.edenai.co/vision</a>. * Text & NLP: <a href=\"https://www.edenai.co/text\" target=\"_blank\">www.edenai.co/text</a>. * Speech & Audio: <a href=\"https://www.edenai.co/speech\" target=\"_blank\">www.edenai.co/speech</a>. * OCR: <a href=\"https://www.edenai.co/ocr\" target=\"_blank\">www.edenai.co/ocr</a>. * Machine Translation: <a href=\"https://www.edenai.co/translation\" target=\"_blank\">www.edenai.co/translation</a>. * Prediction: <a href=\"https://www.edenai.co/prediction\" target=\"_blank\">www.edenai.co/prediction</a>.  For all the proposed technologies, we provide a single endpoint:  the service provider is only a parameter that can be changed very easily. All the engines available on Eden AI are listed here: www.edenai.co/catalog  # Support & community  ### 1- Support If you have any problems, please contact us at this email address: contact@edenai.co. We will be happy to help you in the use of Eden AI.   ### 2- Community  You can interact personally with other people actively using and working with Eden AI and join our  <a href=\"https://join.slack.com/t/edenai/shared_invite/zt-t68c2pr9-4lDKQ_qEqmLiWNptQzB_6w\" target=\"_blank\">Slack community</a>.  We are always updating our docs, so a good way to always stay up to date is to watch our documentation repo on Github: <a href=\"https://github.com/edenai\" target=\"_blank\">https://github.com/edenai</a>.  ### 3- Blog  We also regularly publish various articles with Eden AI news and technical articles on the different AI engines that exist. You can find these articles here: <a href=\"https://www.edenai.co/blog\" target=\"_blank\">https://www.edenai.co/blog</a>.   # Authentication  ## Create account ![Register](/static/images/register.png)  To create an account, please go to this link: <a href=\"https://app.edenai.run/user/login\" target=\"_blank\">app.edenai.run/user/login</a>. You can create an account with your email address or by using your account on available platforms (Gmail, Github, etc.).   By creating an account with your email address, you will receive a confirmation email with a link to click. Check your spam if needed and contact us if you have any problem: contact@edenai.co  ![Login](/static/images/login.png) ## API key  By going to your account page on the platform: <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">https://app.edenai.run/admin/account</a>, you will have access to your API key to start using the different AI engines offered by Eden AI.   ![api_key](/static/images/api_key.png) # Portal Guide  Eden AI provides a web portal that allows you to do several tasks:  ![portal](/static/images/portal.png)  ### 1- Benchmark and test The platform allows you to easily compare competing engines without having to code. By uploading your data, you have access to the prediction results of the different engines. This gives you a first overview of the performance of AI engines.   ![benchmark](/static/images/benchmark.png)  ### 2- Cost management The <a href=\"https://app.edenai.run/admin/cost-management\" target=\"_blank\">cost management page</a> also allows you to centralize the costs associated with the different engines with various filters to simplify the analysis.   This page also allows you to define monthly budget limits not to be exceeded to secure the use of different AI engines.   ![cost-management](/static/images/cost_management.png) ### 3- Account The <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">account page</a> allows you to change your information and password. It also gives you access to your API key that you can renew if needed.   This page also allows you to add a credit card and to buy with credits to use all the engines offered by Eden AI.   ![account](/static/images/account.png)   # API Guide  Eden AI API has different endpoints that refer to different AI services. The connected providers are thus parameters that the user can easily change.   # noqa: E501
+    <a href=\"https://app.edenai.run/user/login\" target=\"_blank\"><img src=\"/static/images/welcome.png\"></a>. # Welcome  Eden AI simplifies the use and integration of AI technologies by providing a unique API connected to the best AI engines and combined with a powerful management platform. The platform covers a wide range of AI technologies: * Vision:  <a href=\"https://www.edenai.co/vision\" target=\"_blank\">www.edenai.co/vision</a>. * Text & NLP: <a href=\"https://www.edenai.co/text\" target=\"_blank\">www.edenai.co/text</a>. * Speech & Audio: <a href=\"https://www.edenai.co/speech\" target=\"_blank\">www.edenai.co/speech</a>. * OCR: <a href=\"https://www.edenai.co/ocr\" target=\"_blank\">www.edenai.co/ocr</a>. * Machine Translation: <a href=\"https://www.edenai.co/translation\" target=\"_blank\">www.edenai.co/translation</a>. * Prediction: <a href=\"https://www.edenai.co/prediction\" target=\"_blank\">www.edenai.co/prediction</a>.  For all the proposed technologies, we provide a single endpoint:  the service provider is only a parameter that can be changed very easily. All the engines available on Eden AI are listed here: www.edenai.co/catalog  # Support & community  ### 1- Support If you have any problems, please contact us at this email address: contact@edenai.co. We will be happy to help you in the use of Eden AI.   ### 2- Community  You can interact personally with other people actively using and working with Eden AI and join our  <a href=\"https://join.slack.com/t/edenai/shared_invite/zt-t68c2pr9-4lDKQ_qEqmLiWNptQzB_6w\" target=\"_blank\">Slack community</a>.  We are always updating our docs, so a good way to always stay up to date is to watch our documentation repo on Github: <a href=\"https://github.com/edenai\" target=\"_blank\">https://github.com/edenai</a>.  ### 3- Blog  We also regularly publish various articles with Eden AI news and technical articles on the different AI engines that exist. You can find these articles here: <a href=\"https://www.edenai.co/blog\" target=\"_blank\">https://www.edenai.co/blog</a>.   # Authentication  ## Create account ![Register](/static/images/register.png)  To create an account, please go to this link: <a href=\"https://app.edenai.run/user/login\" target=\"_blank\">app.edenai.run/user/login</a>. You can create an account with your email address or by using your account on available platforms (Gmail, Github, etc.).   By creating an account with your email address, you will receive a confirmation email with a link to click. Check your spam if needed and contact us if you have any problem: contact@edenai.co  ![Login](/static/images/login.png) ## API key  By going to your account page on the platform: <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">https://app.edenai.run/admin/account</a>, you will have access to your API key to start using the different AI engines offered by Eden AI.   ![api_key](/static/images/api_key.png)  ## Sandbox API key  By going to your account page on the platform: <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">https://app.edenai.run/admin/account</a>, you will also have access to your **Sandbox** API key that will allow you to make free calls and get dummy responses in order to implement and debug Eden AI without consuming credits.   ![api_key](/static/images/sandbox_api_key.png)  # Portal Guide  Eden AI provides a web portal that allows you to do several tasks:  ![portal](/static/images/portal.png)  ### 1- Benchmark and test The platform allows you to easily compare competing engines without having to code. By uploading your data, you have access to the prediction results of the different engines. This gives you a first overview of the performance of AI engines.   ![benchmark](/static/images/benchmark.png)  ### 2- Cost management The <a href=\"https://app.edenai.run/admin/cost-management\" target=\"_blank\">cost management page</a> also allows you to centralize the costs associated with the different engines with various filters to simplify the analysis.   This page also allows you to define monthly budget limits not to be exceeded to secure the use of different AI engines.   ![cost-management](/static/images/cost_management.png) ### 3- Account The <a href=\"https://app.edenai.run/admin/account\" target=\"_blank\">account page</a> allows you to change your information and password. It also gives you access to your API key that you can renew if needed.   This page also allows you to add a credit card and to buy with credits to use all the engines offered by Eden AI.   ![account](/static/images/account.png)   # API Guide  Eden AI API has different endpoints that refer to different AI services. The connected providers are thus parameters that the user can easily change.   # noqa: E501
 
     OpenAPI spec version: v1
     Contact: contact@edenai.co
     Generated by: https://github.com/swagger-api/swagger-codegen.git
 """
+
 
 from __future__ import absolute_import
 
@@ -35,17 +36,17 @@ class OCRApi(object):
     def ocr(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr  # noqa: E501
 
-        Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Arabic**|`string`|`ar-XA`| |**Chinese - Simplified**|`string`|`zh-CN`| |**Chinese - Traditional**|`string`|`zh-TW`| |**Czech**|`string`|`cz-CZ`| |**Danish**|`string`|`da-DK`| |**Dutch**|`string`|`nl-NL`| |**English**|`string`|`en-US`| |**Finnish**|`string`|`fn-FN`| |**French**|`string`|`fr-FR`| |**German**|`string`|`de-DE`| |**Greek**|`string`|`gr-GR`| |**Hungarian**|`string`|`hu-HU`| |**Italian**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Korean**|`string`|`ko-KR`| |**Polish**|`string`|`pl-PO`| |**Portuguese**|`string`|`pt-PT`| |**Russian**|`string`|`ru-RU`| |**Swedish**|`string`|`sw-SW`| |**Spanish**|`string`|`es-ES`| |**Turkish**|`string`|`tr-TR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-vision-(ocr))|`google`|`v1`| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|`v3.2`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-textract)|`amazon`|`boto3 (v1.15.18)`|  # noqa: E501
+        Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Arabic**|`string`|`ar-XA`| |**Chinese - Simplified**|`string`|`zh-CN`| |**Chinese - Traditional**|`string`|`zh-TW`| |**Czech**|`string`|`cz-CZ`| |**Danish**|`string`|`da-DK`| |**Dutch**|`string`|`nl-NL`| |**English**|`string`|`en-US`| |**Finnish**|`string`|`fn-FN`| |**French**|`string`|`fr-FR`| |**German**|`string`|`de-DE`| |**Greek**|`string`|`gr-GR`| |**Hungarian**|`string`|`hu-HU`| |**Italian**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Korean**|`string`|`ko-KR`| |**Polish**|`string`|`pl-PO`| |**Portuguese**|`string`|`pt-PT`| |**Russian**|`string`|`ru-RU`| |**Swedish**|`string`|`sw-SW`| |**Spanish**|`string`|`es-ES`| |**Turkish**|`string`|`tr-TR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr(files, providers, language, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str files: (required)
-        :param str providers: (required)
-        :param str language: (required)
-        :return: InlineResponse2001
+        :param file files: File to analyse (ex: pdf, jpg, jpeg, png, tiff) (required)
+        :param str providers: Providers to compare (ex: [ 'amazon', 'microsoft', 'ibm', 'google']) (required)
+        :param str language: Language code expected (ex: fr-FR) (required)
+        :return: InlineResponse2003
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -59,17 +60,17 @@ class OCRApi(object):
     def ocr_with_http_info(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr  # noqa: E501
 
-        Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Arabic**|`string`|`ar-XA`| |**Chinese - Simplified**|`string`|`zh-CN`| |**Chinese - Traditional**|`string`|`zh-TW`| |**Czech**|`string`|`cz-CZ`| |**Danish**|`string`|`da-DK`| |**Dutch**|`string`|`nl-NL`| |**English**|`string`|`en-US`| |**Finnish**|`string`|`fn-FN`| |**French**|`string`|`fr-FR`| |**German**|`string`|`de-DE`| |**Greek**|`string`|`gr-GR`| |**Hungarian**|`string`|`hu-HU`| |**Italian**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Korean**|`string`|`ko-KR`| |**Polish**|`string`|`pl-PO`| |**Portuguese**|`string`|`pt-PT`| |**Russian**|`string`|`ru-RU`| |**Swedish**|`string`|`sw-SW`| |**Spanish**|`string`|`es-ES`| |**Turkish**|`string`|`tr-TR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Google Cloud**](https://www.edenai.co/catalog/google-cloud-vision-(ocr))|`google`|`v1`| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|`v3.2`| |[**Amazon Web Services**](https://www.edenai.co/catalog/amazon-textract)|`amazon`|`boto3 (v1.15.18)`|  # noqa: E501
+        Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Arabic**|`string`|`ar-XA`| |**Chinese - Simplified**|`string`|`zh-CN`| |**Chinese - Traditional**|`string`|`zh-TW`| |**Czech**|`string`|`cz-CZ`| |**Danish**|`string`|`da-DK`| |**Dutch**|`string`|`nl-NL`| |**English**|`string`|`en-US`| |**Finnish**|`string`|`fn-FN`| |**French**|`string`|`fr-FR`| |**German**|`string`|`de-DE`| |**Greek**|`string`|`gr-GR`| |**Hungarian**|`string`|`hu-HU`| |**Italian**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Korean**|`string`|`ko-KR`| |**Polish**|`string`|`pl-PO`| |**Portuguese**|`string`|`pt-PT`| |**Russian**|`string`|`ru-RU`| |**Swedish**|`string`|`sw-SW`| |**Spanish**|`string`|`es-ES`| |**Turkish**|`string`|`tr-TR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr_with_http_info(files, providers, language, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str files: (required)
-        :param str providers: (required)
-        :param str language: (required)
-        :return: InlineResponse2001
+        :param file files: File to analyse (ex: pdf, jpg, jpeg, png, tiff) (required)
+        :param str providers: Providers to compare (ex: [ 'amazon', 'microsoft', 'ibm', 'google']) (required)
+        :param str language: Language code expected (ex: fr-FR) (required)
+        :return: InlineResponse2003
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -90,18 +91,24 @@ class OCRApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'files' is set
-        if ('files' not in params or
-                params['files'] is None):
+        if self.api_client.client_side_validation and ('files' not in params or
+                                                       params['files'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `files` when calling `ocr`")  # noqa: E501
         # verify the required parameter 'providers' is set
-        if ('providers' not in params or
-                params['providers'] is None):
+        if self.api_client.client_side_validation and ('providers' not in params or
+                                                       params['providers'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `providers` when calling `ocr`")  # noqa: E501
         # verify the required parameter 'language' is set
-        if ('language' not in params or
-                params['language'] is None):
+        if self.api_client.client_side_validation and ('language' not in params or
+                                                       params['language'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `language` when calling `ocr`")  # noqa: E501
 
+        if self.api_client.client_side_validation and ('providers' in params and
+                                                       len(params['providers']) < 1):
+            raise ValueError("Invalid value for parameter `providers` when calling `ocr`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('language' in params and
+                                                       len(params['language']) < 1):
+            raise ValueError("Invalid value for parameter `language` when calling `ocr`, length must be greater than or equal to `1`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -139,7 +146,7 @@ class OCRApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='InlineResponse2003',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -150,17 +157,17 @@ class OCRApi(object):
     def ocr_invoice(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr_invoice  # noqa: E501
 
-        The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|`v2.1-preview.3`|  # noqa: E501
+        The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr_invoice(files, providers, language, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str files: (required)
-        :param str providers: (required)
-        :param str language: (required)
-        :return: InlineResponse2002
+        :param file files: File Image to analyse (ex: pdf, jpg, jpeg, png) (required)
+        :param str providers: Provider to compare (ex: [ 'mindee', 'microsoft']) (required)
+        :param str language: Language code of invoice (ex: fr-FR (French), en-US (English), es-ES (Spanish)) (required)
+        :return: InlineResponse2004
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -174,17 +181,17 @@ class OCRApi(object):
     def ocr_invoice_with_http_info(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr_invoice  # noqa: E501
 
-        The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |[**Microsoft Azure**](https://www.edenai.co/catalog/azure-computer-vision-(ocr))|`microsoft`|`v2.1-preview.3`|  # noqa: E501
+        The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr_invoice_with_http_info(files, providers, language, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str files: (required)
-        :param str providers: (required)
-        :param str language: (required)
-        :return: InlineResponse2002
+        :param file files: File Image to analyse (ex: pdf, jpg, jpeg, png) (required)
+        :param str providers: Provider to compare (ex: [ 'mindee', 'microsoft']) (required)
+        :param str language: Language code of invoice (ex: fr-FR (French), en-US (English), es-ES (Spanish)) (required)
+        :return: InlineResponse2004
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -205,18 +212,24 @@ class OCRApi(object):
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'files' is set
-        if ('files' not in params or
-                params['files'] is None):
+        if self.api_client.client_side_validation and ('files' not in params or
+                                                       params['files'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `files` when calling `ocr_invoice`")  # noqa: E501
         # verify the required parameter 'providers' is set
-        if ('providers' not in params or
-                params['providers'] is None):
+        if self.api_client.client_side_validation and ('providers' not in params or
+                                                       params['providers'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `providers` when calling `ocr_invoice`")  # noqa: E501
         # verify the required parameter 'language' is set
-        if ('language' not in params or
-                params['language'] is None):
+        if self.api_client.client_side_validation and ('language' not in params or
+                                                       params['language'] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `language` when calling `ocr_invoice`")  # noqa: E501
 
+        if self.api_client.client_side_validation and ('providers' in params and
+                                                       len(params['providers']) < 1):
+            raise ValueError("Invalid value for parameter `providers` when calling `ocr_invoice`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('language' in params and
+                                                       len(params['language']) < 1):
+            raise ValueError("Invalid value for parameter `language` when calling `ocr_invoice`, length must be greater than or equal to `1`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -254,7 +267,128 @@ class OCRApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2002',  # noqa: E501
+            response_type='InlineResponse2004',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def ocr_tables(self, files, providers, language, **kwargs):  # noqa: E501
+        """ocr_tables  # noqa: E501
+
+        The OCR Table API allows customers to analyze documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**German**|`string`|`de-DE`| |**Italian**|`string`|`it-IT`| |**Portuguese**|`string`|`pt-PT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.ocr_tables(files, providers, language, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param file files: File to analyse (ex: pdf, jpg, jpeg, png, tiff) (required)
+        :param str providers: Providers to compare (ex: [ 'amazon', 'microsoft', 'google']) (required)
+        :param str language: Language code expected (ex: fr-FR) (required)
+        :return: InlineResponse2004
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.ocr_tables_with_http_info(files, providers, language, **kwargs)  # noqa: E501
+        else:
+            (data) = self.ocr_tables_with_http_info(files, providers, language, **kwargs)  # noqa: E501
+            return data
+
+    def ocr_tables_with_http_info(self, files, providers, language, **kwargs):  # noqa: E501
+        """ocr_tables  # noqa: E501
+
+        The OCR Table API allows customers to analyze documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**German**|`string`|`de-DE`| |**Italian**|`string`|`it-IT`| |**Portuguese**|`string`|`pt-PT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.ocr_tables_with_http_info(files, providers, language, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param file files: File to analyse (ex: pdf, jpg, jpeg, png, tiff) (required)
+        :param str providers: Providers to compare (ex: [ 'amazon', 'microsoft', 'google']) (required)
+        :param str language: Language code expected (ex: fr-FR) (required)
+        :return: InlineResponse2004
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['files', 'providers', 'language']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method ocr_tables" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'files' is set
+        if self.api_client.client_side_validation and ('files' not in params or
+                                                       params['files'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `files` when calling `ocr_tables`")  # noqa: E501
+        # verify the required parameter 'providers' is set
+        if self.api_client.client_side_validation and ('providers' not in params or
+                                                       params['providers'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `providers` when calling `ocr_tables`")  # noqa: E501
+        # verify the required parameter 'language' is set
+        if self.api_client.client_side_validation and ('language' not in params or
+                                                       params['language'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `language` when calling `ocr_tables`")  # noqa: E501
+
+        if self.api_client.client_side_validation and ('providers' in params and
+                                                       len(params['providers']) < 1):
+            raise ValueError("Invalid value for parameter `providers` when calling `ocr_tables`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('language' in params and
+                                                       len(params['language']) < 1):
+            raise ValueError("Invalid value for parameter `language` when calling `ocr_tables`, length must be greater than or equal to `1`")  # noqa: E501
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+        if 'files' in params:
+            local_var_files['files'] = params['files']  # noqa: E501
+        if 'providers' in params:
+            form_params.append(('providers', params['providers']))  # noqa: E501
+        if 'language' in params:
+            form_params.append(('language', params['language']))  # noqa: E501
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/pretrained/ocr/ocr_tables', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='InlineResponse2004',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

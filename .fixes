@@ -1,0 +1,12 @@
+ @@ -312,6 +322,11 @@ class ApiClient(object):
+             If parameter async_req is False or missing,
+             then the method will return the response directly.
+         """
++  
++        for i, element in enumerate(post_params):
++            k,v = element
++            post_params[i] = (k, str(v))
++
+         if not async_req:
+             return self.__call_api(resource_path, method,
+                                    path_params, query_params, header_params, 

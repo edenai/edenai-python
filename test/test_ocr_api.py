@@ -37,11 +37,11 @@ class TestOCRApi(unittest.TestCase):
         pass
 
     def test_ocr(self):
-        result = self.api.basic(
+        result = self.api.ocr(
 
             providers=["google", "amazon"],
             language="en-US",
-            file="test.pdf")
+            files=PDF_FILE)
 
         assert result != None
 
