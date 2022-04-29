@@ -29,3 +29,5 @@ README.md
 .swagger-codegen-ignore
 test/
 test-requirements.txt
+# This should be corrected later :
+edenai/api_client.py
