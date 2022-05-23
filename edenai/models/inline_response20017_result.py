@@ -33,99 +33,279 @@ class InlineResponse20017Result(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'status': 'str',
-        'execution_time': 'float',
-        'result': 'object'
+        'image_path': 'str',
+        'attributes_label': 'list[str]',
+        'confidences': 'list[float]',
+        'x_mins': 'list[float]',
+        'x_maxs': 'list[float]',
+        'y_mins': 'list[float]',
+        'y_maxs': 'list[float]',
+        'landmarks': 'InlineResponse20017ResultLandmarks',
+        'emotions': 'object',
+        'poses': 'object'
     }
 
     attribute_map = {
-        'status': 'status',
-        'execution_time': 'execution_time',
-        'result': 'result'
+        'image_path': 'image_path',
+        'attributes_label': 'attributes_label',
+        'confidences': 'confidences',
+        'x_mins': 'x_mins',
+        'x_maxs': 'x_maxs',
+        'y_mins': 'y_mins',
+        'y_maxs': 'y_maxs',
+        'landmarks': 'landmarks',
+        'emotions': 'emotions',
+        'poses': 'poses'
     }
 
-    def __init__(self, status=None, execution_time=None, result=None, _configuration=None):  # noqa: E501
+    def __init__(self, image_path=None, attributes_label=None, confidences=None, x_mins=None, x_maxs=None, y_mins=None, y_maxs=None, landmarks=None, emotions=None, poses=None, _configuration=None):  # noqa: E501
         """InlineResponse20017Result - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
-        self._status = None
-        self._execution_time = None
-        self._result = None
+        self._image_path = None
+        self._attributes_label = None
+        self._confidences = None
+        self._x_mins = None
+        self._x_maxs = None
+        self._y_mins = None
+        self._y_maxs = None
+        self._landmarks = None
+        self._emotions = None
+        self._poses = None
         self.discriminator = None
 
-        if status is not None:
-            self.status = status
-        if execution_time is not None:
-            self.execution_time = execution_time
-        if result is not None:
-            self.result = result
+        if image_path is not None:
+            self.image_path = image_path
+        if attributes_label is not None:
+            self.attributes_label = attributes_label
+        if confidences is not None:
+            self.confidences = confidences
+        if x_mins is not None:
+            self.x_mins = x_mins
+        if x_maxs is not None:
+            self.x_maxs = x_maxs
+        if y_mins is not None:
+            self.y_mins = y_mins
+        if y_maxs is not None:
+            self.y_maxs = y_maxs
+        if landmarks is not None:
+            self.landmarks = landmarks
+        if emotions is not None:
+            self.emotions = emotions
+        if poses is not None:
+            self.poses = poses
 
     @property
-    def status(self):
-        """Gets the status of this InlineResponse20017Result.  # noqa: E501
+    def image_path(self):
+        """Gets the image_path of this InlineResponse20017Result.  # noqa: E501
 
 
-        :return: The status of this InlineResponse20017Result.  # noqa: E501
+        :return: The image_path of this InlineResponse20017Result.  # noqa: E501
         :rtype: str
         """
-        return self._status
+        return self._image_path
 
-    @status.setter
-    def status(self, status):
-        """Sets the status of this InlineResponse20017Result.
+    @image_path.setter
+    def image_path(self, image_path):
+        """Sets the image_path of this InlineResponse20017Result.
 
 
-        :param status: The status of this InlineResponse20017Result.  # noqa: E501
+        :param image_path: The image_path of this InlineResponse20017Result.  # noqa: E501
         :type: str
         """
 
-        self._status = status
+        self._image_path = image_path
 
     @property
-    def execution_time(self):
-        """Gets the execution_time of this InlineResponse20017Result.  # noqa: E501
+    def attributes_label(self):
+        """Gets the attributes_label of this InlineResponse20017Result.  # noqa: E501
 
 
-        :return: The execution_time of this InlineResponse20017Result.  # noqa: E501
-        :rtype: float
+        :return: The attributes_label of this InlineResponse20017Result.  # noqa: E501
+        :rtype: list[str]
         """
-        return self._execution_time
+        return self._attributes_label
 
-    @execution_time.setter
-    def execution_time(self, execution_time):
-        """Sets the execution_time of this InlineResponse20017Result.
+    @attributes_label.setter
+    def attributes_label(self, attributes_label):
+        """Sets the attributes_label of this InlineResponse20017Result.
 
 
-        :param execution_time: The execution_time of this InlineResponse20017Result.  # noqa: E501
-        :type: float
+        :param attributes_label: The attributes_label of this InlineResponse20017Result.  # noqa: E501
+        :type: list[str]
         """
 
-        self._execution_time = execution_time
+        self._attributes_label = attributes_label
 
     @property
-    def result(self):
-        """Gets the result of this InlineResponse20017Result.  # noqa: E501
+    def confidences(self):
+        """Gets the confidences of this InlineResponse20017Result.  # noqa: E501
 
-        object  # noqa: E501
 
-        :return: The result of this InlineResponse20017Result.  # noqa: E501
+        :return: The confidences of this InlineResponse20017Result.  # noqa: E501
+        :rtype: list[float]
+        """
+        return self._confidences
+
+    @confidences.setter
+    def confidences(self, confidences):
+        """Sets the confidences of this InlineResponse20017Result.
+
+
+        :param confidences: The confidences of this InlineResponse20017Result.  # noqa: E501
+        :type: list[float]
+        """
+
+        self._confidences = confidences
+
+    @property
+    def x_mins(self):
+        """Gets the x_mins of this InlineResponse20017Result.  # noqa: E501
+
+
+        :return: The x_mins of this InlineResponse20017Result.  # noqa: E501
+        :rtype: list[float]
+        """
+        return self._x_mins
+
+    @x_mins.setter
+    def x_mins(self, x_mins):
+        """Sets the x_mins of this InlineResponse20017Result.
+
+
+        :param x_mins: The x_mins of this InlineResponse20017Result.  # noqa: E501
+        :type: list[float]
+        """
+
+        self._x_mins = x_mins
+
+    @property
+    def x_maxs(self):
+        """Gets the x_maxs of this InlineResponse20017Result.  # noqa: E501
+
+
+        :return: The x_maxs of this InlineResponse20017Result.  # noqa: E501
+        :rtype: list[float]
+        """
+        return self._x_maxs
+
+    @x_maxs.setter
+    def x_maxs(self, x_maxs):
+        """Sets the x_maxs of this InlineResponse20017Result.
+
+
+        :param x_maxs: The x_maxs of this InlineResponse20017Result.  # noqa: E501
+        :type: list[float]
+        """
+
+        self._x_maxs = x_maxs
+
+    @property
+    def y_mins(self):
+        """Gets the y_mins of this InlineResponse20017Result.  # noqa: E501
+
+
+        :return: The y_mins of this InlineResponse20017Result.  # noqa: E501
+        :rtype: list[float]
+        """
+        return self._y_mins
+
+    @y_mins.setter
+    def y_mins(self, y_mins):
+        """Sets the y_mins of this InlineResponse20017Result.
+
+
+        :param y_mins: The y_mins of this InlineResponse20017Result.  # noqa: E501
+        :type: list[float]
+        """
+
+        self._y_mins = y_mins
+
+    @property
+    def y_maxs(self):
+        """Gets the y_maxs of this InlineResponse20017Result.  # noqa: E501
+
+
+        :return: The y_maxs of this InlineResponse20017Result.  # noqa: E501
+        :rtype: list[float]
+        """
+        return self._y_maxs
+
+    @y_maxs.setter
+    def y_maxs(self, y_maxs):
+        """Sets the y_maxs of this InlineResponse20017Result.
+
+
+        :param y_maxs: The y_maxs of this InlineResponse20017Result.  # noqa: E501
+        :type: list[float]
+        """
+
+        self._y_maxs = y_maxs
+
+    @property
+    def landmarks(self):
+        """Gets the landmarks of this InlineResponse20017Result.  # noqa: E501
+
+
+        :return: The landmarks of this InlineResponse20017Result.  # noqa: E501
+        :rtype: InlineResponse20017ResultLandmarks
+        """
+        return self._landmarks
+
+    @landmarks.setter
+    def landmarks(self, landmarks):
+        """Sets the landmarks of this InlineResponse20017Result.
+
+
+        :param landmarks: The landmarks of this InlineResponse20017Result.  # noqa: E501
+        :type: InlineResponse20017ResultLandmarks
+        """
+
+        self._landmarks = landmarks
+
+    @property
+    def emotions(self):
+        """Gets the emotions of this InlineResponse20017Result.  # noqa: E501
+
+
+        :return: The emotions of this InlineResponse20017Result.  # noqa: E501
         :rtype: object
         """
-        return self._result
+        return self._emotions
 
-    @result.setter
-    def result(self, result):
-        """Sets the result of this InlineResponse20017Result.
+    @emotions.setter
+    def emotions(self, emotions):
+        """Sets the emotions of this InlineResponse20017Result.
 
-        object  # noqa: E501
 
-        :param result: The result of this InlineResponse20017Result.  # noqa: E501
+        :param emotions: The emotions of this InlineResponse20017Result.  # noqa: E501
         :type: object
         """
 
-        self._result = result
+        self._emotions = emotions
+
+    @property
+    def poses(self):
+        """Gets the poses of this InlineResponse20017Result.  # noqa: E501
+
+
+        :return: The poses of this InlineResponse20017Result.  # noqa: E501
+        :rtype: object
+        """
+        return self._poses
+
+    @poses.setter
+    def poses(self, poses):
+        """Sets the poses of this InlineResponse20017Result.
+
+
+        :param poses: The poses of this InlineResponse20017Result.  # noqa: E501
+        :type: object
+        """
+
+        self._poses = poses
 
     def to_dict(self):
         """Returns the model properties as a dict"""

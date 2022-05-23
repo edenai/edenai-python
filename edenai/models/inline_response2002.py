@@ -33,123 +33,45 @@ class InlineResponse2002(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'job_id': 'str',
-        'status': 'str',
-        'audio_name': 'str',
-        'results': 'list[InlineResponse2002Results]'
+        'result': 'list[InlineResponse2002Result1]'
     }
 
     attribute_map = {
-        'job_id': 'job_id',
-        'status': 'status',
-        'audio_name': 'audio_name',
-        'results': 'results'
+        'result': 'result'
     }
 
-    def __init__(self, job_id=None, status=None, audio_name=None, results=None, _configuration=None):  # noqa: E501
+    def __init__(self, result=None, _configuration=None):  # noqa: E501
         """InlineResponse2002 - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
-        self._job_id = None
-        self._status = None
-        self._audio_name = None
-        self._results = None
+        self._result = None
         self.discriminator = None
 
-        if job_id is not None:
-            self.job_id = job_id
-        if status is not None:
-            self.status = status
-        if audio_name is not None:
-            self.audio_name = audio_name
-        if results is not None:
-            self.results = results
+        if result is not None:
+            self.result = result
 
     @property
-    def job_id(self):
-        """Gets the job_id of this InlineResponse2002.  # noqa: E501
+    def result(self):
+        """Gets the result of this InlineResponse2002.  # noqa: E501
 
 
-        :return: The job_id of this InlineResponse2002.  # noqa: E501
-        :rtype: str
+        :return: The result of this InlineResponse2002.  # noqa: E501
+        :rtype: list[InlineResponse2002Result1]
         """
-        return self._job_id
+        return self._result
 
-    @job_id.setter
-    def job_id(self, job_id):
-        """Sets the job_id of this InlineResponse2002.
-
-
-        :param job_id: The job_id of this InlineResponse2002.  # noqa: E501
-        :type: str
-        """
-
-        self._job_id = job_id
-
-    @property
-    def status(self):
-        """Gets the status of this InlineResponse2002.  # noqa: E501
+    @result.setter
+    def result(self, result):
+        """Sets the result of this InlineResponse2002.
 
 
-        :return: The status of this InlineResponse2002.  # noqa: E501
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this InlineResponse2002.
-
-
-        :param status: The status of this InlineResponse2002.  # noqa: E501
-        :type: str
+        :param result: The result of this InlineResponse2002.  # noqa: E501
+        :type: list[InlineResponse2002Result1]
         """
 
-        self._status = status
-
-    @property
-    def audio_name(self):
-        """Gets the audio_name of this InlineResponse2002.  # noqa: E501
-
-
-        :return: The audio_name of this InlineResponse2002.  # noqa: E501
-        :rtype: str
-        """
-        return self._audio_name
-
-    @audio_name.setter
-    def audio_name(self, audio_name):
-        """Sets the audio_name of this InlineResponse2002.
-
-
-        :param audio_name: The audio_name of this InlineResponse2002.  # noqa: E501
-        :type: str
-        """
-
-        self._audio_name = audio_name
-
-    @property
-    def results(self):
-        """Gets the results of this InlineResponse2002.  # noqa: E501
-
-
-        :return: The results of this InlineResponse2002.  # noqa: E501
-        :rtype: list[InlineResponse2002Results]
-        """
-        return self._results
-
-    @results.setter
-    def results(self, results):
-        """Sets the results of this InlineResponse2002.
-
-
-        :param results: The results of this InlineResponse2002.  # noqa: E501
-        :type: list[InlineResponse2002Results]
-        """
-
-        self._results = results
+        self._result = result
 
     def to_dict(self):
         """Returns the model properties as a dict"""
