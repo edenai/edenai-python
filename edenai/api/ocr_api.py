@@ -33,10 +33,336 @@ class OCRApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
+    def async_ocr_tables_job_ids(self, **kwargs):  # noqa: E501
+        """async_ocr_tables_job_ids  # noqa: E501
+
+        Get all past jobs ids  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.async_ocr_tables_job_ids(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: InlineResponse2001
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.async_ocr_tables_job_ids_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.async_ocr_tables_job_ids_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def async_ocr_tables_job_ids_with_http_info(self, **kwargs):  # noqa: E501
+        """async_ocr_tables_job_ids  # noqa: E501
+
+        Get all past jobs ids  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.async_ocr_tables_job_ids_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: InlineResponse2001
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method async_ocr_tables_job_ids" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/pretrained/async/ocr/tables/get_jobs', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='InlineResponse2001',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def async_ocr_tables_launch(self, language, files, providers, **kwargs):  # noqa: E501
+        """async_ocr_tables_launch  # noqa: E501
+
+        The Async OCR Table API allows customers to analyze multi-page documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `DocumentAI v1 beta3`  |**Microsoft Azure**|`microsoft`| `rest API 3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.async_ocr_tables_launch(language, files, providers, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str language: Language code expected (ex: fr-FR (French), en-US (English), es-ES (Spanish), nl-NL Dutch (Netherlands)) (required)
+        :param file files: File to analyse (required)
+        :param str providers: Provider to compare (ex: [ 'amazon', 'google']) (required)
+        :param str webhook_receiver: Webhook receiver should be a valid https URL (ex : https://your.listner.com/endpoint)
+        :param str users_webhook_parameters: Json data that consist of additional parameters that will be sent back to the webhook receiver (ex: api key for security).
+        :param bool show_original_responses: Weither or not to show the provider original response
+        :return: InlineResponse204
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.async_ocr_tables_launch_with_http_info(language, files, providers, **kwargs)  # noqa: E501
+        else:
+            (data) = self.async_ocr_tables_launch_with_http_info(language, files, providers, **kwargs)  # noqa: E501
+            return data
+
+    def async_ocr_tables_launch_with_http_info(self, language, files, providers, **kwargs):  # noqa: E501
+        """async_ocr_tables_launch  # noqa: E501
+
+        The Async OCR Table API allows customers to analyze multi-page documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `DocumentAI v1 beta3`  |**Microsoft Azure**|`microsoft`| `rest API 3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.async_ocr_tables_launch_with_http_info(language, files, providers, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str language: Language code expected (ex: fr-FR (French), en-US (English), es-ES (Spanish), nl-NL Dutch (Netherlands)) (required)
+        :param file files: File to analyse (required)
+        :param str providers: Provider to compare (ex: [ 'amazon', 'google']) (required)
+        :param str webhook_receiver: Webhook receiver should be a valid https URL (ex : https://your.listner.com/endpoint)
+        :param str users_webhook_parameters: Json data that consist of additional parameters that will be sent back to the webhook receiver (ex: api key for security).
+        :param bool show_original_responses: Weither or not to show the provider original response
+        :return: InlineResponse204
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['language', 'files', 'providers', 'webhook_receiver', 'users_webhook_parameters', 'show_original_responses']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method async_ocr_tables_launch" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'language' is set
+        if self.api_client.client_side_validation and ('language' not in params or
+                                                       params['language'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `language` when calling `async_ocr_tables_launch`")  # noqa: E501
+        # verify the required parameter 'files' is set
+        if self.api_client.client_side_validation and ('files' not in params or
+                                                       params['files'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `files` when calling `async_ocr_tables_launch`")  # noqa: E501
+        # verify the required parameter 'providers' is set
+        if self.api_client.client_side_validation and ('providers' not in params or
+                                                       params['providers'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `providers` when calling `async_ocr_tables_launch`")  # noqa: E501
+
+        if self.api_client.client_side_validation and ('language' in params and
+                                                       len(params['language']) < 1):
+            raise ValueError("Invalid value for parameter `language` when calling `async_ocr_tables_launch`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('providers' in params and
+                                                       len(params['providers']) < 1):
+            raise ValueError("Invalid value for parameter `providers` when calling `async_ocr_tables_launch`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('webhook_receiver' in params and
+                                                       len(params['webhook_receiver']) < 1):
+            raise ValueError("Invalid value for parameter `webhook_receiver` when calling `async_ocr_tables_launch`, length must be greater than or equal to `1`")  # noqa: E501
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+        if 'language' in params:
+            form_params.append(('language', params['language']))  # noqa: E501
+        if 'files' in params:
+            local_var_files['files'] = params['files']  # noqa: E501
+        if 'providers' in params:
+            form_params.append(('providers', params['providers']))  # noqa: E501
+        if 'webhook_receiver' in params:
+            form_params.append(('webhook_receiver', params['webhook_receiver']))  # noqa: E501
+        if 'users_webhook_parameters' in params:
+            form_params.append(('users_webhook_parameters', params['users_webhook_parameters']))  # noqa: E501
+        if 'show_original_responses' in params:
+            form_params.append(('show_original_responses', params['show_original_responses']))  # noqa: E501
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/pretrained/async/ocr/tables/launch_job', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='InlineResponse204',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def async_ocr_tables_results(self, public_id, **kwargs):  # noqa: E501
+        """async_ocr_tables_results  # noqa: E501
+
+        Get the status, or result of your async job  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.async_ocr_tables_results(public_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str public_id: (required)
+        :return: InlineResponse2002
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.async_ocr_tables_results_with_http_info(public_id, **kwargs)  # noqa: E501
+        else:
+            (data) = self.async_ocr_tables_results_with_http_info(public_id, **kwargs)  # noqa: E501
+            return data
+
+    def async_ocr_tables_results_with_http_info(self, public_id, **kwargs):  # noqa: E501
+        """async_ocr_tables_results  # noqa: E501
+
+        Get the status, or result of your async job  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.async_ocr_tables_results_with_http_info(public_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str public_id: (required)
+        :return: InlineResponse2002
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['public_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method async_ocr_tables_results" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'public_id' is set
+        if self.api_client.client_side_validation and ('public_id' not in params or
+                                                       params['public_id'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `public_id` when calling `async_ocr_tables_results`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'public_id' in params:
+            path_params['public_id'] = params['public_id']  # noqa: E501
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/pretrained/async/ocr/tables/get_results/{public_id}', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='InlineResponse2002',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def ocr(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr  # noqa: E501
 
-        Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Arabic**|`string`|`ar-XA`| |**Chinese - Simplified**|`string`|`zh-CN`| |**Chinese - Traditional**|`string`|`zh-TW`| |**Czech**|`string`|`cz-CZ`| |**Danish**|`string`|`da-DK`| |**Dutch**|`string`|`nl-NL`| |**English**|`string`|`en-US`| |**Finnish**|`string`|`fn-FN`| |**French**|`string`|`fr-FR`| |**German**|`string`|`de-DE`| |**Greek**|`string`|`gr-GR`| |**Hungarian**|`string`|`hu-HU`| |**Italian**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Korean**|`string`|`ko-KR`| |**Polish**|`string`|`pl-PO`| |**Portuguese**|`string`|`pt-PT`| |**Russian**|`string`|`ru-RU`| |**Swedish**|`string`|`sw-SW`| |**Spanish**|`string`|`es-ES`| |**Turkish**|`string`|`tr-TR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Swedish**|`string`|`sw-SW`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Greek**|`string`|`gr-GR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Japanese**|`string`|`ja-JP`| |**Polish**|`string`|`pl-PO`| |**Hungarian**|`string`|`hu-HU`| |**Arabic**|`string`|`ar-XA`| |**Finnish**|`string`|`fn-FN`| |**Czech**|`string`|`cz-CZ`| |**Korean**|`string`|`ko-KR`| |**Russian**|`string`|`ru-RU`| |**Danish**|`string`|`da-DK`| |**Chinese-Simplified**|`string`|`zh-CN`| |**French**|`string`|`fr-FR`| |**Turkish**|`string`|`tr-TR`| |**Chinese-Traditional**|`string`|`zh-TW`| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `v1`  |**Microsoft Azure**|`microsoft`| `v3.2`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Tesseract**|`tesseract`| `latest`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr(files, providers, language, async_req=True)
@@ -46,7 +372,7 @@ class OCRApi(object):
         :param file files: File to analyse (ex: pdf, jpg, jpeg, png, tiff) (required)
         :param str providers: Providers to compare (ex: [ 'amazon', 'microsoft', 'ibm', 'google']) (required)
         :param str language: Language code expected (ex: fr-FR) (required)
-        :return: InlineResponse2003
+        :return: InlineResponse2005
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -60,7 +386,7 @@ class OCRApi(object):
     def ocr_with_http_info(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr  # noqa: E501
 
-        Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Arabic**|`string`|`ar-XA`| |**Chinese - Simplified**|`string`|`zh-CN`| |**Chinese - Traditional**|`string`|`zh-TW`| |**Czech**|`string`|`cz-CZ`| |**Danish**|`string`|`da-DK`| |**Dutch**|`string`|`nl-NL`| |**English**|`string`|`en-US`| |**Finnish**|`string`|`fn-FN`| |**French**|`string`|`fr-FR`| |**German**|`string`|`de-DE`| |**Greek**|`string`|`gr-GR`| |**Hungarian**|`string`|`hu-HU`| |**Italian**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Korean**|`string`|`ko-KR`| |**Polish**|`string`|`pl-PO`| |**Portuguese**|`string`|`pt-PT`| |**Russian**|`string`|`ru-RU`| |**Swedish**|`string`|`sw-SW`| |**Spanish**|`string`|`es-ES`| |**Turkish**|`string`|`tr-TR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Optical Character Recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Swedish**|`string`|`sw-SW`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Greek**|`string`|`gr-GR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Japanese**|`string`|`ja-JP`| |**Polish**|`string`|`pl-PO`| |**Hungarian**|`string`|`hu-HU`| |**Arabic**|`string`|`ar-XA`| |**Finnish**|`string`|`fn-FN`| |**Czech**|`string`|`cz-CZ`| |**Korean**|`string`|`ko-KR`| |**Russian**|`string`|`ru-RU`| |**Danish**|`string`|`da-DK`| |**Chinese-Simplified**|`string`|`zh-CN`| |**French**|`string`|`fr-FR`| |**Turkish**|`string`|`tr-TR`| |**Chinese-Traditional**|`string`|`zh-TW`| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `v1`  |**Microsoft Azure**|`microsoft`| `v3.2`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Tesseract**|`tesseract`| `latest`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr_with_http_info(files, providers, language, async_req=True)
@@ -70,7 +396,7 @@ class OCRApi(object):
         :param file files: File to analyse (ex: pdf, jpg, jpeg, png, tiff) (required)
         :param str providers: Providers to compare (ex: [ 'amazon', 'microsoft', 'ibm', 'google']) (required)
         :param str language: Language code expected (ex: fr-FR) (required)
-        :return: InlineResponse2003
+        :return: InlineResponse2005
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -146,7 +472,7 @@ class OCRApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2003',  # noqa: E501
+            response_type='InlineResponse2005',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -157,7 +483,7 @@ class OCRApi(object):
     def ocr_invoice(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr_invoice  # noqa: E501
 
-        The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Danish**|`string`|`da-DK`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Mindee**|`mindee`| `v2`  |**Dataleon**|`dataleon`| `v3.1.0`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr_invoice(files, providers, language, async_req=True)
@@ -167,7 +493,7 @@ class OCRApi(object):
         :param file files: File Image to analyse (ex: pdf, jpg, jpeg, png) (required)
         :param str providers: Provider to compare (ex: [ 'mindee', 'microsoft']) (required)
         :param str language: Language code of invoice (ex: fr-FR (French), en-US (English), es-ES (Spanish)) (required)
-        :return: InlineResponse2004
+        :return: InlineResponse2006
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -181,7 +507,7 @@ class OCRApi(object):
     def ocr_invoice_with_http_info(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr_invoice  # noqa: E501
 
-        The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        The OCR Invoice API enables customers to take invoices in a variety of formats and return structured data to automate the invoice processing.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Danish**|`string`|`da-DK`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Mindee**|`mindee`| `v2`  |**Dataleon**|`dataleon`| `v3.1.0`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr_invoice_with_http_info(files, providers, language, async_req=True)
@@ -191,7 +517,7 @@ class OCRApi(object):
         :param file files: File Image to analyse (ex: pdf, jpg, jpeg, png) (required)
         :param str providers: Provider to compare (ex: [ 'mindee', 'microsoft']) (required)
         :param str language: Language code of invoice (ex: fr-FR (French), en-US (English), es-ES (Spanish)) (required)
-        :return: InlineResponse2004
+        :return: InlineResponse2006
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -267,7 +593,7 @@ class OCRApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2004',  # noqa: E501
+            response_type='InlineResponse2006',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -278,7 +604,7 @@ class OCRApi(object):
     def ocr_tables(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr_tables  # noqa: E501
 
-        The OCR Table API allows customers to analyze documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**German**|`string`|`de-DE`| |**Italian**|`string`|`it-IT`| |**Portuguese**|`string`|`pt-PT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        The OCR Table API allows customers to analyze documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `DocumentAI v1 beta3`  |**Microsoft Azure**|`microsoft`| `rest API 3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr_tables(files, providers, language, async_req=True)
@@ -288,7 +614,7 @@ class OCRApi(object):
         :param file files: File to analyse (ex: pdf, jpg, jpeg, png, tiff) (required)
         :param str providers: Providers to compare (ex: [ 'amazon', 'microsoft', 'google']) (required)
         :param str language: Language code expected (ex: fr-FR) (required)
-        :return: InlineResponse2004
+        :return: InlineResponse2006
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -302,7 +628,7 @@ class OCRApi(object):
     def ocr_tables_with_http_info(self, files, providers, language, **kwargs):  # noqa: E501
         """ocr_tables  # noqa: E501
 
-        The OCR Table API allows customers to analyze documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**German**|`string`|`de-DE`| |**Italian**|`string`|`it-IT`| |**Portuguese**|`string`|`pt-PT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        The OCR Table API allows customers to analyze documents containing tables and return structured representation of said tables in the form of a Json object  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Google Cloud**|`google`| `DocumentAI v1 beta3`  |**Microsoft Azure**|`microsoft`| `rest API 3.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.ocr_tables_with_http_info(files, providers, language, async_req=True)
@@ -312,7 +638,7 @@ class OCRApi(object):
         :param file files: File to analyse (ex: pdf, jpg, jpeg, png, tiff) (required)
         :param str providers: Providers to compare (ex: [ 'amazon', 'microsoft', 'google']) (required)
         :param str language: Language code expected (ex: fr-FR) (required)
-        :return: InlineResponse2004
+        :return: InlineResponse2006
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -388,7 +714,7 @@ class OCRApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2004',  # noqa: E501
+            response_type='InlineResponse2006',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

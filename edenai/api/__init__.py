@@ -11,3 +11,4 @@ from edenai.api.speech_api import SpeechApi
 from edenai.api.text_api import TextApi
 from edenai.api.translation_api import TranslationApi
 from edenai.api.vision_api import VisionApi
+from edenai.api.pretrained_api import PretrainedApi

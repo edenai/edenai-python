@@ -34,48 +34,28 @@ class InlineResponse2006Result(object):
     """
     swagger_types = {
         'text': 'str',
-        'entities': 'list[str]',
-        'importances': 'list[float]',
-        'categories': 'list[str]',
-        'urls': 'list[str]',
-        'classifications': 'list[object]'
+        'results': 'list[InlineResponse2006Results]'
     }
 
     attribute_map = {
         'text': 'text',
-        'entities': 'entities',
-        'importances': 'importances',
-        'categories': 'categories',
-        'urls': 'urls',
-        'classifications': 'classifications'
+        'results': 'results'
     }
 
-    def __init__(self, text=None, entities=None, importances=None, categories=None, urls=None, classifications=None, _configuration=None):  # noqa: E501
+    def __init__(self, text=None, results=None, _configuration=None):  # noqa: E501
         """InlineResponse2006Result - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
         self._text = None
-        self._entities = None
-        self._importances = None
-        self._categories = None
-        self._urls = None
-        self._classifications = None
+        self._results = None
         self.discriminator = None
 
         if text is not None:
             self.text = text
-        if entities is not None:
-            self.entities = entities
-        if importances is not None:
-            self.importances = importances
-        if categories is not None:
-            self.categories = categories
-        if urls is not None:
-            self.urls = urls
-        if classifications is not None:
-            self.classifications = classifications
+        if results is not None:
+            self.results = results
 
     @property
     def text(self):
@@ -99,109 +79,25 @@ class InlineResponse2006Result(object):
         self._text = text
 
     @property
-    def entities(self):
-        """Gets the entities of this InlineResponse2006Result.  # noqa: E501
+    def results(self):
+        """Gets the results of this InlineResponse2006Result.  # noqa: E501
 
 
-        :return: The entities of this InlineResponse2006Result.  # noqa: E501
-        :rtype: list[str]
+        :return: The results of this InlineResponse2006Result.  # noqa: E501
+        :rtype: list[InlineResponse2006Results]
         """
-        return self._entities
+        return self._results
 
-    @entities.setter
-    def entities(self, entities):
-        """Sets the entities of this InlineResponse2006Result.
-
-
-        :param entities: The entities of this InlineResponse2006Result.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._entities = entities
-
-    @property
-    def importances(self):
-        """Gets the importances of this InlineResponse2006Result.  # noqa: E501
+    @results.setter
+    def results(self, results):
+        """Sets the results of this InlineResponse2006Result.
 
 
-        :return: The importances of this InlineResponse2006Result.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._importances
-
-    @importances.setter
-    def importances(self, importances):
-        """Sets the importances of this InlineResponse2006Result.
-
-
-        :param importances: The importances of this InlineResponse2006Result.  # noqa: E501
-        :type: list[float]
+        :param results: The results of this InlineResponse2006Result.  # noqa: E501
+        :type: list[InlineResponse2006Results]
         """
 
-        self._importances = importances
-
-    @property
-    def categories(self):
-        """Gets the categories of this InlineResponse2006Result.  # noqa: E501
-
-
-        :return: The categories of this InlineResponse2006Result.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._categories
-
-    @categories.setter
-    def categories(self, categories):
-        """Sets the categories of this InlineResponse2006Result.
-
-
-        :param categories: The categories of this InlineResponse2006Result.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._categories = categories
-
-    @property
-    def urls(self):
-        """Gets the urls of this InlineResponse2006Result.  # noqa: E501
-
-
-        :return: The urls of this InlineResponse2006Result.  # noqa: E501
-        :rtype: list[str]
-        """
-        return self._urls
-
-    @urls.setter
-    def urls(self, urls):
-        """Sets the urls of this InlineResponse2006Result.
-
-
-        :param urls: The urls of this InlineResponse2006Result.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._urls = urls
-
-    @property
-    def classifications(self):
-        """Gets the classifications of this InlineResponse2006Result.  # noqa: E501
-
-
-        :return: The classifications of this InlineResponse2006Result.  # noqa: E501
-        :rtype: list[object]
-        """
-        return self._classifications
-
-    @classifications.setter
-    def classifications(self, classifications):
-        """Sets the classifications of this InlineResponse2006Result.
-
-
-        :param classifications: The classifications of this InlineResponse2006Result.  # noqa: E501
-        :type: list[object]
-        """
-
-        self._classifications = classifications
+        self._results = results
 
     def to_dict(self):
         """Returns the model properties as a dict"""

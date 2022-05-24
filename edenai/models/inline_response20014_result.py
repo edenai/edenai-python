@@ -33,99 +33,97 @@ class InlineResponse20014Result(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'status': 'str',
-        'execution_time': 'float',
-        'result': 'object'
+        'source_language': 'str',
+        'target_language': 'str',
+        'translated_text': 'str'
     }
 
     attribute_map = {
-        'status': 'status',
-        'execution_time': 'execution_time',
-        'result': 'result'
+        'source_language': 'source_language',
+        'target_language': 'target_language',
+        'translated_text': 'translated_text'
     }
 
-    def __init__(self, status=None, execution_time=None, result=None, _configuration=None):  # noqa: E501
+    def __init__(self, source_language=None, target_language=None, translated_text=None, _configuration=None):  # noqa: E501
         """InlineResponse20014Result - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
-        self._status = None
-        self._execution_time = None
-        self._result = None
+        self._source_language = None
+        self._target_language = None
+        self._translated_text = None
         self.discriminator = None
 
-        if status is not None:
-            self.status = status
-        if execution_time is not None:
-            self.execution_time = execution_time
-        if result is not None:
-            self.result = result
+        if source_language is not None:
+            self.source_language = source_language
+        if target_language is not None:
+            self.target_language = target_language
+        if translated_text is not None:
+            self.translated_text = translated_text
 
     @property
-    def status(self):
-        """Gets the status of this InlineResponse20014Result.  # noqa: E501
+    def source_language(self):
+        """Gets the source_language of this InlineResponse20014Result.  # noqa: E501
 
 
-        :return: The status of this InlineResponse20014Result.  # noqa: E501
+        :return: The source_language of this InlineResponse20014Result.  # noqa: E501
         :rtype: str
         """
-        return self._status
+        return self._source_language
 
-    @status.setter
-    def status(self, status):
-        """Sets the status of this InlineResponse20014Result.
+    @source_language.setter
+    def source_language(self, source_language):
+        """Sets the source_language of this InlineResponse20014Result.
 
 
-        :param status: The status of this InlineResponse20014Result.  # noqa: E501
+        :param source_language: The source_language of this InlineResponse20014Result.  # noqa: E501
         :type: str
         """
 
-        self._status = status
+        self._source_language = source_language
 
     @property
-    def execution_time(self):
-        """Gets the execution_time of this InlineResponse20014Result.  # noqa: E501
+    def target_language(self):
+        """Gets the target_language of this InlineResponse20014Result.  # noqa: E501
 
 
-        :return: The execution_time of this InlineResponse20014Result.  # noqa: E501
-        :rtype: float
+        :return: The target_language of this InlineResponse20014Result.  # noqa: E501
+        :rtype: str
         """
-        return self._execution_time
+        return self._target_language
 
-    @execution_time.setter
-    def execution_time(self, execution_time):
-        """Sets the execution_time of this InlineResponse20014Result.
+    @target_language.setter
+    def target_language(self, target_language):
+        """Sets the target_language of this InlineResponse20014Result.
 
 
-        :param execution_time: The execution_time of this InlineResponse20014Result.  # noqa: E501
-        :type: float
+        :param target_language: The target_language of this InlineResponse20014Result.  # noqa: E501
+        :type: str
         """
 
-        self._execution_time = execution_time
+        self._target_language = target_language
 
     @property
-    def result(self):
-        """Gets the result of this InlineResponse20014Result.  # noqa: E501
+    def translated_text(self):
+        """Gets the translated_text of this InlineResponse20014Result.  # noqa: E501
 
-        object  # noqa: E501
 
-        :return: The result of this InlineResponse20014Result.  # noqa: E501
-        :rtype: object
+        :return: The translated_text of this InlineResponse20014Result.  # noqa: E501
+        :rtype: str
         """
-        return self._result
+        return self._translated_text
 
-    @result.setter
-    def result(self, result):
-        """Sets the result of this InlineResponse20014Result.
+    @translated_text.setter
+    def translated_text(self, translated_text):
+        """Sets the translated_text of this InlineResponse20014Result.
 
-        object  # noqa: E501
 
-        :param result: The result of this InlineResponse20014Result.  # noqa: E501
-        :type: object
+        :param translated_text: The translated_text of this InlineResponse20014Result.  # noqa: E501
+        :type: str
         """
 
-        self._result = result
+        self._translated_text = translated_text
 
     def to_dict(self):
         """Returns the model properties as a dict"""
