@@ -51,6 +51,20 @@ class TestOCRApi(unittest.TestCase):
             language="en-US",
             files=PDF_FILE)
         assert result != None
+    
+    def test_ocr_tables(self):
+        result = self.api.ocr_tables(
+            providers=["amazon"],
+            language="en-US",
+            files=PDF_FILE)
+        assert result != None
+    
+    def test_ocr_tables_async(self):
+        result = self.api.async_ocr_tables_launch(
+            providers=["microsoft"],
+            language="en-US",
+            files=PDF_FILE)
+        assert result != None
 
 
 if __name__ == '__main__':

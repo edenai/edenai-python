@@ -40,8 +40,6 @@ class TestVisionApi(unittest.TestCase):
             providers=["google", "amazon"],
             files=IMAGE_1)
 
-        print(result)
-
         assert result != None
 
     def test_face_detection(self):
@@ -51,7 +49,6 @@ class TestVisionApi(unittest.TestCase):
             providers=["google"],
             files=IMAGE_1)
 
-        print(result)
         assert result != None
 
     def test_object_detection(self):
@@ -60,7 +57,6 @@ class TestVisionApi(unittest.TestCase):
             providers=["google", "amazon"],
             files=IMAGE_1)
 
-        print(result)
         assert result != None
 
 

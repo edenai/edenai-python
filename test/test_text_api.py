@@ -74,6 +74,32 @@ class TestTextApi(unittest.TestCase):
             providers=["google"],
             language="en-US")
         assert result != None
+    
+    def test_text_summarization(self):
+        result = self.api.text_summarization(
+            text="Washington, D.C., formally the District of Columbia, also known as just Washington or just D.C., is the capital city and only federal district of the United States. It is located on the east bank of the Potomac River, which forms its southwestern and southern border with the U.S. state of Virginia, and shares a land border with the U.S. state of Maryland on its remaining sides. The city was named for George Washington, a Founding Father and the first president of the United States, and the federal district is named after Columbia, a female personification of the nation. As the seat of the U.S. federal government and several international organizations, the city is an important world political capital. It is one of the most visited cities in the U.S., seeing over 20 million visitors in 2016.",
+            providers=["openai_ada", "openai_davinci"]
+        )
+        assert result != None
+    
+    def test_search(self):
+        result = self.api.search(
+            texts=["Hello World", "Goodbye Mars"],
+            query="Earth",
+            providers=["openai_ada", "openai_davinci"]
+        )
+        assert result != None
+    
+    def test_question_answering(self):
+        result = self.api.question_answering(
+            texts =["List of texts"],
+            question="What kind of list ?",
+            providers=["openai_ada", "openai_davinci"],
+            examples_context="In 2017, U.S life expectancy was 78.6 years.",
+            examples=[["What is human life expectancy in the United States?", "78 years"]],
+            temperature=0.7
+        )
+        assert result != None
 
 
 if __name__ == '__main__':
