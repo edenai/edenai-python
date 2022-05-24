@@ -42,7 +42,15 @@ class TestSpeechApi(unittest.TestCase):
             providers=["google"],
             language="en-US")
 
-        print(result)
+        assert result != None
+    
+    def test_speech_recognition_async(self):
+        result = self.api.async_speech_to_text(
+
+            files=AUDIO_FILE,
+            providers=["google"],
+            language="en-US")
+
         assert result != None
 
     def test_text_to_speech(self):
