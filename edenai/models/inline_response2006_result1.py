@@ -38,7 +38,7 @@ class InlineResponse2006Result1(object):
         'status': 'str',
         'execution_time': 'float',
         'original_result': 'object',
-        'result': 'InlineResponse2006Result'
+        'result': 'list[InlineResponse2006Result]'
     }
 
     attribute_map = {
@@ -186,9 +186,10 @@ class InlineResponse2006Result1(object):
     def result(self):
         """Gets the result of this InlineResponse2006Result1.  # noqa: E501
 
+        array  # noqa: E501
 
         :return: The result of this InlineResponse2006Result1.  # noqa: E501
-        :rtype: InlineResponse2006Result
+        :rtype: list[InlineResponse2006Result]
         """
         return self._result
 
@@ -196,9 +197,10 @@ class InlineResponse2006Result1(object):
     def result(self, result):
         """Sets the result of this InlineResponse2006Result1.
 
+        array  # noqa: E501
 
         :param result: The result of this InlineResponse2006Result1.  # noqa: E501
-        :type: InlineResponse2006Result
+        :type: list[InlineResponse2006Result]
         """
 
         self._result = result

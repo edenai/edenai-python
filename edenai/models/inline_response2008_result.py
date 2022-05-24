@@ -34,48 +34,48 @@ class InlineResponse2008Result(object):
     """
     swagger_types = {
         'text': 'str',
-        'keywords': 'list[str]',
+        'entities': 'list[str]',
         'importances': 'list[float]',
-        'tags': 'list[str]',
-        'lemmas': 'list[str]',
-        'others': 'list[object]'
+        'categories': 'list[str]',
+        'urls': 'list[str]',
+        'classifications': 'list[object]'
     }
 
     attribute_map = {
         'text': 'text',
-        'keywords': 'keywords',
+        'entities': 'entities',
         'importances': 'importances',
-        'tags': 'tags',
-        'lemmas': 'lemmas',
-        'others': 'others'
+        'categories': 'categories',
+        'urls': 'urls',
+        'classifications': 'classifications'
     }
 
-    def __init__(self, text=None, keywords=None, importances=None, tags=None, lemmas=None, others=None, _configuration=None):  # noqa: E501
+    def __init__(self, text=None, entities=None, importances=None, categories=None, urls=None, classifications=None, _configuration=None):  # noqa: E501
         """InlineResponse2008Result - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
         self._text = None
-        self._keywords = None
+        self._entities = None
         self._importances = None
-        self._tags = None
-        self._lemmas = None
-        self._others = None
+        self._categories = None
+        self._urls = None
+        self._classifications = None
         self.discriminator = None
 
         if text is not None:
             self.text = text
-        if keywords is not None:
-            self.keywords = keywords
+        if entities is not None:
+            self.entities = entities
         if importances is not None:
             self.importances = importances
-        if tags is not None:
-            self.tags = tags
-        if lemmas is not None:
-            self.lemmas = lemmas
-        if others is not None:
-            self.others = others
+        if categories is not None:
+            self.categories = categories
+        if urls is not None:
+            self.urls = urls
+        if classifications is not None:
+            self.classifications = classifications
 
     @property
     def text(self):
@@ -99,25 +99,25 @@ class InlineResponse2008Result(object):
         self._text = text
 
     @property
-    def keywords(self):
-        """Gets the keywords of this InlineResponse2008Result.  # noqa: E501
+    def entities(self):
+        """Gets the entities of this InlineResponse2008Result.  # noqa: E501
 
 
-        :return: The keywords of this InlineResponse2008Result.  # noqa: E501
+        :return: The entities of this InlineResponse2008Result.  # noqa: E501
         :rtype: list[str]
         """
-        return self._keywords
+        return self._entities
 
-    @keywords.setter
-    def keywords(self, keywords):
-        """Sets the keywords of this InlineResponse2008Result.
+    @entities.setter
+    def entities(self, entities):
+        """Sets the entities of this InlineResponse2008Result.
 
 
-        :param keywords: The keywords of this InlineResponse2008Result.  # noqa: E501
+        :param entities: The entities of this InlineResponse2008Result.  # noqa: E501
         :type: list[str]
         """
 
-        self._keywords = keywords
+        self._entities = entities
 
     @property
     def importances(self):
@@ -141,67 +141,67 @@ class InlineResponse2008Result(object):
         self._importances = importances
 
     @property
-    def tags(self):
-        """Gets the tags of this InlineResponse2008Result.  # noqa: E501
+    def categories(self):
+        """Gets the categories of this InlineResponse2008Result.  # noqa: E501
 
 
-        :return: The tags of this InlineResponse2008Result.  # noqa: E501
+        :return: The categories of this InlineResponse2008Result.  # noqa: E501
         :rtype: list[str]
         """
-        return self._tags
+        return self._categories
 
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this InlineResponse2008Result.
+    @categories.setter
+    def categories(self, categories):
+        """Sets the categories of this InlineResponse2008Result.
 
 
-        :param tags: The tags of this InlineResponse2008Result.  # noqa: E501
+        :param categories: The categories of this InlineResponse2008Result.  # noqa: E501
         :type: list[str]
         """
 
-        self._tags = tags
+        self._categories = categories
 
     @property
-    def lemmas(self):
-        """Gets the lemmas of this InlineResponse2008Result.  # noqa: E501
+    def urls(self):
+        """Gets the urls of this InlineResponse2008Result.  # noqa: E501
 
 
-        :return: The lemmas of this InlineResponse2008Result.  # noqa: E501
+        :return: The urls of this InlineResponse2008Result.  # noqa: E501
         :rtype: list[str]
         """
-        return self._lemmas
+        return self._urls
 
-    @lemmas.setter
-    def lemmas(self, lemmas):
-        """Sets the lemmas of this InlineResponse2008Result.
+    @urls.setter
+    def urls(self, urls):
+        """Sets the urls of this InlineResponse2008Result.
 
 
-        :param lemmas: The lemmas of this InlineResponse2008Result.  # noqa: E501
+        :param urls: The urls of this InlineResponse2008Result.  # noqa: E501
         :type: list[str]
         """
 
-        self._lemmas = lemmas
+        self._urls = urls
 
     @property
-    def others(self):
-        """Gets the others of this InlineResponse2008Result.  # noqa: E501
+    def classifications(self):
+        """Gets the classifications of this InlineResponse2008Result.  # noqa: E501
 
 
-        :return: The others of this InlineResponse2008Result.  # noqa: E501
+        :return: The classifications of this InlineResponse2008Result.  # noqa: E501
         :rtype: list[object]
         """
-        return self._others
+        return self._classifications
 
-    @others.setter
-    def others(self, others):
-        """Sets the others of this InlineResponse2008Result.
+    @classifications.setter
+    def classifications(self, classifications):
+        """Sets the classifications of this InlineResponse2008Result.
 
 
-        :param others: The others of this InlineResponse2008Result.  # noqa: E501
+        :param classifications: The classifications of this InlineResponse2008Result.  # noqa: E501
         :type: list[object]
         """
 
-        self._others = others
+        self._classifications = classifications
 
     def to_dict(self):
         """Returns the model properties as a dict"""

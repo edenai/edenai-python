@@ -36,7 +36,7 @@ class SpeechApi(object):
     def async_speech_to_text(self, language, files, providers, **kwargs):  # noqa: E501
         """async_speech_to_text  # noqa: E501
 
-        Speech recognition is technology that can recognize spoken words, which can then be converted to text. This endpoint allows you to launch asynchronous speech recognition jobs.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English (US)**|`string`|`en-US`| |**English (GB)**|`string`|`en-GB`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Russian**|`string`|`ru-RU`| |**Arabic**|`string`|`ar-SA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Portuguese**|`string`|`pt-PT`| |**Turkish**|`string`|`tr-TR`| |**Indonesian**|`string`|`id-ID`| |**Malay**|`string`|`ms-MY`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Speech recognition is technology that can recognize spoken words, which can then be converted to text. This endpoint allows you to launch asynchronous speech recognition jobs.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Russian**|`string`|`ru-RU`| |**German**|`string`|`de-DE`| |**Malay**|`string`|`ms-MY`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**English (GB)**|`string`|`en-GB`| |**Arabic (Saudi Arabia)**|`string`|`ar-SA`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Turkish**|`string`|`tr-TR`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Indonesian**|`string`|`id-ID`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Deepgram**|`deepgram`| `v1`  |**IBM Watson**|`ibm`| `v1`  |**Speechmatics**|`speechmatics`| `2.7.0`  |**Microsoft Azure**|`microsoft`| `v1.0`  |**Google Cloud**|`google`| `v1p1beta1`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.async_speech_to_text(language, files, providers, async_req=True)
@@ -49,7 +49,7 @@ class SpeechApi(object):
         :param str webhook_receiver: Webhook reciever should be a valid https URL (ex : https://your.listner.com/endpoint)
         :param str users_webhook_parameters: Json data that consist of additional parameters that will be sent back to the webhook receiver (ex: api key for security).                    **NOTE : The data will be returned back as a string that should be decoded into a json object!**
         :param str vocab: Speechmatics allows to add a custom vocab dictionnary (json format) for better recognition, you can add it via this parameter.                     It has to be a list of dictionaries : {'content'(Required) : 'string', 'sounds_like'(Optional) : 'list of strings'}
-        :return: InlineResponse2001
+        :return: InlineResponse2003
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class SpeechApi(object):
     def async_speech_to_text_with_http_info(self, language, files, providers, **kwargs):  # noqa: E501
         """async_speech_to_text  # noqa: E501
 
-        Speech recognition is technology that can recognize spoken words, which can then be converted to text. This endpoint allows you to launch asynchronous speech recognition jobs.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English (US)**|`string`|`en-US`| |**English (GB)**|`string`|`en-GB`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Russian**|`string`|`ru-RU`| |**Arabic**|`string`|`ar-SA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Portuguese**|`string`|`pt-PT`| |**Turkish**|`string`|`tr-TR`| |**Indonesian**|`string`|`id-ID`| |**Malay**|`string`|`ms-MY`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Speech recognition is technology that can recognize spoken words, which can then be converted to text. This endpoint allows you to launch asynchronous speech recognition jobs.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Russian**|`string`|`ru-RU`| |**German**|`string`|`de-DE`| |**Malay**|`string`|`ms-MY`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**English (GB)**|`string`|`en-GB`| |**Arabic (Saudi Arabia)**|`string`|`ar-SA`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Turkish**|`string`|`tr-TR`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Indonesian**|`string`|`id-ID`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Deepgram**|`deepgram`| `v1`  |**IBM Watson**|`ibm`| `v1`  |**Speechmatics**|`speechmatics`| `2.7.0`  |**Microsoft Azure**|`microsoft`| `v1.0`  |**Google Cloud**|`google`| `v1p1beta1`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.async_speech_to_text_with_http_info(language, files, providers, async_req=True)
@@ -76,7 +76,7 @@ class SpeechApi(object):
         :param str webhook_receiver: Webhook reciever should be a valid https URL (ex : https://your.listner.com/endpoint)
         :param str users_webhook_parameters: Json data that consist of additional parameters that will be sent back to the webhook receiver (ex: api key for security).                    **NOTE : The data will be returned back as a string that should be decoded into a json object!**
         :param str vocab: Speechmatics allows to add a custom vocab dictionnary (json format) for better recognition, you can add it via this parameter.                     It has to be a list of dictionaries : {'content'(Required) : 'string', 'sounds_like'(Optional) : 'list of strings'}
-        :return: InlineResponse2001
+        :return: InlineResponse2003
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -170,7 +170,7 @@ class SpeechApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='InlineResponse2003',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -189,7 +189,7 @@ class SpeechApi(object):
 
         :param async_req bool
         :param str job_id: (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2004
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -211,7 +211,7 @@ class SpeechApi(object):
 
         :param async_req bool
         :param str job_id: (required)
-        :return: InlineResponse2002
+        :return: InlineResponse2004
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -269,7 +269,7 @@ class SpeechApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2002',  # noqa: E501
+            response_type='InlineResponse2004',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -280,7 +280,7 @@ class SpeechApi(object):
     def speech_to_text(self, language, files, providers, **kwargs):  # noqa: E501
         """speech_to_text  # noqa: E501
 
-        Speech recognition is technology that can recognize spoken words, which can then be converted to text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English (US)**|`string`|`en-US`| |**English (GB)**|`string`|`en-GB`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Russian**|`string`|`ru-RU`| |**Arabic**|`string`|`ar-SA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Portuguese**|`string`|`pt-PT`| |**Turkish**|`string`|`tr-TR`| |**Indonesian**|`string`|`id-ID`| |**Malay**|`string`|`ms-MY`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Speech recognition is technology that can recognize spoken words, which can then be converted to text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Russian**|`string`|`ru-RU`| |**German**|`string`|`de-DE`| |**Malay**|`string`|`ms-MY`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**English (GB)**|`string`|`en-GB`| |**Arabic (Saudi Arabia)**|`string`|`ar-SA`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Turkish**|`string`|`tr-TR`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Indonesian**|`string`|`id-ID`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Deepgram**|`deepgram`| `v1`  |**IBM Watson**|`ibm`| `v1`  |**Speechmatics**|`speechmatics`| `2.7.0`  |**Microsoft Azure**|`microsoft`| `v1.0`  |**Google Cloud**|`google`| `v1p1beta1`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.speech_to_text(language, files, providers, async_req=True)
@@ -305,7 +305,7 @@ class SpeechApi(object):
     def speech_to_text_with_http_info(self, language, files, providers, **kwargs):  # noqa: E501
         """speech_to_text  # noqa: E501
 
-        Speech recognition is technology that can recognize spoken words, which can then be converted to text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English (US)**|`string`|`en-US`| |**English (GB)**|`string`|`en-GB`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Japanese**|`string`|`ja-JP`| |**Russian**|`string`|`ru-RU`| |**Arabic**|`string`|`ar-SA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Portuguese**|`string`|`pt-PT`| |**Turkish**|`string`|`tr-TR`| |**Indonesian**|`string`|`id-ID`| |**Malay**|`string`|`ms-MY`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Speech recognition is technology that can recognize spoken words, which can then be converted to text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Russian**|`string`|`ru-RU`| |**German**|`string`|`de-DE`| |**Malay**|`string`|`ms-MY`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**English (GB)**|`string`|`en-GB`| |**Arabic (Saudi Arabia)**|`string`|`ar-SA`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Turkish**|`string`|`tr-TR`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`| |**Indonesian**|`string`|`id-ID`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Deepgram**|`deepgram`| `v1`  |**IBM Watson**|`ibm`| `v1`  |**Speechmatics**|`speechmatics`| `2.7.0`  |**Microsoft Azure**|`microsoft`| `v1.0`  |**Google Cloud**|`google`| `v1p1beta1`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.speech_to_text_with_http_info(language, files, providers, async_req=True)
@@ -411,7 +411,7 @@ class SpeechApi(object):
     def text_to_speech(self, text, language, option, providers, **kwargs):  # noqa: E501
         """text_to_speech  # noqa: E501
 
-        Text-to-speech (TTS) system converts normal language text into speech.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Arabic**|`string`|`ar-XA`| |**Chinese**|`string`|`cmn-CN`| |**Danish**|`string`|`da-DK`| |**Dutch**|`string`|`nl-NL`| |**English (US)**|`string`|`en-US`| |**English (UK)**|`string`|`en-GB`| |**German**|`string`|`de-DE`| |**Italy**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Russian**|`string`|`ru-RU`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Text-to-speech (TTS) system converts normal language text into speech.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Russian**|`string`|`ru-RU`| |**Danish**|`string`|`da-DK`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**English (GB)**|`string`|`en-GB`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Spanish**|`string`|`es-ES`| |**Arabic**|`string`|`ar-XA`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Chinese**|`string`|`cmn-CN`| |**Japanese**|`string`|`ja-JP`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v1.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Google Cloud**|`google`| `v1`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.text_to_speech(text, language, option, providers, async_req=True)
@@ -436,7 +436,7 @@ class SpeechApi(object):
     def text_to_speech_with_http_info(self, text, language, option, providers, **kwargs):  # noqa: E501
         """text_to_speech  # noqa: E501
 
-        Text-to-speech (TTS) system converts normal language text into speech.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Arabic**|`string`|`ar-XA`| |**Chinese**|`string`|`cmn-CN`| |**Danish**|`string`|`da-DK`| |**Dutch**|`string`|`nl-NL`| |**English (US)**|`string`|`en-US`| |**English (UK)**|`string`|`en-GB`| |**German**|`string`|`de-DE`| |**Italy**|`string`|`it-IT`| |**Japanese**|`string`|`ja-JP`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**Russian**|`string`|`ru-RU`| |**Spanish**|`string`|`es-ES`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Text-to-speech (TTS) system converts normal language text into speech.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**German**|`string`|`de-DE`| |**Russian**|`string`|`ru-RU`| |**Danish**|`string`|`da-DK`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**English (GB)**|`string`|`en-GB`| |**Portuguese (Brazil)**|`string`|`pt-BR`| |**Spanish**|`string`|`es-ES`| |**Arabic**|`string`|`ar-XA`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Chinese**|`string`|`cmn-CN`| |**Japanese**|`string`|`ja-JP`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v1.0`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**Google Cloud**|`google`| `v1`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.text_to_speech_with_http_info(text, language, option, providers, async_req=True)

@@ -33,97 +33,97 @@ class InlineResponse20010Result(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'text': 'str',
-        'languages': 'list[str]',
-        'confidences': 'list[float]'
+        'document': 'float',
+        'object': 'str',
+        'score': 'float'
     }
 
     attribute_map = {
-        'text': 'text',
-        'languages': 'languages',
-        'confidences': 'confidences'
+        'document': 'document',
+        'object': 'object',
+        'score': 'score'
     }
 
-    def __init__(self, text=None, languages=None, confidences=None, _configuration=None):  # noqa: E501
+    def __init__(self, document=None, object=None, score=None, _configuration=None):  # noqa: E501
         """InlineResponse20010Result - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
-        self._text = None
-        self._languages = None
-        self._confidences = None
+        self._document = None
+        self._object = None
+        self._score = None
         self.discriminator = None
 
-        if text is not None:
-            self.text = text
-        if languages is not None:
-            self.languages = languages
-        if confidences is not None:
-            self.confidences = confidences
+        if document is not None:
+            self.document = document
+        if object is not None:
+            self.object = object
+        if score is not None:
+            self.score = score
 
     @property
-    def text(self):
-        """Gets the text of this InlineResponse20010Result.  # noqa: E501
+    def document(self):
+        """Gets the document of this InlineResponse20010Result.  # noqa: E501
 
 
-        :return: The text of this InlineResponse20010Result.  # noqa: E501
+        :return: The document of this InlineResponse20010Result.  # noqa: E501
+        :rtype: float
+        """
+        return self._document
+
+    @document.setter
+    def document(self, document):
+        """Sets the document of this InlineResponse20010Result.
+
+
+        :param document: The document of this InlineResponse20010Result.  # noqa: E501
+        :type: float
+        """
+
+        self._document = document
+
+    @property
+    def object(self):
+        """Gets the object of this InlineResponse20010Result.  # noqa: E501
+
+
+        :return: The object of this InlineResponse20010Result.  # noqa: E501
         :rtype: str
         """
-        return self._text
+        return self._object
 
-    @text.setter
-    def text(self, text):
-        """Sets the text of this InlineResponse20010Result.
+    @object.setter
+    def object(self, object):
+        """Sets the object of this InlineResponse20010Result.
 
 
-        :param text: The text of this InlineResponse20010Result.  # noqa: E501
+        :param object: The object of this InlineResponse20010Result.  # noqa: E501
         :type: str
         """
 
-        self._text = text
+        self._object = object
 
     @property
-    def languages(self):
-        """Gets the languages of this InlineResponse20010Result.  # noqa: E501
+    def score(self):
+        """Gets the score of this InlineResponse20010Result.  # noqa: E501
 
 
-        :return: The languages of this InlineResponse20010Result.  # noqa: E501
-        :rtype: list[str]
+        :return: The score of this InlineResponse20010Result.  # noqa: E501
+        :rtype: float
         """
-        return self._languages
+        return self._score
 
-    @languages.setter
-    def languages(self, languages):
-        """Sets the languages of this InlineResponse20010Result.
-
-
-        :param languages: The languages of this InlineResponse20010Result.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._languages = languages
-
-    @property
-    def confidences(self):
-        """Gets the confidences of this InlineResponse20010Result.  # noqa: E501
+    @score.setter
+    def score(self, score):
+        """Sets the score of this InlineResponse20010Result.
 
 
-        :return: The confidences of this InlineResponse20010Result.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._confidences
-
-    @confidences.setter
-    def confidences(self, confidences):
-        """Sets the confidences of this InlineResponse20010Result.
-
-
-        :param confidences: The confidences of this InlineResponse20010Result.  # noqa: E501
-        :type: list[float]
+        :param score: The score of this InlineResponse20010Result.  # noqa: E501
+        :type: float
         """
 
-        self._confidences = confidences
+        self._score = score
 
     def to_dict(self):
         """Returns the model properties as a dict"""

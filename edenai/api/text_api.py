@@ -36,7 +36,7 @@ class TextApi(object):
     def keyword_extraction(self, language, text, providers, **kwargs):  # noqa: E501
         """keyword_extraction  # noqa: E501
 
-        Keyword extraction (also known as keyword detection or keyword analysis) is a text analysis technique that consists of automatically extracting the mostimportant words and expressions in a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Finnish**|`string`|`fn-FN`| |**Swedish**|`string`|`sw-SW`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Keyword extraction (also known as keyword detection or keyword analysis) is a text analysis technique that consists of automatically extracting the mostimportant words and expressions in a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Swedish**|`string`|`sw-SW`| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Finnish**|`string`|`fn-FN`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v3.1`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Lettria**|`lettria`| `v5.5.2`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.keyword_extraction(language, text, providers, async_req=True)
@@ -46,7 +46,7 @@ class TextApi(object):
         :param str language: Language code of text (ex: fr-FR (French), en-US (English), es-ES (Spanish)) (required)
         :param str text: Text to analyze (required)
         :param str providers: Provider to compare (ex: [ 'amazon', 'microsoft', 'ibm']) (required)
-        :return: InlineResponse2005
+        :return: InlineResponse2007
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -60,7 +60,7 @@ class TextApi(object):
     def keyword_extraction_with_http_info(self, language, text, providers, **kwargs):  # noqa: E501
         """keyword_extraction  # noqa: E501
 
-        Keyword extraction (also known as keyword detection or keyword analysis) is a text analysis technique that consists of automatically extracting the mostimportant words and expressions in a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Finnish**|`string`|`fn-FN`| |**Swedish**|`string`|`sw-SW`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Keyword extraction (also known as keyword detection or keyword analysis) is a text analysis technique that consists of automatically extracting the mostimportant words and expressions in a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Swedish**|`string`|`sw-SW`| |**German**|`string`|`de-DE`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Finnish**|`string`|`fn-FN`| |**Italian**|`string`|`it-IT`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v3.1`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Lettria**|`lettria`| `v5.5.2`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.keyword_extraction_with_http_info(language, text, providers, async_req=True)
@@ -70,7 +70,7 @@ class TextApi(object):
         :param str language: Language code of text (ex: fr-FR (French), en-US (English), es-ES (Spanish)) (required)
         :param str text: Text to analyze (required)
         :param str providers: Provider to compare (ex: [ 'amazon', 'microsoft', 'ibm']) (required)
-        :return: InlineResponse2005
+        :return: InlineResponse2007
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -149,7 +149,7 @@ class TextApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2005',  # noqa: E501
+            response_type='InlineResponse2007',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -160,7 +160,7 @@ class TextApi(object):
     def named_entity_recognition(self, language, text, providers, **kwargs):  # noqa: E501
         """named_entity_recognition  # noqa: E501
 
-        Named Entity Recognition (also called entity identification or entity extraction) is an information extraction technique that automatically identifies named entities in a text and classifies them into predefined categories.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Finnish**|`string`|`fn-FN`| |**Swedish**|`string`|`sw-SW`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Named Entity Recognition (also called entity identification or entity extraction) is an information extraction technique that automatically identifies named entities in a text and classifies them into predefined categories.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Chinese-Traditional**|`string`|`zh-TW`| |**Swedish**|`string`|`sw-SW`| |**German**|`string`|`de-DE`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Chinese-Simplified**|`string`|`zh-CN`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Finnish**|`string`|`fn-FN`| |**Arabic**|`string`|`ar-XA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Google Cloud**|`google`| `v1`  |**Lettria**|`lettria`| `v5.5.2`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.named_entity_recognition(language, text, providers, async_req=True)
@@ -170,7 +170,7 @@ class TextApi(object):
         :param str language: Language code of text (ex: fr-FR (French), en-US (English), es-ES (Spanish)) (required)
         :param str text: Text to analyze (required)
         :param str providers: Provider to compare (ex: [ 'amazon', 'microsoft', 'ibm','google']) (required)
-        :return: InlineResponse2006
+        :return: InlineResponse2008
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -184,7 +184,7 @@ class TextApi(object):
     def named_entity_recognition_with_http_info(self, language, text, providers, **kwargs):  # noqa: E501
         """named_entity_recognition  # noqa: E501
 
-        Named Entity Recognition (also called entity identification or entity extraction) is an information extraction technique that automatically identifies named entities in a text and classifies them into predefined categories.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Finnish**|`string`|`fn-FN`| |**Swedish**|`string`|`sw-SW`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Named Entity Recognition (also called entity identification or entity extraction) is an information extraction technique that automatically identifies named entities in a text and classifies them into predefined categories.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Chinese-Traditional**|`string`|`zh-TW`| |**Swedish**|`string`|`sw-SW`| |**German**|`string`|`de-DE`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Chinese-Simplified**|`string`|`zh-CN`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Finnish**|`string`|`fn-FN`| |**Arabic**|`string`|`ar-XA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Google Cloud**|`google`| `v1`  |**Lettria**|`lettria`| `v5.5.2`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.named_entity_recognition_with_http_info(language, text, providers, async_req=True)
@@ -194,7 +194,7 @@ class TextApi(object):
         :param str language: Language code of text (ex: fr-FR (French), en-US (English), es-ES (Spanish)) (required)
         :param str text: Text to analyze (required)
         :param str providers: Provider to compare (ex: [ 'amazon', 'microsoft', 'ibm','google']) (required)
-        :return: InlineResponse2006
+        :return: InlineResponse2008
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -273,7 +273,285 @@ class TextApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2006',  # noqa: E501
+            response_type='InlineResponse2008',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def question_answering(self, texts, question, providers, examples_context, examples, **kwargs):  # noqa: E501
+        """question_answering  # noqa: E501
+
+        Given a question, a set of documents, and some examples, the API generates an answer to the question based on the information in the set of documents.  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**OpenAI Davinci**|`openai_davinci`| `v1`  |**OpenAI Ada**|`openai_ada`| `v1`   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.question_answering(texts, question, providers, examples_context, examples, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str texts: List of texts to analyze (required)
+        :param str question: Question about the text content (required)
+        :param str providers: Providers to compare (ex: ['openai']) (required)
+        :param str examples_context: example text serving as context (required)
+        :param str examples: List of question/answer pairs (ex: [['When was Barack Obama elected president?', 'in 2009.'],]) (required)
+        :param float temperature: Higher values mean the model will take more risks and value 0 (argmax sampling) works better for scenarios with a well-defined answer.
+        :return: InlineResponse2009
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.question_answering_with_http_info(texts, question, providers, examples_context, examples, **kwargs)  # noqa: E501
+        else:
+            (data) = self.question_answering_with_http_info(texts, question, providers, examples_context, examples, **kwargs)  # noqa: E501
+            return data
+
+    def question_answering_with_http_info(self, texts, question, providers, examples_context, examples, **kwargs):  # noqa: E501
+        """question_answering  # noqa: E501
+
+        Given a question, a set of documents, and some examples, the API generates an answer to the question based on the information in the set of documents.  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**OpenAI Davinci**|`openai_davinci`| `v1`  |**OpenAI Ada**|`openai_ada`| `v1`   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.question_answering_with_http_info(texts, question, providers, examples_context, examples, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str texts: List of texts to analyze (required)
+        :param str question: Question about the text content (required)
+        :param str providers: Providers to compare (ex: ['openai']) (required)
+        :param str examples_context: example text serving as context (required)
+        :param str examples: List of question/answer pairs (ex: [['When was Barack Obama elected president?', 'in 2009.'],]) (required)
+        :param float temperature: Higher values mean the model will take more risks and value 0 (argmax sampling) works better for scenarios with a well-defined answer.
+        :return: InlineResponse2009
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['texts', 'question', 'providers', 'examples_context', 'examples', 'temperature']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method question_answering" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'texts' is set
+        if self.api_client.client_side_validation and ('texts' not in params or
+                                                       params['texts'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `texts` when calling `question_answering`")  # noqa: E501
+        # verify the required parameter 'question' is set
+        if self.api_client.client_side_validation and ('question' not in params or
+                                                       params['question'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `question` when calling `question_answering`")  # noqa: E501
+        # verify the required parameter 'providers' is set
+        if self.api_client.client_side_validation and ('providers' not in params or
+                                                       params['providers'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `providers` when calling `question_answering`")  # noqa: E501
+        # verify the required parameter 'examples_context' is set
+        if self.api_client.client_side_validation and ('examples_context' not in params or
+                                                       params['examples_context'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `examples_context` when calling `question_answering`")  # noqa: E501
+        # verify the required parameter 'examples' is set
+        if self.api_client.client_side_validation and ('examples' not in params or
+                                                       params['examples'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `examples` when calling `question_answering`")  # noqa: E501
+
+        if self.api_client.client_side_validation and ('texts' in params and
+                                                       len(params['texts']) < 1):
+            raise ValueError("Invalid value for parameter `texts` when calling `question_answering`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('question' in params and
+                                                       len(params['question']) < 1):
+            raise ValueError("Invalid value for parameter `question` when calling `question_answering`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('providers' in params and
+                                                       len(params['providers']) < 1):
+            raise ValueError("Invalid value for parameter `providers` when calling `question_answering`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('examples_context' in params and
+                                                       len(params['examples_context']) < 1):
+            raise ValueError("Invalid value for parameter `examples_context` when calling `question_answering`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('examples' in params and
+                                                       len(params['examples']) < 1):
+            raise ValueError("Invalid value for parameter `examples` when calling `question_answering`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('temperature' in params and params['temperature'] > 1):  # noqa: E501
+            raise ValueError("Invalid value for parameter `temperature` when calling `question_answering`, must be a value less than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('temperature' in params and params['temperature'] < 0):  # noqa: E501
+            raise ValueError("Invalid value for parameter `temperature` when calling `question_answering`, must be a value greater than or equal to `0`")  # noqa: E501
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+        if 'texts' in params:
+            form_params.append(('texts', params['texts']))  # noqa: E501
+        if 'question' in params:
+            form_params.append(('question', params['question']))  # noqa: E501
+        if 'providers' in params:
+            form_params.append(('providers', params['providers']))  # noqa: E501
+        if 'temperature' in params:
+            form_params.append(('temperature', params['temperature']))  # noqa: E501
+        if 'examples_context' in params:
+            form_params.append(('examples_context', params['examples_context']))  # noqa: E501
+        if 'examples' in params:
+            form_params.append(('examples', params['examples']))  # noqa: E501
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/pretrained/text/qestion-answer', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='InlineResponse2009',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def search(self, texts, query, providers, **kwargs):  # noqa: E501
+        """search  # noqa: E501
+
+        Given a query and a set of documents or labels, the model ranks each document based on its semantic similarity to the provided query.  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**OpenAI Davinci**|`openai_davinci`| `v1`  |**OpenAI Ada**|`openai_ada`| `v1`   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.search(texts, query, providers, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str texts: Texts to search (required)
+        :param str query: Your query (required)
+        :param str providers: Providers to compare (ex: ['openai_davinci']) (required)
+        :return: InlineResponse20010
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.search_with_http_info(texts, query, providers, **kwargs)  # noqa: E501
+        else:
+            (data) = self.search_with_http_info(texts, query, providers, **kwargs)  # noqa: E501
+            return data
+
+    def search_with_http_info(self, texts, query, providers, **kwargs):  # noqa: E501
+        """search  # noqa: E501
+
+        Given a query and a set of documents or labels, the model ranks each document based on its semantic similarity to the provided query.  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**OpenAI Davinci**|`openai_davinci`| `v1`  |**OpenAI Ada**|`openai_ada`| `v1`   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.search_with_http_info(texts, query, providers, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str texts: Texts to search (required)
+        :param str query: Your query (required)
+        :param str providers: Providers to compare (ex: ['openai_davinci']) (required)
+        :return: InlineResponse20010
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['texts', 'query', 'providers']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method search" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'texts' is set
+        if self.api_client.client_side_validation and ('texts' not in params or
+                                                       params['texts'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `texts` when calling `search`")  # noqa: E501
+        # verify the required parameter 'query' is set
+        if self.api_client.client_side_validation and ('query' not in params or
+                                                       params['query'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `query` when calling `search`")  # noqa: E501
+        # verify the required parameter 'providers' is set
+        if self.api_client.client_side_validation and ('providers' not in params or
+                                                       params['providers'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `providers` when calling `search`")  # noqa: E501
+
+        if self.api_client.client_side_validation and ('texts' in params and
+                                                       len(params['texts']) < 1):
+            raise ValueError("Invalid value for parameter `texts` when calling `search`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('query' in params and
+                                                       len(params['query']) < 1):
+            raise ValueError("Invalid value for parameter `query` when calling `search`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('providers' in params and
+                                                       len(params['providers']) < 1):
+            raise ValueError("Invalid value for parameter `providers` when calling `search`, length must be greater than or equal to `1`")  # noqa: E501
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+        if 'texts' in params:
+            form_params.append(('texts', params['texts']))  # noqa: E501
+        if 'query' in params:
+            form_params.append(('query', params['query']))  # noqa: E501
+        if 'providers' in params:
+            form_params.append(('providers', params['providers']))  # noqa: E501
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/pretrained/text/search', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='InlineResponse20010',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -284,7 +562,7 @@ class TextApi(object):
     def sentiment_analysis(self, language, text, providers, **kwargs):  # noqa: E501
         """sentiment_analysis  # noqa: E501
 
-        Sentiment analysis API extracts sentiment in a given string of text.Sentiment analysis, also called 'opinion mining',uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Dutch**|`string`|`nl-NL`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Sentiment analysis API extracts sentiment in a given string of text.Sentiment analysis, also called 'opinion mining',uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Chinese-Traditional**|`string`|`zh-TW`| |**German**|`string`|`de-DE`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Chinese-Simplified**|`string`|`zh-CN`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Arabic**|`string`|`ar-XA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v3.1`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Lettria**|`lettria`| `v5.5.2`  |**Connexun**|`connexun`| `v1.0`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.sentiment_analysis(language, text, providers, async_req=True)
@@ -294,7 +572,7 @@ class TextApi(object):
         :param str language: Language code of text (ex: fr-FR (French), en-US (English), es-ES (Spanish)) (required)
         :param str text: Text to analyze (required)
         :param str providers: Provider to compare (ex: [ 'amazon', 'microsoft', 'ibm', 'google']) (required)
-        :return: InlineResponse2007
+        :return: InlineResponse20011
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -308,7 +586,7 @@ class TextApi(object):
     def sentiment_analysis_with_http_info(self, language, text, providers, **kwargs):  # noqa: E501
         """sentiment_analysis  # noqa: E501
 
-        Sentiment analysis API extracts sentiment in a given string of text.Sentiment analysis, also called 'opinion mining',uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Dutch**|`string`|`nl-NL`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Sentiment analysis API extracts sentiment in a given string of text.Sentiment analysis, also called 'opinion mining',uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Chinese-Traditional**|`string`|`zh-TW`| |**German**|`string`|`de-DE`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Chinese-Simplified**|`string`|`zh-CN`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Arabic**|`string`|`ar-XA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Microsoft Azure**|`microsoft`| `v3.1`  |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Lettria**|`lettria`| `v5.5.2`  |**Connexun**|`connexun`| `v1.0`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.sentiment_analysis_with_http_info(language, text, providers, async_req=True)
@@ -318,7 +596,7 @@ class TextApi(object):
         :param str language: Language code of text (ex: fr-FR (French), en-US (English), es-ES (Spanish)) (required)
         :param str text: Text to analyze (required)
         :param str providers: Provider to compare (ex: [ 'amazon', 'microsoft', 'ibm', 'google']) (required)
-        :return: InlineResponse2007
+        :return: InlineResponse20011
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -397,7 +675,7 @@ class TextApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2007',  # noqa: E501
+            response_type='InlineResponse20011',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -408,7 +686,7 @@ class TextApi(object):
     def syntax_analysis(self, language, text, providers, **kwargs):  # noqa: E501
         """syntax_analysis  # noqa: E501
 
-        Syntax analysis consists principaly in highlighting the structure of a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Finnish**|`string`|`fn-FN`| |**Swedish**|`string`|`sw-SW`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Syntax analysis consists principaly in highlighting the structure of a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Chinese-Traditional**|`string`|`zh-TW`| |**Swedish**|`string`|`sw-SW`| |**German**|`string`|`de-DE`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Chinese-Simplified**|`string`|`zh-CN`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Finnish**|`string`|`fn-FN`| |**Arabic**|`string`|`ar-XA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Lettria**|`lettria`| `v5.5.2`  |**Google Cloud**|`google`| `v1`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.syntax_analysis(language, text, providers, async_req=True)
@@ -418,7 +696,7 @@ class TextApi(object):
         :param str language: Language code of text (ex: fr-FR (French), en-US (English), es-ES (Spanish)) (required)
         :param str text: Text to analyze (required)
         :param str providers: Provider to compare (ex: [ 'amazon', 'microsoft', 'ibm','google']) (required)
-        :return: InlineResponse2008
+        :return: InlineResponse20012
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -432,7 +710,7 @@ class TextApi(object):
     def syntax_analysis_with_http_info(self, language, text, providers, **kwargs):  # noqa: E501
         """syntax_analysis  # noqa: E501
 
-        Syntax analysis consists principaly in highlighting the structure of a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**English(US)**|`string`|`en-US`| |**French**|`string`|`fr-FR`| |**Spanish**|`string`|`es-ES`| |**Finnish**|`string`|`fn-FN`| |**Swedish**|`string`|`sw-SW`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------|   # noqa: E501
+        Syntax analysis consists principaly in highlighting the structure of a text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----| |**Chinese-Traditional**|`string`|`zh-TW`| |**Swedish**|`string`|`sw-SW`| |**German**|`string`|`de-DE`| |**Dutch (Netherlands)**|`string`|`nl-NL`| |**Spanish**|`string`|`es-ES`| |**French**|`string`|`fr-FR`| |**Chinese-Simplified**|`string`|`zh-CN`| |**Portuguese (Portugal)**|`string`|`pt-PT`| |**English (US)**|`string`|`en-US`| |**Japanese**|`string`|`ja-JP`| |**Finnish**|`string`|`fn-FN`| |**Arabic**|`string`|`ar-XA`| |**Italian**|`string`|`it-IT`| |**Korean**|`string`|`ko-KR`|  **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Amazon Web Services**|`amazon`| `boto3 (v1.15.18)`  |**IBM Watson**|`ibm`| `v1 (2021-08-01)`  |**Lettria**|`lettria`| `v5.5.2`  |**Google Cloud**|`google`| `v1`   # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.syntax_analysis_with_http_info(language, text, providers, async_req=True)
@@ -442,7 +720,7 @@ class TextApi(object):
         :param str language: Language code of text (ex: fr-FR (French), en-US (English), es-ES (Spanish)) (required)
         :param str text: Text to analyze (required)
         :param str providers: Provider to compare (ex: [ 'amazon', 'microsoft', 'ibm','google']) (required)
-        :return: InlineResponse2008
+        :return: InlineResponse20012
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -521,7 +799,120 @@ class TextApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2008',  # noqa: E501
+            response_type='InlineResponse20012',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def text_summarization(self, text, providers, **kwargs):  # noqa: E501
+        """text_summarization  # noqa: E501
+
+        Text summarization is a technique for extracting the most important sentences from a text in order to create a smaller version of the text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----|   **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Connexun**|`connexun`| `v1.0`  |**Microsoft Azure**|`microsoft`| `v3.1`  |**MeaningCloud**|`meaningcloud`| `v1.0`  |**OpenAI Ada**|`openai_ada`| `v1`  |**OpenAI Davinci**|`openai_davinci`| `v1`   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.text_summarization(text, providers, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str text: Text to summarize (required)
+        :param str providers: Provider to compare (ex: [ 'DataVoice','OpenAI', 'Microsoft']) (required)
+        :return: InlineResponse20013
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.text_summarization_with_http_info(text, providers, **kwargs)  # noqa: E501
+        else:
+            (data) = self.text_summarization_with_http_info(text, providers, **kwargs)  # noqa: E501
+            return data
+
+    def text_summarization_with_http_info(self, text, providers, **kwargs):  # noqa: E501
+        """text_summarization  # noqa: E501
+
+        Text summarization is a technique for extracting the most important sentences from a text in order to create a smaller version of the text.  **SUPPORTED LANGUAGE**  |Name|Type|Value| |----|----|-----|   **AVAILABLE PROVIDERS**   |Name|Value|Version| |----|-----|-------| |**Connexun**|`connexun`| `v1.0`  |**Microsoft Azure**|`microsoft`| `v3.1`  |**MeaningCloud**|`meaningcloud`| `v1.0`  |**OpenAI Ada**|`openai_ada`| `v1`  |**OpenAI Davinci**|`openai_davinci`| `v1`   # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.text_summarization_with_http_info(text, providers, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str text: Text to summarize (required)
+        :param str providers: Provider to compare (ex: [ 'DataVoice','OpenAI', 'Microsoft']) (required)
+        :return: InlineResponse20013
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['text', 'providers']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method text_summarization" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'text' is set
+        if self.api_client.client_side_validation and ('text' not in params or
+                                                       params['text'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `text` when calling `text_summarization`")  # noqa: E501
+        # verify the required parameter 'providers' is set
+        if self.api_client.client_side_validation and ('providers' not in params or
+                                                       params['providers'] is None):  # noqa: E501
+            raise ValueError("Missing the required parameter `providers` when calling `text_summarization`")  # noqa: E501
+
+        if self.api_client.client_side_validation and ('text' in params and
+                                                       len(params['text']) < 1):
+            raise ValueError("Invalid value for parameter `text` when calling `text_summarization`, length must be greater than or equal to `1`")  # noqa: E501
+        if self.api_client.client_side_validation and ('providers' in params and
+                                                       len(params['providers']) < 1):
+            raise ValueError("Invalid value for parameter `providers` when calling `text_summarization`, length must be greater than or equal to `1`")  # noqa: E501
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+        if 'text' in params:
+            form_params.append(('text', params['text']))  # noqa: E501
+        if 'providers' in params:
+            form_params.append(('providers', params['providers']))  # noqa: E501
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/pretrained/text/text_summarization', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='InlineResponse20013',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
