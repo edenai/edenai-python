@@ -33,97 +33,175 @@ class InlineResponse2009Result(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'source_language': 'str',
-        'target_language': 'str',
-        'translated_text': 'str'
+        'solution_name': 'str',
+        'provider': 'str',
+        'status': 'str',
+        'execution_time': 'float',
+        'original_result': 'object',
+        'result': 'list[object]'
     }
 
     attribute_map = {
-        'source_language': 'source_language',
-        'target_language': 'target_language',
-        'translated_text': 'translated_text'
+        'solution_name': 'solution_name',
+        'provider': 'provider',
+        'status': 'status',
+        'execution_time': 'execution_time',
+        'original_result': 'original_result',
+        'result': 'result'
     }
 
-    def __init__(self, source_language=None, target_language=None, translated_text=None, _configuration=None):  # noqa: E501
+    def __init__(self, solution_name=None, provider=None, status=None, execution_time=None, original_result=None, result=None, _configuration=None):  # noqa: E501
         """InlineResponse2009Result - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
-        self._source_language = None
-        self._target_language = None
-        self._translated_text = None
+        self._solution_name = None
+        self._provider = None
+        self._status = None
+        self._execution_time = None
+        self._original_result = None
+        self._result = None
         self.discriminator = None
 
-        if source_language is not None:
-            self.source_language = source_language
-        if target_language is not None:
-            self.target_language = target_language
-        if translated_text is not None:
-            self.translated_text = translated_text
+        if solution_name is not None:
+            self.solution_name = solution_name
+        if provider is not None:
+            self.provider = provider
+        if status is not None:
+            self.status = status
+        if execution_time is not None:
+            self.execution_time = execution_time
+        if original_result is not None:
+            self.original_result = original_result
+        if result is not None:
+            self.result = result
 
     @property
-    def source_language(self):
-        """Gets the source_language of this InlineResponse2009Result.  # noqa: E501
+    def solution_name(self):
+        """Gets the solution_name of this InlineResponse2009Result.  # noqa: E501
 
 
-        :return: The source_language of this InlineResponse2009Result.  # noqa: E501
+        :return: The solution_name of this InlineResponse2009Result.  # noqa: E501
         :rtype: str
         """
-        return self._source_language
+        return self._solution_name
 
-    @source_language.setter
-    def source_language(self, source_language):
-        """Sets the source_language of this InlineResponse2009Result.
+    @solution_name.setter
+    def solution_name(self, solution_name):
+        """Sets the solution_name of this InlineResponse2009Result.
 
 
-        :param source_language: The source_language of this InlineResponse2009Result.  # noqa: E501
+        :param solution_name: The solution_name of this InlineResponse2009Result.  # noqa: E501
         :type: str
         """
 
-        self._source_language = source_language
+        self._solution_name = solution_name
 
     @property
-    def target_language(self):
-        """Gets the target_language of this InlineResponse2009Result.  # noqa: E501
+    def provider(self):
+        """Gets the provider of this InlineResponse2009Result.  # noqa: E501
 
 
-        :return: The target_language of this InlineResponse2009Result.  # noqa: E501
+        :return: The provider of this InlineResponse2009Result.  # noqa: E501
         :rtype: str
         """
-        return self._target_language
+        return self._provider
 
-    @target_language.setter
-    def target_language(self, target_language):
-        """Sets the target_language of this InlineResponse2009Result.
+    @provider.setter
+    def provider(self, provider):
+        """Sets the provider of this InlineResponse2009Result.
 
 
-        :param target_language: The target_language of this InlineResponse2009Result.  # noqa: E501
+        :param provider: The provider of this InlineResponse2009Result.  # noqa: E501
         :type: str
         """
 
-        self._target_language = target_language
+        self._provider = provider
 
     @property
-    def translated_text(self):
-        """Gets the translated_text of this InlineResponse2009Result.  # noqa: E501
+    def status(self):
+        """Gets the status of this InlineResponse2009Result.  # noqa: E501
 
 
-        :return: The translated_text of this InlineResponse2009Result.  # noqa: E501
+        :return: The status of this InlineResponse2009Result.  # noqa: E501
         :rtype: str
         """
-        return self._translated_text
+        return self._status
 
-    @translated_text.setter
-    def translated_text(self, translated_text):
-        """Sets the translated_text of this InlineResponse2009Result.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this InlineResponse2009Result.
 
 
-        :param translated_text: The translated_text of this InlineResponse2009Result.  # noqa: E501
+        :param status: The status of this InlineResponse2009Result.  # noqa: E501
         :type: str
         """
 
-        self._translated_text = translated_text
+        self._status = status
+
+    @property
+    def execution_time(self):
+        """Gets the execution_time of this InlineResponse2009Result.  # noqa: E501
+
+
+        :return: The execution_time of this InlineResponse2009Result.  # noqa: E501
+        :rtype: float
+        """
+        return self._execution_time
+
+    @execution_time.setter
+    def execution_time(self, execution_time):
+        """Sets the execution_time of this InlineResponse2009Result.
+
+
+        :param execution_time: The execution_time of this InlineResponse2009Result.  # noqa: E501
+        :type: float
+        """
+
+        self._execution_time = execution_time
+
+    @property
+    def original_result(self):
+        """Gets the original_result of this InlineResponse2009Result.  # noqa: E501
+
+
+        :return: The original_result of this InlineResponse2009Result.  # noqa: E501
+        :rtype: object
+        """
+        return self._original_result
+
+    @original_result.setter
+    def original_result(self, original_result):
+        """Sets the original_result of this InlineResponse2009Result.
+
+
+        :param original_result: The original_result of this InlineResponse2009Result.  # noqa: E501
+        :type: object
+        """
+
+        self._original_result = original_result
+
+    @property
+    def result(self):
+        """Gets the result of this InlineResponse2009Result.  # noqa: E501
+
+
+        :return: The result of this InlineResponse2009Result.  # noqa: E501
+        :rtype: list[object]
+        """
+        return self._result
+
+    @result.setter
+    def result(self, result):
+        """Sets the result of this InlineResponse2009Result.
+
+
+        :param result: The result of this InlineResponse2009Result.  # noqa: E501
+        :type: list[object]
+        """
+
+        self._result = result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

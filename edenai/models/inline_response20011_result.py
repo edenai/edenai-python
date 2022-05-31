@@ -33,97 +33,97 @@ class InlineResponse20011Result(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'image_path': 'str',
-        'labels': 'list[str]',
-        'likelihood': 'list[float]'
+        'text': 'str',
+        'sentiments': 'list[str]',
+        'sentiment_rate': 'list[float]'
     }
 
     attribute_map = {
-        'image_path': 'image_path',
-        'labels': 'labels',
-        'likelihood': 'likelihood'
+        'text': 'text',
+        'sentiments': 'sentiments',
+        'sentiment_rate': 'sentiment_rate'
     }
 
-    def __init__(self, image_path=None, labels=None, likelihood=None, _configuration=None):  # noqa: E501
+    def __init__(self, text=None, sentiments=None, sentiment_rate=None, _configuration=None):  # noqa: E501
         """InlineResponse20011Result - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
-        self._image_path = None
-        self._labels = None
-        self._likelihood = None
+        self._text = None
+        self._sentiments = None
+        self._sentiment_rate = None
         self.discriminator = None
 
-        if image_path is not None:
-            self.image_path = image_path
-        if labels is not None:
-            self.labels = labels
-        if likelihood is not None:
-            self.likelihood = likelihood
+        if text is not None:
+            self.text = text
+        if sentiments is not None:
+            self.sentiments = sentiments
+        if sentiment_rate is not None:
+            self.sentiment_rate = sentiment_rate
 
     @property
-    def image_path(self):
-        """Gets the image_path of this InlineResponse20011Result.  # noqa: E501
+    def text(self):
+        """Gets the text of this InlineResponse20011Result.  # noqa: E501
 
 
-        :return: The image_path of this InlineResponse20011Result.  # noqa: E501
+        :return: The text of this InlineResponse20011Result.  # noqa: E501
         :rtype: str
         """
-        return self._image_path
+        return self._text
 
-    @image_path.setter
-    def image_path(self, image_path):
-        """Sets the image_path of this InlineResponse20011Result.
+    @text.setter
+    def text(self, text):
+        """Sets the text of this InlineResponse20011Result.
 
 
-        :param image_path: The image_path of this InlineResponse20011Result.  # noqa: E501
+        :param text: The text of this InlineResponse20011Result.  # noqa: E501
         :type: str
         """
 
-        self._image_path = image_path
+        self._text = text
 
     @property
-    def labels(self):
-        """Gets the labels of this InlineResponse20011Result.  # noqa: E501
+    def sentiments(self):
+        """Gets the sentiments of this InlineResponse20011Result.  # noqa: E501
 
 
-        :return: The labels of this InlineResponse20011Result.  # noqa: E501
+        :return: The sentiments of this InlineResponse20011Result.  # noqa: E501
         :rtype: list[str]
         """
-        return self._labels
+        return self._sentiments
 
-    @labels.setter
-    def labels(self, labels):
-        """Sets the labels of this InlineResponse20011Result.
+    @sentiments.setter
+    def sentiments(self, sentiments):
+        """Sets the sentiments of this InlineResponse20011Result.
 
 
-        :param labels: The labels of this InlineResponse20011Result.  # noqa: E501
+        :param sentiments: The sentiments of this InlineResponse20011Result.  # noqa: E501
         :type: list[str]
         """
 
-        self._labels = labels
+        self._sentiments = sentiments
 
     @property
-    def likelihood(self):
-        """Gets the likelihood of this InlineResponse20011Result.  # noqa: E501
+    def sentiment_rate(self):
+        """Gets the sentiment_rate of this InlineResponse20011Result.  # noqa: E501
 
 
-        :return: The likelihood of this InlineResponse20011Result.  # noqa: E501
+        :return: The sentiment_rate of this InlineResponse20011Result.  # noqa: E501
         :rtype: list[float]
         """
-        return self._likelihood
+        return self._sentiment_rate
 
-    @likelihood.setter
-    def likelihood(self, likelihood):
-        """Sets the likelihood of this InlineResponse20011Result.
+    @sentiment_rate.setter
+    def sentiment_rate(self, sentiment_rate):
+        """Sets the sentiment_rate of this InlineResponse20011Result.
 
 
-        :param likelihood: The likelihood of this InlineResponse20011Result.  # noqa: E501
+        :param sentiment_rate: The sentiment_rate of this InlineResponse20011Result.  # noqa: E501
         :type: list[float]
         """
 
-        self._likelihood = likelihood
+        self._sentiment_rate = sentiment_rate
 
     def to_dict(self):
         """Returns the model properties as a dict"""

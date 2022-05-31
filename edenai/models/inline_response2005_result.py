@@ -34,33 +34,28 @@ class InlineResponse2005Result(object):
     """
     swagger_types = {
         'text': 'str',
-        'keywords': 'list[str]',
-        'importances': 'list[float]'
+        'bounding_boxes': 'list[InlineResponse2005ResultBoundingBoxes]'
     }
 
     attribute_map = {
         'text': 'text',
-        'keywords': 'keywords',
-        'importances': 'importances'
+        'bounding_boxes': 'bounding_boxes'
     }
 
-    def __init__(self, text=None, keywords=None, importances=None, _configuration=None):  # noqa: E501
+    def __init__(self, text=None, bounding_boxes=None, _configuration=None):  # noqa: E501
         """InlineResponse2005Result - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
         self._text = None
-        self._keywords = None
-        self._importances = None
+        self._bounding_boxes = None
         self.discriminator = None
 
         if text is not None:
             self.text = text
-        if keywords is not None:
-            self.keywords = keywords
-        if importances is not None:
-            self.importances = importances
+        if bounding_boxes is not None:
+            self.bounding_boxes = bounding_boxes
 
     @property
     def text(self):
@@ -84,46 +79,25 @@ class InlineResponse2005Result(object):
         self._text = text
 
     @property
-    def keywords(self):
-        """Gets the keywords of this InlineResponse2005Result.  # noqa: E501
+    def bounding_boxes(self):
+        """Gets the bounding_boxes of this InlineResponse2005Result.  # noqa: E501
 
 
-        :return: The keywords of this InlineResponse2005Result.  # noqa: E501
-        :rtype: list[str]
+        :return: The bounding_boxes of this InlineResponse2005Result.  # noqa: E501
+        :rtype: list[InlineResponse2005ResultBoundingBoxes]
         """
-        return self._keywords
+        return self._bounding_boxes
 
-    @keywords.setter
-    def keywords(self, keywords):
-        """Sets the keywords of this InlineResponse2005Result.
-
-
-        :param keywords: The keywords of this InlineResponse2005Result.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._keywords = keywords
-
-    @property
-    def importances(self):
-        """Gets the importances of this InlineResponse2005Result.  # noqa: E501
+    @bounding_boxes.setter
+    def bounding_boxes(self, bounding_boxes):
+        """Sets the bounding_boxes of this InlineResponse2005Result.
 
 
-        :return: The importances of this InlineResponse2005Result.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._importances
-
-    @importances.setter
-    def importances(self, importances):
-        """Sets the importances of this InlineResponse2005Result.
-
-
-        :param importances: The importances of this InlineResponse2005Result.  # noqa: E501
-        :type: list[float]
+        :param bounding_boxes: The bounding_boxes of this InlineResponse2005Result.  # noqa: E501
+        :type: list[InlineResponse2005ResultBoundingBoxes]
         """
 
-        self._importances = importances
+        self._bounding_boxes = bounding_boxes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

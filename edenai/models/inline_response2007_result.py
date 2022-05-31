@@ -34,33 +34,33 @@ class InlineResponse2007Result(object):
     """
     swagger_types = {
         'text': 'str',
-        'sentiments': 'list[str]',
-        'sentiment_rate': 'list[float]'
+        'keywords': 'list[str]',
+        'importances': 'list[float]'
     }
 
     attribute_map = {
         'text': 'text',
-        'sentiments': 'sentiments',
-        'sentiment_rate': 'sentiment_rate'
+        'keywords': 'keywords',
+        'importances': 'importances'
     }
 
-    def __init__(self, text=None, sentiments=None, sentiment_rate=None, _configuration=None):  # noqa: E501
+    def __init__(self, text=None, keywords=None, importances=None, _configuration=None):  # noqa: E501
         """InlineResponse2007Result - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
         self._text = None
-        self._sentiments = None
-        self._sentiment_rate = None
+        self._keywords = None
+        self._importances = None
         self.discriminator = None
 
         if text is not None:
             self.text = text
-        if sentiments is not None:
-            self.sentiments = sentiments
-        if sentiment_rate is not None:
-            self.sentiment_rate = sentiment_rate
+        if keywords is not None:
+            self.keywords = keywords
+        if importances is not None:
+            self.importances = importances
 
     @property
     def text(self):
@@ -84,46 +84,46 @@ class InlineResponse2007Result(object):
         self._text = text
 
     @property
-    def sentiments(self):
-        """Gets the sentiments of this InlineResponse2007Result.  # noqa: E501
+    def keywords(self):
+        """Gets the keywords of this InlineResponse2007Result.  # noqa: E501
 
 
-        :return: The sentiments of this InlineResponse2007Result.  # noqa: E501
+        :return: The keywords of this InlineResponse2007Result.  # noqa: E501
         :rtype: list[str]
         """
-        return self._sentiments
+        return self._keywords
 
-    @sentiments.setter
-    def sentiments(self, sentiments):
-        """Sets the sentiments of this InlineResponse2007Result.
+    @keywords.setter
+    def keywords(self, keywords):
+        """Sets the keywords of this InlineResponse2007Result.
 
 
-        :param sentiments: The sentiments of this InlineResponse2007Result.  # noqa: E501
+        :param keywords: The keywords of this InlineResponse2007Result.  # noqa: E501
         :type: list[str]
         """
 
-        self._sentiments = sentiments
+        self._keywords = keywords
 
     @property
-    def sentiment_rate(self):
-        """Gets the sentiment_rate of this InlineResponse2007Result.  # noqa: E501
+    def importances(self):
+        """Gets the importances of this InlineResponse2007Result.  # noqa: E501
 
 
-        :return: The sentiment_rate of this InlineResponse2007Result.  # noqa: E501
+        :return: The importances of this InlineResponse2007Result.  # noqa: E501
         :rtype: list[float]
         """
-        return self._sentiment_rate
+        return self._importances
 
-    @sentiment_rate.setter
-    def sentiment_rate(self, sentiment_rate):
-        """Sets the sentiment_rate of this InlineResponse2007Result.
+    @importances.setter
+    def importances(self, importances):
+        """Sets the importances of this InlineResponse2007Result.
 
 
-        :param sentiment_rate: The sentiment_rate of this InlineResponse2007Result.  # noqa: E501
+        :param importances: The importances of this InlineResponse2007Result.  # noqa: E501
         :type: list[float]
         """
 
-        self._sentiment_rate = sentiment_rate
+        self._importances = importances
 
     def to_dict(self):
         """Returns the model properties as a dict"""

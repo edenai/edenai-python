@@ -33,201 +33,71 @@ class InlineResponse20013Result(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'file_name': 'str',
-        'labels': 'list[str]',
-        'confidences': 'list[float]',
-        'x_mins': 'list[float]',
-        'x_maxs': 'list[float]',
-        'y_mins': 'list[float]',
-        'y_maxs': 'list[float]'
+        'text': 'str',
+        'summary': 'str'
     }
 
     attribute_map = {
-        'file_name': 'file_name',
-        'labels': 'labels',
-        'confidences': 'confidences',
-        'x_mins': 'x_mins',
-        'x_maxs': 'x_maxs',
-        'y_mins': 'y_mins',
-        'y_maxs': 'y_maxs'
+        'text': 'text',
+        'summary': 'summary'
     }
 
-    def __init__(self, file_name=None, labels=None, confidences=None, x_mins=None, x_maxs=None, y_mins=None, y_maxs=None, _configuration=None):  # noqa: E501
+    def __init__(self, text=None, summary=None, _configuration=None):  # noqa: E501
         """InlineResponse20013Result - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
-        self._file_name = None
-        self._labels = None
-        self._confidences = None
-        self._x_mins = None
-        self._x_maxs = None
-        self._y_mins = None
-        self._y_maxs = None
+        self._text = None
+        self._summary = None
         self.discriminator = None
 
-        if file_name is not None:
-            self.file_name = file_name
-        if labels is not None:
-            self.labels = labels
-        if confidences is not None:
-            self.confidences = confidences
-        if x_mins is not None:
-            self.x_mins = x_mins
-        if x_maxs is not None:
-            self.x_maxs = x_maxs
-        if y_mins is not None:
-            self.y_mins = y_mins
-        if y_maxs is not None:
-            self.y_maxs = y_maxs
+        if text is not None:
+            self.text = text
+        if summary is not None:
+            self.summary = summary
 
     @property
-    def file_name(self):
-        """Gets the file_name of this InlineResponse20013Result.  # noqa: E501
+    def text(self):
+        """Gets the text of this InlineResponse20013Result.  # noqa: E501
 
 
-        :return: The file_name of this InlineResponse20013Result.  # noqa: E501
+        :return: The text of this InlineResponse20013Result.  # noqa: E501
         :rtype: str
         """
-        return self._file_name
+        return self._text
 
-    @file_name.setter
-    def file_name(self, file_name):
-        """Sets the file_name of this InlineResponse20013Result.
+    @text.setter
+    def text(self, text):
+        """Sets the text of this InlineResponse20013Result.
 
 
-        :param file_name: The file_name of this InlineResponse20013Result.  # noqa: E501
+        :param text: The text of this InlineResponse20013Result.  # noqa: E501
         :type: str
         """
 
-        self._file_name = file_name
+        self._text = text
 
     @property
-    def labels(self):
-        """Gets the labels of this InlineResponse20013Result.  # noqa: E501
+    def summary(self):
+        """Gets the summary of this InlineResponse20013Result.  # noqa: E501
 
 
-        :return: The labels of this InlineResponse20013Result.  # noqa: E501
-        :rtype: list[str]
+        :return: The summary of this InlineResponse20013Result.  # noqa: E501
+        :rtype: str
         """
-        return self._labels
+        return self._summary
 
-    @labels.setter
-    def labels(self, labels):
-        """Sets the labels of this InlineResponse20013Result.
-
-
-        :param labels: The labels of this InlineResponse20013Result.  # noqa: E501
-        :type: list[str]
-        """
-
-        self._labels = labels
-
-    @property
-    def confidences(self):
-        """Gets the confidences of this InlineResponse20013Result.  # noqa: E501
+    @summary.setter
+    def summary(self, summary):
+        """Sets the summary of this InlineResponse20013Result.
 
 
-        :return: The confidences of this InlineResponse20013Result.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._confidences
-
-    @confidences.setter
-    def confidences(self, confidences):
-        """Sets the confidences of this InlineResponse20013Result.
-
-
-        :param confidences: The confidences of this InlineResponse20013Result.  # noqa: E501
-        :type: list[float]
+        :param summary: The summary of this InlineResponse20013Result.  # noqa: E501
+        :type: str
         """
 
-        self._confidences = confidences
-
-    @property
-    def x_mins(self):
-        """Gets the x_mins of this InlineResponse20013Result.  # noqa: E501
-
-
-        :return: The x_mins of this InlineResponse20013Result.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._x_mins
-
-    @x_mins.setter
-    def x_mins(self, x_mins):
-        """Sets the x_mins of this InlineResponse20013Result.
-
-
-        :param x_mins: The x_mins of this InlineResponse20013Result.  # noqa: E501
-        :type: list[float]
-        """
-
-        self._x_mins = x_mins
-
-    @property
-    def x_maxs(self):
-        """Gets the x_maxs of this InlineResponse20013Result.  # noqa: E501
-
-
-        :return: The x_maxs of this InlineResponse20013Result.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._x_maxs
-
-    @x_maxs.setter
-    def x_maxs(self, x_maxs):
-        """Sets the x_maxs of this InlineResponse20013Result.
-
-
-        :param x_maxs: The x_maxs of this InlineResponse20013Result.  # noqa: E501
-        :type: list[float]
-        """
-
-        self._x_maxs = x_maxs
-
-    @property
-    def y_mins(self):
-        """Gets the y_mins of this InlineResponse20013Result.  # noqa: E501
-
-
-        :return: The y_mins of this InlineResponse20013Result.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._y_mins
-
-    @y_mins.setter
-    def y_mins(self, y_mins):
-        """Sets the y_mins of this InlineResponse20013Result.
-
-
-        :param y_mins: The y_mins of this InlineResponse20013Result.  # noqa: E501
-        :type: list[float]
-        """
-
-        self._y_mins = y_mins
-
-    @property
-    def y_maxs(self):
-        """Gets the y_maxs of this InlineResponse20013Result.  # noqa: E501
-
-
-        :return: The y_maxs of this InlineResponse20013Result.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._y_maxs
-
-    @y_maxs.setter
-    def y_maxs(self, y_maxs):
-        """Sets the y_maxs of this InlineResponse20013Result.
-
-
-        :param y_maxs: The y_maxs of this InlineResponse20013Result.  # noqa: E501
-        :type: list[float]
-        """
-
-        self._y_maxs = y_maxs
+        self._summary = summary
 
     def to_dict(self):
         """Returns the model properties as a dict"""

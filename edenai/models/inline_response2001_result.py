@@ -34,15 +34,17 @@ class InlineResponse2001Result(object):
     """
     swagger_types = {
         'job_id': 'str',
-        'status': 'str'
+        'status': 'str',
+        'created': 'str'
     }
 
     attribute_map = {
         'job_id': 'job_id',
-        'status': 'status'
+        'status': 'status',
+        'created': 'created'
     }
 
-    def __init__(self, job_id=None, status=None, _configuration=None):  # noqa: E501
+    def __init__(self, job_id=None, status=None, created=None, _configuration=None):  # noqa: E501
         """InlineResponse2001Result - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
@@ -50,12 +52,15 @@ class InlineResponse2001Result(object):
 
         self._job_id = None
         self._status = None
+        self._created = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
         if status is not None:
             self.status = status
+        if created is not None:
+            self.created = created
 
     @property
     def job_id(self):
@@ -98,6 +103,27 @@ class InlineResponse2001Result(object):
         """
 
         self._status = status
+
+    @property
+    def created(self):
+        """Gets the created of this InlineResponse2001Result.  # noqa: E501
+
+
+        :return: The created of this InlineResponse2001Result.  # noqa: E501
+        :rtype: str
+        """
+        return self._created
+
+    @created.setter
+    def created(self, created):
+        """Sets the created of this InlineResponse2001Result.
+
+
+        :param created: The created of this InlineResponse2001Result.  # noqa: E501
+        :type: str
+        """
+
+        self._created = created
 
     def to_dict(self):
         """Returns the model properties as a dict"""

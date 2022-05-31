@@ -33,75 +33,55 @@ class InlineResponse20016Result(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'file_name': 'str',
+        'image_path': 'str',
         'labels': 'list[str]',
-        'confidences': 'list[float]',
-        'x_mins': 'list[float]',
-        'x_maxs': 'list[float]',
-        'y_mins': 'list[float]',
-        'y_maxs': 'list[float]'
+        'likelihood': 'list[float]'
     }
 
     attribute_map = {
-        'file_name': 'file_name',
+        'image_path': 'image_path',
         'labels': 'labels',
-        'confidences': 'confidences',
-        'x_mins': 'x_mins',
-        'x_maxs': 'x_maxs',
-        'y_mins': 'y_mins',
-        'y_maxs': 'y_maxs'
+        'likelihood': 'likelihood'
     }
 
-    def __init__(self, file_name=None, labels=None, confidences=None, x_mins=None, x_maxs=None, y_mins=None, y_maxs=None, _configuration=None):  # noqa: E501
+    def __init__(self, image_path=None, labels=None, likelihood=None, _configuration=None):  # noqa: E501
         """InlineResponse20016Result - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
-        self._file_name = None
+        self._image_path = None
         self._labels = None
-        self._confidences = None
-        self._x_mins = None
-        self._x_maxs = None
-        self._y_mins = None
-        self._y_maxs = None
+        self._likelihood = None
         self.discriminator = None
 
-        if file_name is not None:
-            self.file_name = file_name
+        if image_path is not None:
+            self.image_path = image_path
         if labels is not None:
             self.labels = labels
-        if confidences is not None:
-            self.confidences = confidences
-        if x_mins is not None:
-            self.x_mins = x_mins
-        if x_maxs is not None:
-            self.x_maxs = x_maxs
-        if y_mins is not None:
-            self.y_mins = y_mins
-        if y_maxs is not None:
-            self.y_maxs = y_maxs
+        if likelihood is not None:
+            self.likelihood = likelihood
 
     @property
-    def file_name(self):
-        """Gets the file_name of this InlineResponse20016Result.  # noqa: E501
+    def image_path(self):
+        """Gets the image_path of this InlineResponse20016Result.  # noqa: E501
 
 
-        :return: The file_name of this InlineResponse20016Result.  # noqa: E501
+        :return: The image_path of this InlineResponse20016Result.  # noqa: E501
         :rtype: str
         """
-        return self._file_name
+        return self._image_path
 
-    @file_name.setter
-    def file_name(self, file_name):
-        """Sets the file_name of this InlineResponse20016Result.
+    @image_path.setter
+    def image_path(self, image_path):
+        """Sets the image_path of this InlineResponse20016Result.
 
 
-        :param file_name: The file_name of this InlineResponse20016Result.  # noqa: E501
+        :param image_path: The image_path of this InlineResponse20016Result.  # noqa: E501
         :type: str
         """
 
-        self._file_name = file_name
+        self._image_path = image_path
 
     @property
     def labels(self):
@@ -125,109 +105,25 @@ class InlineResponse20016Result(object):
         self._labels = labels
 
     @property
-    def confidences(self):
-        """Gets the confidences of this InlineResponse20016Result.  # noqa: E501
+    def likelihood(self):
+        """Gets the likelihood of this InlineResponse20016Result.  # noqa: E501
 
 
-        :return: The confidences of this InlineResponse20016Result.  # noqa: E501
+        :return: The likelihood of this InlineResponse20016Result.  # noqa: E501
         :rtype: list[float]
         """
-        return self._confidences
+        return self._likelihood
 
-    @confidences.setter
-    def confidences(self, confidences):
-        """Sets the confidences of this InlineResponse20016Result.
+    @likelihood.setter
+    def likelihood(self, likelihood):
+        """Sets the likelihood of this InlineResponse20016Result.
 
 
-        :param confidences: The confidences of this InlineResponse20016Result.  # noqa: E501
+        :param likelihood: The likelihood of this InlineResponse20016Result.  # noqa: E501
         :type: list[float]
         """
 
-        self._confidences = confidences
-
-    @property
-    def x_mins(self):
-        """Gets the x_mins of this InlineResponse20016Result.  # noqa: E501
-
-
-        :return: The x_mins of this InlineResponse20016Result.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._x_mins
-
-    @x_mins.setter
-    def x_mins(self, x_mins):
-        """Sets the x_mins of this InlineResponse20016Result.
-
-
-        :param x_mins: The x_mins of this InlineResponse20016Result.  # noqa: E501
-        :type: list[float]
-        """
-
-        self._x_mins = x_mins
-
-    @property
-    def x_maxs(self):
-        """Gets the x_maxs of this InlineResponse20016Result.  # noqa: E501
-
-
-        :return: The x_maxs of this InlineResponse20016Result.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._x_maxs
-
-    @x_maxs.setter
-    def x_maxs(self, x_maxs):
-        """Sets the x_maxs of this InlineResponse20016Result.
-
-
-        :param x_maxs: The x_maxs of this InlineResponse20016Result.  # noqa: E501
-        :type: list[float]
-        """
-
-        self._x_maxs = x_maxs
-
-    @property
-    def y_mins(self):
-        """Gets the y_mins of this InlineResponse20016Result.  # noqa: E501
-
-
-        :return: The y_mins of this InlineResponse20016Result.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._y_mins
-
-    @y_mins.setter
-    def y_mins(self, y_mins):
-        """Sets the y_mins of this InlineResponse20016Result.
-
-
-        :param y_mins: The y_mins of this InlineResponse20016Result.  # noqa: E501
-        :type: list[float]
-        """
-
-        self._y_mins = y_mins
-
-    @property
-    def y_maxs(self):
-        """Gets the y_maxs of this InlineResponse20016Result.  # noqa: E501
-
-
-        :return: The y_maxs of this InlineResponse20016Result.  # noqa: E501
-        :rtype: list[float]
-        """
-        return self._y_maxs
-
-    @y_maxs.setter
-    def y_maxs(self, y_maxs):
-        """Sets the y_maxs of this InlineResponse20016Result.
-
-
-        :param y_maxs: The y_maxs of this InlineResponse20016Result.  # noqa: E501
-        :type: list[float]
-        """
-
-        self._y_maxs = y_maxs
+        self._likelihood = likelihood
 
     def to_dict(self):
         """Returns the model properties as a dict"""
